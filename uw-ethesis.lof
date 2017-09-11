@@ -1,0 +1,28 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical representation of an example perceptron to determine the expected output for the $k^{th}$ sample, $\mathbf {z}^{k}$ with $\mathbf {x}^{k} \in R^{3}$ and $\mathbf {y}^{k} \in R^{2}$. The ``1" is a constant multiplier which differentiates regular weights values from bias values, $\mathbf {b}_{i}$, $i=1,2$.\relax }}{8}{figure.caption.13}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Visualization of the capacity increase from having multiple layers in a network. Subplot a) shows the classification potential for a single perceptron. Subplots b) and c) show the potential classification performed by 3 perceptrons, 2 in the first layer and 1 in the second.\relax }}{9}{figure.caption.16}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces This is Figure 1 from \cite {martens2010deep} which shows an example of a valley characteristic. On the left the arrows point towards the gradient direction and the red arrow points towards the shortest path to the smallest value visible. On the right are arrows pointing in the direction of a method considering curvature and therefore avoiding the gradient direction which is, in this case, in the direction of high curvature.\relax }}{12}{figure.caption.23}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Training an ff-ANN to predict MNIST using \textbf {SGD}, \textbf {MBGD} and \textbf {GD} for comparison. \relax }}{31}{figure.caption.64}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Visualization of Habe dataset where classes are represented by shape and colour. This shows the difficulty in learning this dataset, there is no clear separation between classes.\relax }}{39}{figure.caption.75}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Structure of ff-ANN for learning the Derm dataset. Used as visual example to show resulting structure for a given $n_{0}$ and $n_{2}$ which are based on the dataset.\relax }}{40}{figure.caption.77}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Running TRMMBGD vs MBGBD for training ff-ANNs on five datasets.\relax }}{44}{figure.caption.82}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Comparing \textbf {TRM} with stochastic training example subsampling \textbf {TRM} methods (\textbf {STRM} and \textbf {MBTRM}), based on objective function, $f(\mathbf {w})$, vs CPU time.\relax }}{47}{figure.caption.86}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Comparing \textbf {TRM} with stochastic training example subsampling \textbf {TRM} method, \textbf {BTRM}, based on objective function over CPU time.\relax }}{50}{figure.caption.87}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Running TRM vs TRMWS for training ff-ANNs on five datasets.\relax }}{53}{figure.caption.91}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Running BTRM vs BTRMWS for training ff-ANNs on five datasets.\relax }}{54}{figure.caption.92}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Test results for using stochastic TRM methods.\relax }}{56}{figure.caption.96}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Percentage of time taken up by solving the Generalized Eigenvalue Problem (\ref {equation:M_def}) and computing $\mathbf {p}_{1}$ from the result at each relevant step.\relax }}{58}{figure.caption.100}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Percentage of time taken for computing the Hessian matrix at each change in weight values $\mathbf {w}$.\relax }}{58}{figure.caption.101}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Percentage of time taken to solve for the $\mathbf {p}_{0}$, the bulk of which is solving the linear equation (\ref {equation:p0}).\relax }}{59}{figure.caption.102}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Convergence of \textbf {TRM} with $\mathbf {p}_{0}$ and $\mathbf {p}_{1}$ using stopping criterion of residual magnitude less than $10^{-3}$ (dashed line) and stopping criterion of reaching the max iteration (\textbf {submaxiter}=1,2,3,4,5). (Left) Convergence in terms of CPU time. (Right) Convergence in terms of Epoch. (Bottom) Convergence in terms of CPU time with \textbf {SGD} for reference.\relax }}{61}{figure.caption.103}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Final points are recorded when the final objective function value is within a tolerance of $10^{-3}$ from one of the known points.\relax }}{64}{figure.caption.106}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Mean time taken to reach the process' final known point within a tolerance of $10^{-3}$.\relax }}{65}{figure.caption.107}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Comparison of methods implemented in this thesis with methods tested in \cite {Shepherd.1997}. The methods from our exploration are displayed as solid black and methods from \cite {Shepherd.1997} are coloured with a diagonal pattern.\relax }}{66}{figure.caption.108}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

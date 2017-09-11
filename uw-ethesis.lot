@@ -1,0 +1,30 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Training algorithm definitions used for numerical exploration, and their labels, which will be used to reference them.\relax }}{36}{table.caption.72}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Datasets used for experimentation. *Habe uses a single dependent variable with two states, each to represent one of the classes.\relax }}{38}{table.caption.73}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Datasets used for experimentation. Full descriptions can be found at appendix \ref {appendix:dataset_descriptions}.\relax }}{38}{table.caption.74}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Time taken to reach within 1\% of minimum $f(\mathbf {w})$ achieved by \textbf {SGD} for both \textbf {SGD} and \textbf {TRM}.\relax }}{43}{table.caption.81}
+\contentsline {table}{\numberline {5.4}{\ignorespaces TRRS results for $\Delta = 1\%$\relax }}{45}{table.caption.83}
+\contentsline {table}{\numberline {5.5}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{45}{table.caption.84}
+\contentsline {table}{\numberline {5.6}{\ignorespaces TRRS results for $\Delta = 10\%$\relax }}{45}{table.caption.85}
+\contentsline {table}{\numberline {5.7}{\ignorespaces TRRS results for $\Delta = 1\%$\relax }}{49}{table.caption.88}
+\contentsline {table}{\numberline {5.8}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{51}{table.caption.89}
+\contentsline {table}{\numberline {5.9}{\ignorespaces TRRS results for $\Delta = 10\%$\relax }}{51}{table.caption.90}
+\contentsline {table}{\numberline {5.10}{\ignorespaces TRRS results for $\Delta = 1 \%$\relax }}{52}{table.caption.93}
+\contentsline {table}{\numberline {5.11}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{52}{table.caption.94}
+\contentsline {table}{\numberline {5.12}{\ignorespaces TRRS results for $\Delta = 10 \%$\relax }}{52}{table.caption.95}
+\contentsline {table}{\numberline {5.13}{\ignorespaces TRRS results for $\Delta = 1\%$\relax }}{55}{table.caption.97}
+\contentsline {table}{\numberline {5.14}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{57}{table.caption.98}
+\contentsline {table}{\numberline {5.15}{\ignorespaces TRRS results for $\Delta = 10\%$\relax }}{57}{table.caption.99}
+\contentsline {table}{\numberline {5.16}{\ignorespaces The 2-feature XOR problem.\relax }}{62}{table.caption.104}
+\contentsline {table}{\numberline {5.17}{\ignorespaces First order critical point classification for the XOR problem when trained on a 2-layer ff-ANN with two hidden nodes.\relax }}{62}{table.caption.105}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1}{\ignorespaces Values of parameters for Algorithm \ref {algorithm:passes} based on propagation direction.\relax }}{71}{table.caption.116}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces The \textbf {Method} is the algorithm used to test the \textbf {hyperparameter} in the same row. This mapping is used in Algorithm \ref {algorithm:hyperparameters}, row 3.\relax }}{85}{table.caption.175}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {C.1}{\ignorespaces Final objective function achieved for training an ff-ANN on the set of datasets using SGD and using TRM.\relax }}{92}{table.caption.176}
