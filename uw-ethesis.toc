@@ -11,70 +11,70 @@
 \contentsline {subsection}{\numberline {2.1.4}Overfitting}{10}{subsection.2.1.4}
 \contentsline {section}{\numberline {2.2}Optimization Methods for Training ff-ANNs}{10}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}First Order Methods}{11}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Second Order Methods}{13}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Second Order Methods}{12}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Trust Region Methods}{14}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Subproblem Definition}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}Subproblem Definition}{15}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Step Calculation: Solving the Trust Region Subproblem}{15}{subsection.2.3.2}
-\contentsline {subsubsection}{Optimality Conditions}{15}{section*.29}
-\contentsline {subsubsection}{Solving TRS via a Generalized Eigenvalue Problem}{18}{section*.43}
+\contentsline {subsubsection}{Optimality Conditions}{16}{section*.29}
+\contentsline {subsubsection}{Solving TRS via a Generalized Eigenvalue Problem}{19}{section*.43}
 \contentsline {subsubsection}{Interior Case}{19}{section*.44}
-\contentsline {subsubsection}{Boundary Case via a Generalized Eigenvalue Problem}{19}{section*.46}
+\contentsline {subsubsection}{Boundary Case via a Generalized Eigenvalue Problem}{20}{section*.46}
 \contentsline {subsubsection}{Choosing the trial point}{21}{section*.56}
-\contentsline {subsection}{\numberline {2.3.3}Acceptance of the trial point}{21}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Trust region radius update}{21}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Method Summary}{22}{subsection.2.3.5}
-\contentsline {chapter}{\numberline {3}Solving the Trust Region Subproblem for Feedforward Neural Networks}{24}{chapter.3}
-\contentsline {section}{\numberline {3.1}Computing the Solution to the TRS}{25}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Conjugate Gradient}{25}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}QZ Method}{25}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Computing $\mathbf {H}_{k}$}{25}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Computing The Boundary Solution, $\mathbf {p}_{1}$}{27}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Summary of TRS Solution Method}{27}{subsection.3.1.5}
-\contentsline {chapter}{\numberline {4}Modified Trust Region Methods}{29}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Challenge: Stochastic Variations on the \textbf {TRM}}{29}{subsection.4.0.1}
-\contentsline {section}{\numberline {4.1}Stochastic Subsampling of Training Samples}{30}{section.4.1}
-\contentsline {section}{\numberline {4.2}Weight Subsampling}{33}{section.4.2}
-\contentsline {section}{\numberline {4.3}Hybrid Approach}{34}{section.4.3}
-\contentsline {section}{\numberline {4.4}Summary}{35}{section.4.4}
-\contentsline {chapter}{\numberline {5}Numerical Results}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Experimental Set-up}{37}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Datasets}{37}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Network Structure}{38}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Methods for Comparison}{41}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Time Required for a Reasonable Solution}{41}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}CPU time of TRM vs SGD}{42}{section.5.3}
-\contentsline {section}{\numberline {5.4}Using TRM and MBGD in Hybrid: TRMMBGD}{43}{section.5.4}
-\contentsline {section}{\numberline {5.5}Stochastic TRMs}{46}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Adaptive Trust Region Reduction Scheme}{46}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Traditional TRM $\gamma $ Update Scheme}{48}{subsection.5.5.2}
-\contentsline {section}{\numberline {5.6}Reducing the Dimentionality of TRS}{51}{section.5.6}
-\contentsline {section}{\numberline {5.7}CPU Time Analysis}{57}{section.5.7}
-\contentsline {section}{\numberline {5.8}Robustness Test}{62}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}The XOR Problem}{62}{subsection.5.8.1}
-\contentsline {subsection}{\numberline {5.8.2}XOR Training Results}{63}{subsection.5.8.2}
-\contentsline {chapter}{\numberline {6}Conclusion}{67}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{68}{section.6.1}
-\contentsline {chapter}{APPENDICES}{69}{appendix*.109}
-\contentsline {section}{\numberline {.1}Pearlmutter Trick for Computing Second Order Information}{69}{section.Alph0.1}
-\contentsline {subsection}{\numberline {.1.1}Forward and Back Propagations}{70}{subsection.Alph0.1.1}
-\contentsline {subsubsection}{Forward Propagation I}{72}{section*.117}
-\contentsline {subsubsection}{Back Propagation I}{72}{section*.120}
-\contentsline {subsubsection}{Forward Propagation II}{73}{section*.126}
-\contentsline {subsubsection}{Back Propagation II}{74}{section*.133}
-\contentsline {section}{\numberline {.2}Complexity Analysis}{76}{section.Alph0.2}
-\contentsline {subsection}{\numberline {.2.1}Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{76}{subsection.Alph0.2.1}
-\contentsline {subsubsection}{Forward Propagation I}{76}{section*.144}
-\contentsline {subsubsection}{Back Propagation I}{77}{section*.147}
-\contentsline {subsubsection}{Forward Propagation II}{77}{section*.150}
-\contentsline {subsubsection}{Back Propagation II}{78}{section*.152}
-\contentsline {subsubsection}{Softmax vs Sigmoid}{78}{section*.154}
-\contentsline {section}{\numberline {.3}Computing TRS Solution: Complexity}{81}{section.Alph0.3}
-\contentsline {chapter}{\numberline {A}Hyperparameters}{84}{appendix.A}
-\contentsline {chapter}{\numberline {B}}{86}{appendix.B}
-\contentsline {subsection}{\numberline {B.0.1}Habe}{86}{subsection.B.0.1}
-\contentsline {subsection}{\numberline {B.0.2}Nurs}{87}{subsection.B.0.2}
-\contentsline {subsection}{\numberline {B.0.3}IRIS}{88}{subsection.B.0.3}
-\contentsline {subsection}{\numberline {B.0.4}Derm}{89}{subsection.B.0.4}
-\contentsline {subsection}{\numberline {B.0.5}MNIST}{91}{subsection.B.0.5}
-\contentsline {chapter}{\numberline {C}PDF Plots From Matlab}{92}{appendix.C}
-\contentsline {chapter}{\textbf {References}}{93}{section*.177}
+\contentsline {subsection}{\numberline {2.3.3}Acceptance of the trial point}{22}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Trust region radius update}{22}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Method Summary}{23}{subsection.2.3.5}
+\contentsline {chapter}{\numberline {3}Solving the Trust Region Subproblem for Feedforward Neural Networks}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Computing the Solution to the TRS}{26}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Conjugate Gradient}{26}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}QZ Method}{26}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Computing $\mathbf {H}_{k}$}{26}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Computing The Boundary Solution, $\mathbf {p}_{1}$}{28}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Summary of TRS Solution Method}{28}{subsection.3.1.5}
+\contentsline {chapter}{\numberline {4}Modified Trust Region Methods}{30}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Challenge: Stochastic Variations on the \textbf {TRM}}{30}{subsection.4.0.1}
+\contentsline {section}{\numberline {4.1}Stochastic Subsampling of Training Samples}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Weight Subsampling}{34}{section.4.2}
+\contentsline {section}{\numberline {4.3}Hybrid Approach}{35}{section.4.3}
+\contentsline {section}{\numberline {4.4}Summary}{36}{section.4.4}
+\contentsline {chapter}{\numberline {5}Numerical Results}{38}{chapter.5}
+\contentsline {section}{\numberline {5.1}Experimental Set-up}{38}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Datasets}{38}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Network Structure}{39}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Methods for Comparison}{42}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Time Required for a Reasonable Solution}{42}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}CPU time of TRM vs SGD}{43}{section.5.3}
+\contentsline {section}{\numberline {5.4}Using TRM and MBGD in Hybrid: TRMMBGD}{44}{section.5.4}
+\contentsline {section}{\numberline {5.5}Stochastic TRMs}{47}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Adaptive Trust Region Reduction Scheme}{47}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Traditional TRM $\gamma $ Update Scheme}{50}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Reducing the Dimentionality of TRS}{53}{section.5.6}
+\contentsline {section}{\numberline {5.7}CPU Time Analysis}{59}{section.5.7}
+\contentsline {section}{\numberline {5.8}Robustness Test}{63}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}The XOR Problem}{63}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}XOR Training Results}{64}{subsection.5.8.2}
+\contentsline {chapter}{\numberline {6}Conclusion}{68}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{69}{section.6.1}
+\contentsline {chapter}{APPENDICES}{70}{appendix*.110}
+\contentsline {section}{\numberline {.1}Pearlmutter Trick for Computing Second Order Information}{70}{section.Alph0.1}
+\contentsline {subsection}{\numberline {.1.1}Forward and Back Propagations}{71}{subsection.Alph0.1.1}
+\contentsline {subsubsection}{Forward Propagation I}{73}{section*.118}
+\contentsline {subsubsection}{Back Propagation I}{73}{section*.121}
+\contentsline {subsubsection}{Forward Propagation II}{74}{section*.127}
+\contentsline {subsubsection}{Back Propagation II}{75}{section*.134}
+\contentsline {section}{\numberline {.2}Complexity Analysis}{77}{section.Alph0.2}
+\contentsline {subsection}{\numberline {.2.1}Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{77}{subsection.Alph0.2.1}
+\contentsline {subsubsection}{Forward Propagation I}{77}{section*.145}
+\contentsline {subsubsection}{Back Propagation I}{78}{section*.148}
+\contentsline {subsubsection}{Forward Propagation II}{78}{section*.151}
+\contentsline {subsubsection}{Back Propagation II}{79}{section*.153}
+\contentsline {subsubsection}{Softmax vs Sigmoid}{79}{section*.155}
+\contentsline {section}{\numberline {.3}Computing TRS Solution: Complexity}{82}{section.Alph0.3}
+\contentsline {chapter}{\numberline {A}Hyperparameters}{85}{appendix.A}
+\contentsline {chapter}{\numberline {B}}{87}{appendix.B}
+\contentsline {subsection}{\numberline {B.0.1}Habe}{87}{subsection.B.0.1}
+\contentsline {subsection}{\numberline {B.0.2}Nurs}{88}{subsection.B.0.2}
+\contentsline {subsection}{\numberline {B.0.3}IRIS}{89}{subsection.B.0.3}
+\contentsline {subsection}{\numberline {B.0.4}Derm}{90}{subsection.B.0.4}
+\contentsline {subsection}{\numberline {B.0.5}MNIST}{92}{subsection.B.0.5}
+\contentsline {chapter}{\numberline {C}PDF Plots From Matlab}{93}{appendix.C}
+\contentsline {chapter}{\textbf {References}}{94}{section*.178}

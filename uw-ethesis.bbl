@@ -1,0 +1,195 @@
+\begin{thebibliography}{10}
+
+\bibitem{tutorial}
+Chuan Yu Foo Yifan Mai Caroline Suen Adam Coates Andrew Maas Awni Hannun Brody
+  Huval Tao Wang Sameep~Tandon Andrew~Ng, Jiquan~Ngiam.
+\newblock Ufldl tutorial.
+\newblock \url{http://ufldl.stanford.edu/tutorial/}.
+
+\bibitem{TRM.book}
+Nicholas I. M.~Gould Andrew R.~Conn and Philippe L.Toint.
+\newblock {\em Trust-Region Methods}.
+\newblock MPS and SIAM, Philadelphia, PA, 2000.
+\newblock Series on Optimization.
+
+\bibitem{bojarski2016end}
+Mariusz Bojarski, Davide Del~Testa, Daniel Dworakowski, Bernhard Firner, Beat
+  Flepp, Prasoon Goyal, Lawrence~D Jackel, Mathew Monfort, Urs Muller, Jiakai
+  Zhang, et~al.
+\newblock End to end learning for self-driving cars.
+\newblock {\em arXiv preprint arXiv:1604.07316}, 2016.
+
+\bibitem{boyd}
+Stephen Boyd and Lieven Vandenberghe.
+\newblock {\em Convex optimization}.
+\newblock Cambridge university press, 2004.
+
+\bibitem{saddle_free}
+Yann~N Dauphin, Razvan Pascanu, Caglar Gulcehre, Kyunghyun Cho, Surya Ganguli,
+  and Yoshua Bengio.
+\newblock Identifying and attacking the saddle point problem in
+  high-dimensional non-convex optimization.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2933--2941, 2014.
+
+\bibitem{demmel.book}
+James~W. Demmel.
+\newblock {\em Applied Numerical Linear Algebra}.
+\newblock SIAM, Philadelphia, PA, 1997.
+
+\bibitem{Nurs}
+Vladislav~Rajkovic et~al.
+\newblock Nursery database, 1989.
+
+\bibitem{IRIS}
+R.A. Fisher.
+\newblock Iris plants database, 1936.
+
+\bibitem{Fletcher.1987}
+R.~Fletcher.
+\newblock {\em Practical Methods of Optimization}.
+\newblock John Wiley and Sons, New York, 2nd edition, 1987.
+
+\bibitem{golub1989matrix}
+Gene~H Golub and Charles~F Van~Loan.
+\newblock {\em Matrix computations}, volume~2.
+\newblock JHU Press, 1989.
+
+\bibitem{Goodfellow-et-al-2016}
+Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
+\bibitem{Derm}
+Nilsel~Ilter H.~Altay~Gubenir, Gulsen~Demiroz.
+\newblock Dermatology database, 1998.
+
+\bibitem{Habe}
+S.J. Haberman.
+\newblock Haberman's survival data, 1976.
+
+\bibitem{hastie2009overview}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock Overview of supervised learning.
+\newblock In {\em The elements of statistical learning}, pages 9--41. Springer,
+  2009.
+
+\bibitem{hornik1989multilayer}
+Kurt Hornik, Maxwell Stinchcombe, and Halbert White.
+\newblock Multilayer feedforward networks are universal approximators.
+\newblock {\em Neural networks}, 2(5):359--366, 1989.
+
+\bibitem{gd_converges.paper}
+Michael I. Jordan Benjamin~Recht Jason D.~Lee, Max~Simchowitz.
+\newblock Gradient descent only converges to minimizers.
+\newblock {\em JMLR: Workshop and Conference Proceedings vol 49}, pages 1--12,
+  2016.
+
+\bibitem{krizhevsky2012imagenet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1097--1105, 2012.
+
+\bibitem{mnist}
+Yann LeCun and Corinna Cortes.
+\newblock {MNIST} handwritten digit database.
+\newblock 2010.
+
+\bibitem{ml_repo}
+M.~Lichman.
+\newblock {UCI} machine learning repository, 2013.
+
+\bibitem{ma2002natural}
+Qing Ma.
+\newblock Natural language processing with neural networks.
+\newblock In {\em Language Engineering Conference, 2002. Proceedings}, pages
+  45--56. IEEE, 2002.
+
+\bibitem{mahsereci2017early}
+Maren Mahsereci, Lukas Balles, Christoph Lassner, and Philipp Hennig.
+\newblock Early stopping without a validation set.
+\newblock {\em arXiv preprint arXiv:1703.09580}, 2017.
+
+\bibitem{martens2010deep}
+James Martens.
+\newblock Deep learning via hessian-free optimization.
+\newblock In {\em Proceedings of the 27th International Conference on Machine
+  Learning (ICML-10)}, pages 735--742, 2010.
+
+\bibitem{Perceptrons.book}
+Marvin Minsky and Seymour Papert.
+\newblock {\em Perceptrons}.
+\newblock M.I.T Press, Oxford, England, 1969.
+
+\bibitem{Pearlmutter.1993}
+B.~A. Pearlmutter.
+\newblock Fast exact multiplication by the hessian.
+\newblock {\em Neural Computation 6.1}, pages 147--160, 1994.
+
+\bibitem{priddy2005artificial}
+Kevin~L Priddy and Paul~E Keller.
+\newblock {\em Artificial neural networks: an introduction}, volume~68.
+\newblock SPIE press, 2005.
+
+\bibitem{adachi.paper}
+Yuji~Nakatsukasa Satoru~Adachi, Satoru~Iwata and Akiko Takeda.
+\newblock Solving the trust region subproblem by a generalized eigenvalue
+  problem.
+\newblock Technical report, The University of Tokyo, Tokyo, Japan, 2015.
+
+\bibitem{Shepherd.1997}
+Adrian~J. Shepherd.
+\newblock {\em Second-Order Methods for Neural Networks: Fast and Reliable
+  Training Methods for Multi-Layer Perceptrons}.
+\newblock Springer, 1997.
+
+\bibitem{shewchuk1994introduction}
+Jonathan~Richard Shewchuk et~al.
+\newblock An introduction to the conjugate gradient method without the
+  agonizing pain, 1994.
+
+\bibitem{shultz1985family}
+Gerald~A Shultz, Robert~B Schnabel, and Richard~H Byrd.
+\newblock A family of trust-region-based algorithms for unconstrained
+  minimization with strong global convergence properties.
+\newblock {\em SIAM Journal on Numerical Analysis}, 22(1):47--67, 1985.
+
+\bibitem{silver2016mastering}
+David Silver, Aja Huang, Chris~J Maddison, Arthur Guez, Laurent Sifre, George
+  Van Den~Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda
+  Panneershelvam, Marc Lanctot, et~al.
+\newblock Mastering the game of go with deep neural networks and tree search.
+\newblock {\em Nature}, 529(7587):484--489, 2016.
+
+\bibitem{dropout}
+Nitish Srivastava, Geoffrey~E Hinton, Alex Krizhevsky, Ilya Sutskever, and
+  Ruslan Salakhutdinov.
+\newblock Dropout: a simple way to prevent neural networks from overfitting.
+\newblock {\em Journal of machine learning research}, 15(1):1929--1958, 2014.
+
+\bibitem{strakovs1991real}
+Z~Strako{\v{s}}.
+\newblock On the real convergence rate of the conjugate gradient method.
+\newblock {\em Linear algebra and its applications}, 154:535--549, 1991.
+
+\bibitem{tetko1995neural}
+Igor~V Tetko, David~J Livingstone, and Alexander~I Luik.
+\newblock Neural network studies. 1. comparison of overfitting and
+  overtraining.
+\newblock {\em Journal of chemical information and computer sciences},
+  35(5):826--833, 1995.
+
+\bibitem{vapnik1999overview}
+Vladimir~N Vapnik.
+\newblock An overview of statistical learning theory.
+\newblock {\em IEEE transactions on neural networks}, 10(5):988--999, 1999.
+
+\bibitem{vapnik2015uniform}
+Vladimir~N Vapnik and A~Ya Chervonenkis.
+\newblock On the uniform convergence of relative frequencies of events to their
+  probabilities.
+\newblock In {\em Measures of Complexity}, pages 11--30. Springer, 2015.
+
+\end{thebibliography}

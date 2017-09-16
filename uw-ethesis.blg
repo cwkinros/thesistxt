@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: uw-ethesis.aux
+The style file: plain.bst
+Database file #1: uw-ethesis.bib
+I was expecting a `,' or a `}'---line 208 of file uw-ethesis.bib
+ :  
+ :  note = {Accessed: 2017-06-25}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Name 1 in "Satoru Adachi, Satoru Iwata, Yuji Nakatsukasa, and Akiko Takeda" has a comma at the end for entry adachi.paper
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Jason D. Lee, Max Simchowitz, Michael I. Jordan, Benjamin Recht" for entry gd_converges.paper
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Jason D. Lee, Max Simchowitz, Michael I. Jordan, Benjamin Recht" for entry gd_converges.paper
+while executing---line 1090 of file plain.bst
+Warning--empty journal in mnist
+Name 1 in "Satoru Adachi, Satoru Iwata, Yuji Nakatsukasa, and Akiko Takeda" has a comma at the end for entry adachi.paper
+while executing---line 1090 of file plain.bst
+(There were 21 error messages)

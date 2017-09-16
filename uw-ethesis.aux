@@ -54,105 +54,105 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphical representation of an example perceptron to determine the expected output for the $k^{th}$ sample, $\mathbf  {z}^{k}$ with $\mathbf  {x}^{k} \in R^{3}$ and $\mathbf  {y}^{k} \in R^{2}$. The ``1" is a constant multiplier which differentiates regular weights values from bias values, $\mathbf  {b}_{i}$, $i=1,2$.\relax }}{8}{figure.caption.13}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{perceptron}{{2.1}{8}{Graphical representation of an example perceptron to determine the expected output for the $k^{th}$ sample, $\mathbf {z}^{k}$ with $\mathbf {x}^{k} \in R^{3}$ and $\mathbf {y}^{k} \in R^{2}$. The ``1" is a constant multiplier which differentiates regular weights values from bias values, $\mathbf {b}_{i}$, $i=1,2$.\relax }{figure.caption.13}{}}
-\citation{dropout}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Visualization of the capacity increase from having multiple layers in a network. Subplot a) shows the classification potential for a single perceptron. Subplots b) and c) show the potential classification performed by 3 perceptrons, 2 in the first layer and 1 in the second.\relax }}{9}{figure.caption.16}}
 \newlabel{figure:MLP}{{2.2}{9}{Visualization of the capacity increase from having multiple layers in a network. Subplot a) shows the classification potential for a single perceptron. Subplots b) and c) show the potential classification performed by 3 perceptrons, 2 in the first layer and 1 in the second.\relax }{figure.caption.16}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Training}{9}{subsection.2.1.3}}
 \newlabel{equation:objective_function}{{2.9}{9}{Training}{equation.2.1.9}{}}
 \newlabel{equation:optimization}{{2.10}{9}{Training}{equation.2.1.10}{}}
-\citation{Shepherd.1997}
+\citation{dropout}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Overfitting}{10}{subsection.2.1.4}}
 \newlabel{equation:regularization}{{2.11}{10}{Overfitting}{equation.2.1.11}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}Optimization Methods for Training ff-ANNs}{10}{section.2.2}}
 \newlabel{equation:optimization_simple}{{2.12}{10}{Optimization Methods for Training ff-ANNs}{equation.2.2.12}{}}
+\citation{Shepherd.1997}
 \citation{gd_converges.paper}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}First Order Methods}{11}{subsection.2.2.1}}
 \newlabel{equation:gd_update}{{2.13}{11}{First Order Methods}{equation.2.2.13}{}}
-\newlabel{equation:sgd_update}{{2.14}{11}{First Order Methods}{equation.2.2.14}{}}
 \citation{Shepherd.1997}
 \citation{martens2010deep}
 \citation{martens2010deep}
 \citation{martens2010deep}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces This is Figure 1 from \cite  {martens2010deep} which shows an example of a valley characteristic. On the left the arrows point towards the gradient direction and the red arrow points towards the shortest path to the smallest value visible. On the right are arrows pointing in the direction of a method considering curvature and therefore avoiding the gradient direction which is, in this case, in the direction of high curvature.\relax }}{12}{figure.caption.23}}
-\newlabel{figure:valley}{{2.3}{12}{This is Figure 1 from \cite {martens2010deep} which shows an example of a valley characteristic. On the left the arrows point towards the gradient direction and the red arrow points towards the shortest path to the smallest value visible. On the right are arrows pointing in the direction of a method considering curvature and therefore avoiding the gradient direction which is, in this case, in the direction of high curvature.\relax }{figure.caption.23}{}}
 \citation{Shepherd.1997}
+\newlabel{equation:sgd_update}{{2.14}{12}{First Order Methods}{equation.2.2.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Second Order Methods}{12}{subsection.2.2.2}}
+\newlabel{section:second_order}{{2.2.2}{12}{Second Order Methods}{subsection.2.2.2}{}}
+\newlabel{equation:newtons}{{2.15}{12}{Second Order Methods}{equation.2.2.15}{}}
 \citation{Shepherd.1997}
 \citation{Shepherd.1997}
 \citation{Shepherd.1997}
 \citation{saddle_free}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Second Order Methods}{13}{subsection.2.2.2}}
-\newlabel{section:second_order}{{2.2.2}{13}{Second Order Methods}{subsection.2.2.2}{}}
-\newlabel{equation:newtons}{{2.15}{13}{Second Order Methods}{equation.2.2.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces This is Figure 1 from \cite  {martens2010deep} which shows an example of a valley characteristic. On the left the arrows point towards the gradient direction and the red arrow points towards the shortest path to the smallest value visible. On the right are arrows pointing in the direction of a method considering curvature and therefore avoiding the gradient direction which is, in this case, in the direction of high curvature.\relax }}{13}{figure.caption.23}}
+\newlabel{figure:valley}{{2.3}{13}{This is Figure 1 from \cite {martens2010deep} which shows an example of a valley characteristic. On the left the arrows point towards the gradient direction and the red arrow points towards the shortest path to the smallest value visible. On the right are arrows pointing in the direction of a method considering curvature and therefore avoiding the gradient direction which is, in this case, in the direction of high curvature.\relax }{figure.caption.23}{}}
 \citation{TRM.book}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Trust Region Methods}{14}{section.2.3}}
 \newlabel{model def}{{1}{14}{Trust Region Methods}{Item.18}{}}
 \newlabel{step calc}{{2}{14}{Trust Region Methods}{Item.19}{}}
 \newlabel{accept step}{{3}{14}{Trust Region Methods}{Item.20}{}}
 \newlabel{update radius}{{4}{14}{Trust Region Methods}{Item.21}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Subproblem Definition}{14}{subsection.2.3.1}}
 \citation{TRM.book}
 \citation{adachi.paper}
 \citation{boyd}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Subproblem Definition}{15}{subsection.2.3.1}}
 \newlabel{equation:taylor_series}{{2.17}{15}{Subproblem Definition}{equation.2.3.17}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Step Calculation: Solving the Trust Region Subproblem}{15}{subsection.2.3.2}}
 \newlabel{equation:TRS}{{2.18}{15}{Step Calculation: Solving the Trust Region Subproblem}{equation.2.3.18}{}}
 \newlabel{equation:delta}{{2.19}{15}{Step Calculation: Solving the Trust Region Subproblem}{equation.2.3.19}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Optimality Conditions}{15}{section*.29}}
+\@writefile{toc}{\contentsline {subsubsection}{Optimality Conditions}{16}{section*.29}}
 \newlabel{equation:inbounds}{{2.20}{16}{Optimality Conditions}{equation.2.3.20}{}}
 \newlabel{equation:lagrangian}{{2.21}{16}{Optimality Conditions}{equation.2.3.21}{}}
 \newlabel{equation:complementary_slackness}{{2.22}{16}{Optimality Conditions}{equation.2.3.22}{}}
 \newlabel{equation:dual}{{2.23}{16}{Optimality Conditions}{equation.2.3.23}{}}
 \newlabel{equation:grad_lagrangian}{{2.24}{16}{Optimality Conditions}{equation.2.3.24}{}}
-\newlabel{equation:infimum}{{2.25}{16}{Optimality Conditions}{equation.2.3.25}{}}
+\newlabel{equation:infimum}{{2.25}{17}{Optimality Conditions}{equation.2.3.25}{}}
 \newlabel{equation:g_fun}{{2.26}{17}{Optimality Conditions}{equation.2.3.26}{}}
 \newlabel{equation:possemdef}{{2.27}{17}{Optimality Conditions}{equation.2.3.27}{}}
 \newlabel{equation:dual2}{{2.28}{17}{Optimality Conditions}{equation.2.3.28}{}}
-\newlabel{equation:grad_lagrangian}{{2.29}{17}{Optimality Conditions}{equation.2.3.29}{}}
-\newlabel{equation:grad_lagrangian2}{{2.31}{17}{Optimality Conditions}{equation.2.3.31}{}}
+\newlabel{equation:grad_d}{{2.29}{17}{Optimality Conditions}{equation.2.3.29}{}}
 \citation{TRM.book}
 \citation{TRM.book}
 \citation{adachi.paper}
 \citation{adachi.paper}
-\citation{adachi.paper}
-\citation{adachi.paper}
+\newlabel{equation:grad_lagrangian2}{{2.31}{18}{Optimality Conditions}{equation.2.3.31}{}}
 \newlabel{phi}{{2.32}{18}{Optimality Conditions}{equation.2.3.32}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Solving TRS via a Generalized Eigenvalue Problem}{18}{section*.43}}
 \citation{adachi.paper}
+\citation{adachi.paper}
+\@writefile{toc}{\contentsline {subsubsection}{Solving TRS via a Generalized Eigenvalue Problem}{19}{section*.43}}
 \@writefile{toc}{\contentsline {subsubsection}{Interior Case}{19}{section*.44}}
 \newlabel{equation:p0}{{2.33a}{19}{Interior Case}{equation.2.3.33a}{}}
 \newlabel{equation:p0_posdef}{{2.33b}{19}{Interior Case}{equation.2.3.33b}{}}
 \newlabel{equation:p0_bounds}{{2.33c}{19}{Interior Case}{equation.2.3.33c}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Boundary Case via a Generalized Eigenvalue Problem}{19}{section*.46}}
-\newlabel{equation:boundary}{{2.34}{19}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.34}{}}
-\newlabel{equation:M_def}{{2.36}{19}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.36}{}}
 \citation{adachi.paper}
-\citation{adachi.paper}
+\@writefile{toc}{\contentsline {subsubsection}{Boundary Case via a Generalized Eigenvalue Problem}{20}{section*.46}}
+\newlabel{equation:boundary}{{2.34}{20}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.34}{}}
+\newlabel{equation:M_def}{{2.36}{20}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.36}{}}
 \newlabel{equation:M}{{2.37}{20}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.37}{}}
 \newlabel{equation:p1}{{2.38}{20}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.38}{}}
 \newlabel{equation:M_def1}{{2.39}{20}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.39}{}}
 \newlabel{equation:M_def2}{{2.40}{20}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.40}{}}
 \newlabel{equation:M_def2_rearranged}{{2.41}{20}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.41}{}}
-\newlabel{equation:v1v2}{{2.42}{20}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.42}{}}
-\citation{Fletcher.1987}
-\citation{Fletcher.1987}
-\citation{Fletcher.1987}
-\citation{Fletcher.1987}
+\citation{adachi.paper}
+\citation{adachi.paper}
+\newlabel{equation:v1v2}{{2.42}{21}{Boundary Case via a Generalized Eigenvalue Problem}{equation.2.3.42}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Choosing the trial point}{21}{section*.56}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Selecting Global Minimizer, $\mathbf  {p}$, to (\ref  {equation:TRS})\relax }}{21}{algorithm.1}}
 \newlabel{algorithm:trialpoint}{{1}{21}{Selecting Global Minimizer, $\mathbf {p}$, to (\ref {equation:TRS})\relax }{algorithm.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Acceptance of the trial point}{21}{subsection.2.3.3}}
-\newlabel{equation:rho}{{2.43}{21}{Acceptance of the trial point}{equation.2.3.43}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Trust region radius update}{21}{subsection.2.3.4}}
+\citation{Fletcher.1987}
+\citation{Fletcher.1987}
+\citation{Fletcher.1987}
+\citation{Fletcher.1987}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Acceptance of the trial point}{22}{subsection.2.3.3}}
+\newlabel{equation:rho}{{2.43}{22}{Acceptance of the trial point}{equation.2.3.43}{}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Acceptance of the trial point \cite  {Fletcher.1987}\relax }}{22}{algorithm.2}}
 \newlabel{algorithm:accept_trial_point}{{2}{22}{Acceptance of the trial point \cite {Fletcher.1987}\relax }{algorithm.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Trust region radius update}{22}{subsection.2.3.4}}
 \newlabel{equation:lbub}{{2.44}{22}{Trust region radius update}{equation.2.3.44}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Adaptive adjustment of trust region size\relax }}{22}{algorithm.3}}
-\newlabel{trust region size}{{3}{22}{Adaptive adjustment of trust region size\relax }{algorithm.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}Method Summary}{22}{subsection.2.3.5}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Full Trust Region Algorithm to Solve (\ref  {equation:optimization_simple})\relax }}{23}{algorithm.4}}
-\newlabel{trust region method}{{4}{23}{Full Trust Region Algorithm to Solve (\ref {equation:optimization_simple})\relax }{algorithm.4}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Adaptive adjustment of trust region size\relax }}{23}{algorithm.3}}
+\newlabel{trust region size}{{3}{23}{Adaptive adjustment of trust region size\relax }{algorithm.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}Method Summary}{23}{subsection.2.3.5}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Full Trust Region Algorithm to Solve (\ref  {equation:optimization_simple})\relax }}{24}{algorithm.4}}
+\newlabel{trust region method}{{4}{24}{Full Trust Region Algorithm to Solve (\ref {equation:optimization_simple})\relax }{algorithm.4}{}}
 \citation{adachi.paper}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Solving the Trust Region Subproblem for Feedforward Neural Networks}{24}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Solving the Trust Region Subproblem for Feedforward Neural Networks}{25}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \citation{demmel.book}
@@ -161,122 +161,122 @@
 \citation{Pearlmutter.1993}
 \citation{Pearlmutter.1993}
 \citation{Pearlmutter.1993}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Computing the Solution to the TRS}{25}{section.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Conjugate Gradient}{25}{subsection.3.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}QZ Method}{25}{subsection.3.1.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Computing $\mathbf  {H}_{k}$}{25}{subsection.3.1.3}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Conjugate Gradient, Algorithm 6.11 from \cite  {demmel.book}\relax }}{26}{algorithm.5}}
-\newlabel{algorithm:cg}{{5}{26}{Conjugate Gradient, Algorithm 6.11 from \cite {demmel.book}\relax }{algorithm.5}{}}
-\newlabel{algorithm:cg}{{14}{26}{Conjugate Gradient, Algorithm 6.11 from \cite {demmel.book}\relax }{algorithm.5}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {6}{\ignorespaces Compute H, using the Pearlmutter Trick \cite  {Pearlmutter.1993}\relax }}{26}{algorithm.6}}
-\newlabel{algorithm:hv}{{10}{26}{Compute H, using the Pearlmutter Trick \cite {Pearlmutter.1993}\relax }{algorithm.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Computing the Solution to the TRS}{26}{section.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Conjugate Gradient}{26}{subsection.3.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}QZ Method}{26}{subsection.3.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Computing $\mathbf  {H}_{k}$}{26}{subsection.3.1.3}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Conjugate Gradient, Algorithm 6.11 from \cite  {demmel.book}\relax }}{27}{algorithm.5}}
+\newlabel{algorithm:cg}{{5}{27}{Conjugate Gradient, Algorithm 6.11 from \cite {demmel.book}\relax }{algorithm.5}{}}
+\newlabel{algorithm:cg}{{14}{27}{Conjugate Gradient, Algorithm 6.11 from \cite {demmel.book}\relax }{algorithm.5}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {6}{\ignorespaces Compute H, using the Pearlmutter Trick \cite  {Pearlmutter.1993}\relax }}{27}{algorithm.6}}
+\newlabel{algorithm:hv}{{6}{27}{Compute H, using the Pearlmutter Trick \cite {Pearlmutter.1993}\relax }{algorithm.6}{}}
 \citation{adachi.paper}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Computing The Boundary Solution, $\mathbf  {p}_{1}$}{27}{subsection.3.1.4}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {7}{\ignorespaces Compute $p_{1}$\relax }}{27}{algorithm.7}}
-\newlabel{algorithm:p1}{{13}{27}{Compute $p_{1}$\relax }{algorithm.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Summary of TRS Solution Method}{27}{subsection.3.1.5}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {8}{\ignorespaces Solving the TRS\relax }}{28}{algorithm.8}}
-\newlabel{algorithm:trs}{{8}{28}{Solving the TRS\relax }{algorithm.8}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Modified Trust Region Methods}{29}{chapter.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Computing The Boundary Solution, $\mathbf  {p}_{1}$}{28}{subsection.3.1.4}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {7}{\ignorespaces Compute $\mathbf  {p}_{1}$\relax }}{28}{algorithm.7}}
+\newlabel{algorithm:p1}{{7}{28}{Compute $\mathbf {p}_{1}$\relax }{algorithm.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Summary of TRS Solution Method}{28}{subsection.3.1.5}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {8}{\ignorespaces Solving the TRS\relax }}{29}{algorithm.8}}
+\newlabel{algorithm:trs}{{8}{29}{Solving the TRS\relax }{algorithm.8}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Modified Trust Region Methods}{30}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.1}Challenge: Stochastic Variations on the \textbf  {TRM}}{29}{subsection.4.0.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.1}Challenge: Stochastic Variations on the \textbf  {TRM}}{30}{subsection.4.0.1}}
 \citation{mnist}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Stochastic Subsampling of Training Samples}{30}{section.4.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Stochastic Subsampling of Training Samples}{31}{section.4.1}}
 \citation{tutorial}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Training an ff-ANN to predict MNIST using \textbf  {SGD}, \textbf  {MBGD} and \textbf  {GD} for comparison. \relax }}{31}{figure.caption.64}}
-\newlabel{figure:SMBGDGD}{{4.1}{31}{Training an ff-ANN to predict MNIST using \textbf {SGD}, \textbf {MBGD} and \textbf {GD} for comparison. \relax }{figure.caption.64}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {9}{\ignorespaces Adaptive Trust Region Reduction Schedule (ATRRS)\relax }}{32}{algorithm.9}}
-\newlabel{algorithm:assrs-simple}{{9}{32}{Adaptive Trust Region Reduction Schedule (ATRRS)\relax }{algorithm.9}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Weight Subsampling}{33}{section.4.2}}
-\newlabel{equation:w_subset}{{4.9}{33}{Weight Subsampling}{equation.4.2.9}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Hybrid Approach}{34}{section.4.3}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {10}{\ignorespaces \textbf  {MBGD} $\eta $ Update and \textbf  {TRM} Step Incorporation\relax }}{35}{algorithm.10}}
-\newlabel{algorithm:TRMMBGD}{{10}{35}{\textbf {MBGD} $\eta $ Update and \textbf {TRM} Step Incorporation\relax }{algorithm.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Summary}{35}{section.4.4}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Training algorithm definitions used for numerical exploration, and their labels, which will be used to reference them.\relax }}{36}{table.caption.72}}
-\newlabel{table:algorithms}{{4.1}{36}{Training algorithm definitions used for numerical exploration, and their labels, which will be used to reference them.\relax }{table.caption.72}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Training an ff-ANN to predict MNIST using \textbf  {SGD}, \textbf  {MBGD} and \textbf  {GD} for comparison. \relax }}{32}{figure.caption.64}}
+\newlabel{figure:SMBGDGD}{{4.1}{32}{Training an ff-ANN to predict MNIST using \textbf {SGD}, \textbf {MBGD} and \textbf {GD} for comparison. \relax }{figure.caption.64}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {9}{\ignorespaces Adaptive Trust Region Reduction Schedule (ATRRS)\relax }}{33}{algorithm.9}}
+\newlabel{algorithm:assrs-simple}{{9}{33}{Adaptive Trust Region Reduction Schedule (ATRRS)\relax }{algorithm.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Weight Subsampling}{34}{section.4.2}}
+\newlabel{equation:w_subset}{{4.9}{34}{Weight Subsampling}{equation.4.2.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Hybrid Approach}{35}{section.4.3}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {10}{\ignorespaces \textbf  {MBGD} $\eta $ Update and \textbf  {TRM} Step Incorporation\relax }}{36}{algorithm.10}}
+\newlabel{algorithm:TRMMBGD}{{10}{36}{\textbf {MBGD} $\eta $ Update and \textbf {TRM} Step Incorporation\relax }{algorithm.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Summary}{36}{section.4.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Training algorithm definitions used for numerical exploration, and their labels, which will be used to reference them.\relax }}{37}{table.caption.72}}
+\newlabel{table:algorithms}{{4.1}{37}{Training algorithm definitions used for numerical exploration, and their labels, which will be used to reference them.\relax }{table.caption.72}{}}
 \citation{mnist}
 \citation{Derm}
 \citation{IRIS}
 \citation{Nurs}
 \citation{Habe}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Numerical Results}{37}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Numerical Results}{38}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Experimental Set-up}{37}{section.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Datasets}{37}{subsection.5.1.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Datasets used for experimentation. *Habe uses a single dependent variable with two states, each to represent one of the classes.\relax }}{38}{table.caption.73}}
-\newlabel{table:datasets}{{5.1}{38}{Datasets used for experimentation. *Habe uses a single dependent variable with two states, each to represent one of the classes.\relax }{table.caption.73}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Datasets used for experimentation. Full descriptions can be found at appendix \ref  {appendix:dataset_descriptions}.\relax }}{38}{table.caption.74}}
-\newlabel{table:datasettopics}{{5.2}{38}{Datasets used for experimentation. Full descriptions can be found at appendix \ref {appendix:dataset_descriptions}.\relax }{table.caption.74}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Network Structure}{38}{subsection.5.1.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Visualization of Habe dataset where classes are represented by shape and colour. This shows the difficulty in learning this dataset, there is no clear separation between classes.\relax }}{39}{figure.caption.75}}
-\newlabel{figure:haberman}{{5.1}{39}{Visualization of Habe dataset where classes are represented by shape and colour. This shows the difficulty in learning this dataset, there is no clear separation between classes.\relax }{figure.caption.75}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Structure of ff-ANN for learning the Derm dataset. Used as visual example to show resulting structure for a given $n_{0}$ and $n_{2}$ which are based on the dataset.\relax }}{40}{figure.caption.77}}
-\newlabel{figure:structure}{{5.2}{40}{Structure of ff-ANN for learning the Derm dataset. Used as visual example to show resulting structure for a given $n_{0}$ and $n_{2}$ which are based on the dataset.\relax }{figure.caption.77}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Methods for Comparison}{41}{section.5.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Time Required for a Reasonable Solution}{41}{subsection.5.2.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}CPU time of TRM vs SGD}{42}{section.5.3}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Time taken to reach within 1\% of minimum $f(\mathbf  {w})$ achieved by \textbf  {SGD} for both \textbf  {SGD} and \textbf  {TRM}.\relax }}{43}{table.caption.81}}
-\newlabel{t_trm_sgd}{{5.3}{43}{Time taken to reach within 1\% of minimum $f(\mathbf {w})$ achieved by \textbf {SGD} for both \textbf {SGD} and \textbf {TRM}.\relax }{table.caption.81}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Using TRM and MBGD in Hybrid: TRMMBGD}{43}{section.5.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Running TRMMBGD vs MBGBD for training ff-ANNs on five datasets.\relax }}{44}{figure.caption.82}}
-\newlabel{figure:TRMMBGD}{{5.3}{44}{Running TRMMBGD vs MBGBD for training ff-ANNs on five datasets.\relax }{figure.caption.82}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces TRRS results for $\Delta = 1\%$\relax }}{45}{table.caption.83}}
-\newlabel{TRMMBGD1}{{5.4}{45}{TRRS results for $\Delta = 1\%$\relax }{table.caption.83}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{45}{table.caption.84}}
-\newlabel{TRMMBGD5}{{5.5}{45}{TRRS results for $\Delta = 5\%$\relax }{table.caption.84}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces TRRS results for $\Delta = 10\%$\relax }}{45}{table.caption.85}}
-\newlabel{TRMMBGD10}{{5.6}{45}{TRRS results for $\Delta = 10\%$\relax }{table.caption.85}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Stochastic TRMs}{46}{section.5.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Adaptive Trust Region Reduction Scheme}{46}{subsection.5.5.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Comparing \textbf  {TRM} with stochastic training example subsampling \textbf  {TRM} methods (\textbf  {STRM} and \textbf  {MBTRM}), based on objective function, $f(\mathbf  {w})$, vs CPU time.\relax }}{47}{figure.caption.86}}
-\newlabel{figure:SMBTRMTRM}{{5.4}{47}{Comparing \textbf {TRM} with stochastic training example subsampling \textbf {TRM} methods (\textbf {STRM} and \textbf {MBTRM}), based on objective function, $f(\mathbf {w})$, vs CPU time.\relax }{figure.caption.86}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Traditional TRM $\gamma $ Update Scheme}{48}{subsection.5.5.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Experimental Set-up}{38}{section.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Datasets}{38}{subsection.5.1.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Datasets used for experimentation. *Habe uses a single dependent variable with two states, each to represent one of the classes.\relax }}{39}{table.caption.73}}
+\newlabel{table:datasets}{{5.1}{39}{Datasets used for experimentation. *Habe uses a single dependent variable with two states, each to represent one of the classes.\relax }{table.caption.73}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Datasets used for experimentation. Full descriptions can be found at appendix \ref  {appendix:dataset_descriptions}.\relax }}{39}{table.caption.74}}
+\newlabel{table:datasettopics}{{5.2}{39}{Datasets used for experimentation. Full descriptions can be found at appendix \ref {appendix:dataset_descriptions}.\relax }{table.caption.74}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Network Structure}{39}{subsection.5.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Visualization of Habe dataset where classes are represented by shape and colour. This shows the difficulty in learning this dataset, there is no clear separation between classes.\relax }}{40}{figure.caption.75}}
+\newlabel{figure:haberman}{{5.1}{40}{Visualization of Habe dataset where classes are represented by shape and colour. This shows the difficulty in learning this dataset, there is no clear separation between classes.\relax }{figure.caption.75}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Structure of ff-ANN for learning the Derm dataset. Used as visual example to show resulting structure for a given $n_{0}$ and $n_{2}$ which are based on the dataset.\relax }}{41}{figure.caption.77}}
+\newlabel{figure:structure}{{5.2}{41}{Structure of ff-ANN for learning the Derm dataset. Used as visual example to show resulting structure for a given $n_{0}$ and $n_{2}$ which are based on the dataset.\relax }{figure.caption.77}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Methods for Comparison}{42}{section.5.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Time Required for a Reasonable Solution}{42}{subsection.5.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}CPU time of TRM vs SGD}{43}{section.5.3}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces Time taken to reach within 1\% of minimum $f(\mathbf  {w})$ achieved by \textbf  {SGD} for both \textbf  {SGD} and \textbf  {TRM}.\relax }}{44}{table.caption.82}}
+\newlabel{t_trm_sgd}{{5.3}{44}{Time taken to reach within 1\% of minimum $f(\mathbf {w})$ achieved by \textbf {SGD} for both \textbf {SGD} and \textbf {TRM}.\relax }{table.caption.82}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Using TRM and MBGD in Hybrid: TRMMBGD}{44}{section.5.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Running TRMMBGD vs MBGBD for training ff-ANNs on five datasets.\relax }}{45}{figure.caption.83}}
+\newlabel{figure:TRMMBGD}{{5.3}{45}{Running TRMMBGD vs MBGBD for training ff-ANNs on five datasets.\relax }{figure.caption.83}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces TRRS results for $\Delta = 1\%$\relax }}{46}{table.caption.84}}
+\newlabel{TRMMBGD1}{{5.4}{46}{TRRS results for $\Delta = 1\%$\relax }{table.caption.84}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{46}{table.caption.85}}
+\newlabel{TRMMBGD5}{{5.5}{46}{TRRS results for $\Delta = 5\%$\relax }{table.caption.85}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces TRRS results for $\Delta = 10\%$\relax }}{46}{table.caption.86}}
+\newlabel{TRMMBGD10}{{5.6}{46}{TRRS results for $\Delta = 10\%$\relax }{table.caption.86}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Stochastic TRMs}{47}{section.5.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Adaptive Trust Region Reduction Scheme}{47}{subsection.5.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Comparing \textbf  {TRM} with stochastic training example subsampling \textbf  {TRM} methods (\textbf  {STRM} and \textbf  {MBTRM}), based on objective function, $f(\mathbf  {w})$, vs CPU time.\relax }}{48}{figure.caption.87}}
+\newlabel{figure:SMBTRMTRM}{{5.4}{48}{Comparing \textbf {TRM} with stochastic training example subsampling \textbf {TRM} methods (\textbf {STRM} and \textbf {MBTRM}), based on objective function, $f(\mathbf {w})$, vs CPU time.\relax }{figure.caption.87}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {5.7}{\ignorespaces TRRS results for $\Delta = 1\%$\relax }}{49}{table.caption.88}}
 \newlabel{SMBTRMTRM1}{{5.7}{49}{TRRS results for $\Delta = 1\%$\relax }{table.caption.88}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Comparing \textbf  {TRM} with stochastic training example subsampling \textbf  {TRM} method, \textbf  {BTRM}, based on objective function over CPU time.\relax }}{50}{figure.caption.87}}
-\newlabel{figure:BTRMTRM}{{5.5}{50}{Comparing \textbf {TRM} with stochastic training example subsampling \textbf {TRM} method, \textbf {BTRM}, based on objective function over CPU time.\relax }{figure.caption.87}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.8}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{51}{table.caption.89}}
-\newlabel{SMBTRMTRM5}{{5.8}{51}{TRRS results for $\Delta = 5\%$\relax }{table.caption.89}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.9}{\ignorespaces TRRS results for $\Delta = 10\%$\relax }}{51}{table.caption.90}}
-\newlabel{SMBTRMTRM10}{{5.9}{51}{TRRS results for $\Delta = 10\%$\relax }{table.caption.90}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}Reducing the Dimentionality of TRS}{51}{section.5.6}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.10}{\ignorespaces TRRS results for $\Delta = 1 \%$\relax }}{52}{table.caption.93}}
-\newlabel{table:TRMWS1}{{5.10}{52}{TRRS results for $\Delta = 1 \%$\relax }{table.caption.93}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.11}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{52}{table.caption.94}}
-\newlabel{table:TRMWS5}{{5.11}{52}{TRRS results for $\Delta = 5\%$\relax }{table.caption.94}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.12}{\ignorespaces TRRS results for $\Delta = 10 \%$\relax }}{52}{table.caption.95}}
-\newlabel{table:TRMWS10}{{5.12}{52}{TRRS results for $\Delta = 10 \%$\relax }{table.caption.95}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Running TRM vs TRMWS for training ff-ANNs on five datasets.\relax }}{53}{figure.caption.91}}
-\newlabel{figure:TRMWS}{{5.6}{53}{Running TRM vs TRMWS for training ff-ANNs on five datasets.\relax }{figure.caption.91}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Running BTRM vs BTRMWS for training ff-ANNs on five datasets.\relax }}{54}{figure.caption.92}}
-\newlabel{figure:BTRMWS}{{5.7}{54}{Running BTRM vs BTRMWS for training ff-ANNs on five datasets.\relax }{figure.caption.92}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.13}{\ignorespaces TRRS results for $\Delta = 1\%$\relax }}{55}{table.caption.97}}
-\newlabel{SMBTRMWS1}{{5.13}{55}{TRRS results for $\Delta = 1\%$\relax }{table.caption.97}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Test results for using stochastic TRM methods.\relax }}{56}{figure.caption.96}}
-\newlabel{figure:SMBTRMWS}{{5.8}{56}{Test results for using stochastic TRM methods.\relax }{figure.caption.96}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.14}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{57}{table.caption.98}}
-\newlabel{SMBTRMWS5}{{5.14}{57}{TRRS results for $\Delta = 5\%$\relax }{table.caption.98}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.15}{\ignorespaces TRRS results for $\Delta = 10\%$\relax }}{57}{table.caption.99}}
-\newlabel{SMBTRMWS10}{{5.15}{57}{TRRS results for $\Delta = 10\%$\relax }{table.caption.99}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.7}CPU Time Analysis}{57}{section.5.7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Percentage of time taken up by solving the Generalized Eigenvalue Problem (\ref  {equation:M_def}) and computing $\mathbf  {p}_{1}$ from the result at each relevant step.\relax }}{58}{figure.caption.100}}
-\newlabel{figure:p1_time}{{5.9}{58}{Percentage of time taken up by solving the Generalized Eigenvalue Problem (\ref {equation:M_def}) and computing $\mathbf {p}_{1}$ from the result at each relevant step.\relax }{figure.caption.100}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Percentage of time taken for computing the Hessian matrix at each change in weight values $\mathbf  {w}$.\relax }}{58}{figure.caption.101}}
-\newlabel{figure:H_time}{{5.10}{58}{Percentage of time taken for computing the Hessian matrix at each change in weight values $\mathbf {w}$.\relax }{figure.caption.101}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Percentage of time taken to solve for the $\mathbf  {p}_{0}$, the bulk of which is solving the linear equation (\ref  {equation:p0}).\relax }}{59}{figure.caption.102}}
-\newlabel{figure:p0_time}{{5.11}{59}{Percentage of time taken to solve for the $\mathbf {p}_{0}$, the bulk of which is solving the linear equation (\ref {equation:p0}).\relax }{figure.caption.102}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Convergence of \textbf  {TRM} with $\mathbf  {p}_{0}$ and $\mathbf  {p}_{1}$ using stopping criterion of residual magnitude less than $10^{-3}$ (dashed line) and stopping criterion of reaching the max iteration (\textbf  {submaxiter}=1,2,3,4,5). (Left) Convergence in terms of CPU time. (Right) Convergence in terms of Epoch. (Bottom) Convergence in terms of CPU time with \textbf  {SGD} for reference.\relax }}{61}{figure.caption.103}}
-\newlabel{figure:mnist_maxiter}{{5.12}{61}{Convergence of \textbf {TRM} with $\mathbf {p}_{0}$ and $\mathbf {p}_{1}$ using stopping criterion of residual magnitude less than $10^{-3}$ (dashed line) and stopping criterion of reaching the max iteration (\textbf {submaxiter}=1,2,3,4,5). (Left) Convergence in terms of CPU time. (Right) Convergence in terms of Epoch. (Bottom) Convergence in terms of CPU time with \textbf {SGD} for reference.\relax }{figure.caption.103}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.8}Robustness Test}{62}{section.5.8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.1}The XOR Problem}{62}{subsection.5.8.1}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.16}{\ignorespaces The 2-feature XOR problem.\relax }}{62}{table.caption.104}}
-\newlabel{table:XOR}{{5.16}{62}{The 2-feature XOR problem.\relax }{table.caption.104}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {5.17}{\ignorespaces First order critical point classification for the XOR problem when trained on a 2-layer ff-ANN with two hidden nodes.\relax }}{62}{table.caption.105}}
-\newlabel{table:XOR_point_type}{{5.17}{62}{First order critical point classification for the XOR problem when trained on a 2-layer ff-ANN with two hidden nodes.\relax }{table.caption.105}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.2}XOR Training Results}{63}{subsection.5.8.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.8}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{49}{table.caption.89}}
+\newlabel{SMBTRMTRM5}{{5.8}{49}{TRRS results for $\Delta = 5\%$\relax }{table.caption.89}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.9}{\ignorespaces TRRS results for $\Delta = 10\%$\relax }}{50}{table.caption.90}}
+\newlabel{SMBTRMTRM10}{{5.9}{50}{TRRS results for $\Delta = 10\%$\relax }{table.caption.90}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Traditional TRM $\gamma $ Update Scheme}{50}{subsection.5.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Comparing \textbf  {TRM} with stochastic training example subsampling \textbf  {TRM} method, \textbf  {BTRM}, based on objective function over CPU time.\relax }}{52}{figure.caption.91}}
+\newlabel{figure:BTRMTRM}{{5.5}{52}{Comparing \textbf {TRM} with stochastic training example subsampling \textbf {TRM} method, \textbf {BTRM}, based on objective function over CPU time.\relax }{figure.caption.91}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Reducing the Dimentionality of TRS}{53}{section.5.6}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.10}{\ignorespaces TRRS results for $\Delta = 1 \%$\relax }}{53}{table.caption.92}}
+\newlabel{table:TRMWS1}{{5.10}{53}{TRRS results for $\Delta = 1 \%$\relax }{table.caption.92}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.11}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{54}{table.caption.93}}
+\newlabel{table:TRMWS5}{{5.11}{54}{TRRS results for $\Delta = 5\%$\relax }{table.caption.93}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.12}{\ignorespaces TRRS results for $\Delta = 10 \%$\relax }}{54}{table.caption.94}}
+\newlabel{table:TRMWS10}{{5.12}{54}{TRRS results for $\Delta = 10 \%$\relax }{table.caption.94}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Running TRM vs TRMWS for training ff-ANNs on five datasets.\relax }}{55}{figure.caption.95}}
+\newlabel{figure:TRMWS}{{5.6}{55}{Running TRM vs TRMWS for training ff-ANNs on five datasets.\relax }{figure.caption.95}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Running BTRM vs BTRMWS for training ff-ANNs on five datasets.\relax }}{56}{figure.caption.96}}
+\newlabel{figure:BTRMWS}{{5.7}{56}{Running BTRM vs BTRMWS for training ff-ANNs on five datasets.\relax }{figure.caption.96}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.13}{\ignorespaces TRRS results for $\Delta = 1\%$\relax }}{57}{table.caption.98}}
+\newlabel{SMBTRMWS1}{{5.13}{57}{TRRS results for $\Delta = 1\%$\relax }{table.caption.98}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.14}{\ignorespaces TRRS results for $\Delta = 5\%$\relax }}{57}{table.caption.99}}
+\newlabel{SMBTRMWS5}{{5.14}{57}{TRRS results for $\Delta = 5\%$\relax }{table.caption.99}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.15}{\ignorespaces TRRS results for $\Delta = 10\%$\relax }}{57}{table.caption.100}}
+\newlabel{SMBTRMWS10}{{5.15}{57}{TRRS results for $\Delta = 10\%$\relax }{table.caption.100}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Test results for using stochastic TRM methods.\relax }}{58}{figure.caption.97}}
+\newlabel{figure:SMBTRMWS}{{5.8}{58}{Test results for using stochastic TRM methods.\relax }{figure.caption.97}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}CPU Time Analysis}{59}{section.5.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Percentage of time taken up by solving the Generalized Eigenvalue Problem (\ref  {equation:M_def}) and computing $\mathbf  {p}_{1}$ from the result at each relevant step.\relax }}{60}{figure.caption.101}}
+\newlabel{figure:p1_time}{{5.9}{60}{Percentage of time taken up by solving the Generalized Eigenvalue Problem (\ref {equation:M_def}) and computing $\mathbf {p}_{1}$ from the result at each relevant step.\relax }{figure.caption.101}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Percentage of time taken for computing the Hessian matrix at each change in weight values $\mathbf  {w}$. Recall that only 6 of 8 methods include the computation of the Hessian matrix. \relax }}{60}{figure.caption.102}}
+\newlabel{figure:H_time}{{5.10}{60}{Percentage of time taken for computing the Hessian matrix at each change in weight values $\mathbf {w}$. Recall that only 6 of 8 methods include the computation of the Hessian matrix. \relax }{figure.caption.102}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Percentage of time taken to solve for the $\mathbf  {p}_{0}$, the bulk of which is solving the linear equation (\ref  {equation:p0}). Recall that those methods which use the ATRRS do not compute $\mathbf  {p}_{0}$ (see Algorithm \ref  {algorithm:assrs-simple}).\relax }}{61}{figure.caption.103}}
+\newlabel{figure:p0_time}{{5.11}{61}{Percentage of time taken to solve for the $\mathbf {p}_{0}$, the bulk of which is solving the linear equation (\ref {equation:p0}). Recall that those methods which use the ATRRS do not compute $\mathbf {p}_{0}$ (see Algorithm \ref {algorithm:assrs-simple}).\relax }{figure.caption.103}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Convergence of \textbf  {TRM} with $\mathbf  {p}_{0}$ and $\mathbf  {p}_{1}$ using stopping criterion of residual magnitude less than $10^{-3}$ (dashed line) and stopping criterion of reaching the max iteration (\textbf  {submaxiter}=1,2,3,4,5). (Upper Left) Convergence in terms of CPU time. (Upper Right) Convergence in terms of Epoch. (Bottom) Convergence in terms of CPU time with \textbf  {SGD} for reference.\relax }}{62}{figure.caption.104}}
+\newlabel{figure:mnist_maxiter}{{5.12}{62}{Convergence of \textbf {TRM} with $\mathbf {p}_{0}$ and $\mathbf {p}_{1}$ using stopping criterion of residual magnitude less than $10^{-3}$ (dashed line) and stopping criterion of reaching the max iteration (\textbf {submaxiter}=1,2,3,4,5). (Upper Left) Convergence in terms of CPU time. (Upper Right) Convergence in terms of Epoch. (Bottom) Convergence in terms of CPU time with \textbf {SGD} for reference.\relax }{figure.caption.104}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.8}Robustness Test}{63}{section.5.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.1}The XOR Problem}{63}{subsection.5.8.1}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.16}{\ignorespaces The 2-feature XOR problem.\relax }}{63}{table.caption.105}}
+\newlabel{table:XOR}{{5.16}{63}{The 2-feature XOR problem.\relax }{table.caption.105}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.17}{\ignorespaces First order critical point classification for the XOR problem when trained on a 2-layer ff-ANN with two hidden nodes.\relax }}{63}{table.caption.106}}
+\newlabel{table:XOR_point_type}{{5.17}{63}{First order critical point classification for the XOR problem when trained on a 2-layer ff-ANN with two hidden nodes.\relax }{table.caption.106}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.2}XOR Training Results}{64}{subsection.5.8.2}}
 \citation{Shepherd.1997}
 \citation{Shepherd.1997}
 \citation{Shepherd.1997}
@@ -285,86 +285,85 @@
 \citation{Shepherd.1997}
 \citation{Shepherd.1997}
 \citation{Shepherd.1997}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Final points are recorded when the final objective function value is within a tolerance of $10^{-3}$ from one of the known points.\relax }}{64}{figure.caption.106}}
-\newlabel{figure:XOR}{{5.13}{64}{Final points are recorded when the final objective function value is within a tolerance of $10^{-3}$ from one of the known points.\relax }{figure.caption.106}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Mean time taken to reach the process' final known point within a tolerance of $10^{-3}$.\relax }}{65}{figure.caption.107}}
-\newlabel{figure:XOR_time}{{5.14}{65}{Mean time taken to reach the process' final known point within a tolerance of $10^{-3}$.\relax }{figure.caption.107}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Comparison of methods implemented in this thesis with methods tested in \cite  {Shepherd.1997}. The methods from our exploration are displayed as solid black and methods from \cite  {Shepherd.1997} are coloured with a diagonal pattern.\relax }}{66}{figure.caption.108}}
-\newlabel{figure:XOR_comparison}{{5.15}{66}{Comparison of methods implemented in this thesis with methods tested in \cite {Shepherd.1997}. The methods from our exploration are displayed as solid black and methods from \cite {Shepherd.1997} are coloured with a diagonal pattern.\relax }{figure.caption.108}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{67}{chapter.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Final points are recorded when the final objective function value is within a tolerance of $10^{-3}$ from one of the known points.\relax }}{65}{figure.caption.107}}
+\newlabel{figure:XOR}{{5.13}{65}{Final points are recorded when the final objective function value is within a tolerance of $10^{-3}$ from one of the known points.\relax }{figure.caption.107}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Mean time taken to reach the process' final known point within a tolerance of $10^{-3}$.\relax }}{66}{figure.caption.108}}
+\newlabel{figure:XOR_time}{{5.14}{66}{Mean time taken to reach the process' final known point within a tolerance of $10^{-3}$.\relax }{figure.caption.108}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Comparison of methods implemented in this thesis with methods tested in \cite  {Shepherd.1997}. The methods from our exploration are displayed as solid black and methods from \cite  {Shepherd.1997} are coloured with a diagonal pattern.\relax }}{67}{figure.caption.109}}
+\newlabel{figure:XOR_comparison}{{5.15}{67}{Comparison of methods implemented in this thesis with methods tested in \cite {Shepherd.1997}. The methods from our exploration are displayed as solid black and methods from \cite {Shepherd.1997} are coloured with a diagonal pattern.\relax }{figure.caption.109}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusion}{68}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Future Work}{68}{section.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Future Work}{69}{section.6.1}}
 \citation{Pearlmutter.1993}
 \citation{Pearlmutter.1993}
-\@writefile{toc}{\contentsline {chapter}{APPENDICES}{69}{appendix*.109}}
-\@writefile{toc}{\contentsline {section}{\numberline {.1}Pearlmutter Trick for Computing Second Order Information}{69}{section.Alph0.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {.1.1}Forward and Back Propagations}{70}{subsection.Alph0.1.1}}
-\newlabel{equation:map}{{3}{70}{Forward and Back Propagations}{equation.Alph0.1.3}{}}
-\newlabel{equation:index}{{4}{70}{Forward and Back Propagations}{equation.Alph0.1.4}{}}
-\newlabel{equation:biasindex}{{5}{70}{Forward and Back Propagations}{AMS.114}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Values of parameters for Algorithm \ref  {algorithm:passes} based on propagation direction.\relax }}{71}{table.caption.116}}
-\newlabel{table:passes}{{1}{71}{Values of parameters for Algorithm \ref {algorithm:passes} based on propagation direction.\relax }{table.caption.116}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {11}{\ignorespaces Pseudocode of a Single Pass\relax }}{71}{algorithm.11}}
-\newlabel{euclid}{{11}{71}{Pseudocode of a Single Pass\relax }{algorithm.11}{}}
-\newlabel{algorithm:passes}{{11}{71}{Pseudocode of a Single Pass\relax }{algorithm.11}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Forward Propagation I}{72}{section*.117}}
-\newlabel{equation:pass1_pe}{{7}{72}{Forward Propagation I}{equation.Alph0.1.7}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Back Propagation I}{72}{section*.120}}
-\newlabel{equation:df_dzL0}{{9}{72}{Back Propagation I}{equation.Alph0.1.9}{}}
-\newlabel{equation:pass2_pe}{{10}{73}{Back Propagation I}{equation.Alph0.1.10}{}}
-\newlabel{equation:grad_w}{{11}{73}{Back Propagation I}{equation.Alph0.1.11}{}}
-\newlabel{equation:grad_b}{{12}{73}{Back Propagation I}{equation.Alph0.1.12}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Forward Propagation II}{73}{section*.126}}
-\newlabel{equation:pass3_pe}{{15}{73}{Forward Propagation II}{equation.Alph0.1.15}{}}
-\newlabel{equation:RwisV}{{17}{74}{Forward Propagation II}{equation.Alph0.1.17}{}}
-\newlabel{equation:WtoV}{{18}{74}{Forward Propagation II}{equation.Alph0.1.18}{}}
-\newlabel{equation:btobv}{{19}{74}{Forward Propagation II}{equation.Alph0.1.19}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Back Propagation II}{74}{section*.133}}
-\newlabel{equation:rh}{{23}{74}{Back Propagation II}{equation.Alph0.1.23}{}}
-\newlabel{equation:rdh}{{25}{75}{Back Propagation II}{equation.Alph0.1.25}{}}
-\newlabel{equation:pass4_pe}{{26}{75}{Back Propagation II}{equation.Alph0.1.26}{}}
-\newlabel{equation:hv_w}{{27}{75}{Back Propagation II}{equation.Alph0.1.27}{}}
-\newlabel{equation:hv_b}{{28}{75}{Back Propagation II}{equation.Alph0.1.28}{}}
-\newlabel{equation:biasindex}{{29}{76}{Back Propagation II}{AMS.143}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {.2}Complexity Analysis}{76}{section.Alph0.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {.2.1}Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{76}{subsection.Alph0.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Forward Propagation I}{76}{section*.144}}
-\@writefile{toc}{\contentsline {subsubsection}{Back Propagation I}{77}{section*.147}}
-\@writefile{toc}{\contentsline {subsubsection}{Forward Propagation II}{77}{section*.150}}
-\@writefile{toc}{\contentsline {subsubsection}{Back Propagation II}{78}{section*.152}}
-\@writefile{toc}{\contentsline {subsubsection}{Softmax vs Sigmoid}{78}{section*.154}}
-\newlabel{equation:simplifieda}{{42}{80}{Softmax vs Sigmoid}{equation.Alph0.2.42}{}}
-\newlabel{equation:simplifiedb}{{43}{80}{Softmax vs Sigmoid}{equation.Alph0.2.43}{}}
-\citation{strakovs1991real}
+\@writefile{toc}{\contentsline {chapter}{APPENDICES}{70}{appendix*.110}}
+\@writefile{toc}{\contentsline {section}{\numberline {.1}Pearlmutter Trick for Computing Second Order Information}{70}{section.Alph0.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {.1.1}Forward and Back Propagations}{71}{subsection.Alph0.1.1}}
+\newlabel{equation:map}{{3}{71}{Forward and Back Propagations}{equation.Alph0.1.3}{}}
+\newlabel{equation:index}{{4}{71}{Forward and Back Propagations}{equation.Alph0.1.4}{}}
+\newlabel{equation:biasindex}{{5}{71}{Forward and Back Propagations}{AMS.115}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Values of parameters for Algorithm \ref  {algorithm:passes} based on propagation direction.\relax }}{72}{table.caption.117}}
+\newlabel{table:passes}{{1}{72}{Values of parameters for Algorithm \ref {algorithm:passes} based on propagation direction.\relax }{table.caption.117}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {11}{\ignorespaces Pseudocode of a Single Pass\relax }}{72}{algorithm.11}}
+\newlabel{euclid}{{11}{72}{Pseudocode of a Single Pass\relax }{algorithm.11}{}}
+\newlabel{algorithm:passes}{{11}{72}{Pseudocode of a Single Pass\relax }{algorithm.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Forward Propagation I}{73}{section*.118}}
+\newlabel{equation:pass1_pe}{{7}{73}{Forward Propagation I}{equation.Alph0.1.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Back Propagation I}{73}{section*.121}}
+\newlabel{equation:df_dzL0}{{9}{73}{Back Propagation I}{equation.Alph0.1.9}{}}
+\newlabel{equation:pass2_pe}{{10}{74}{Back Propagation I}{equation.Alph0.1.10}{}}
+\newlabel{equation:grad_w}{{11}{74}{Back Propagation I}{equation.Alph0.1.11}{}}
+\newlabel{equation:grad_b}{{12}{74}{Back Propagation I}{equation.Alph0.1.12}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Forward Propagation II}{74}{section*.127}}
+\newlabel{equation:pass3_pe}{{15}{74}{Forward Propagation II}{equation.Alph0.1.15}{}}
+\newlabel{equation:RwisV}{{17}{75}{Forward Propagation II}{equation.Alph0.1.17}{}}
+\newlabel{equation:WtoV}{{18}{75}{Forward Propagation II}{equation.Alph0.1.18}{}}
+\newlabel{equation:btobv}{{19}{75}{Forward Propagation II}{equation.Alph0.1.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Back Propagation II}{75}{section*.134}}
+\newlabel{equation:rh}{{23}{75}{Back Propagation II}{equation.Alph0.1.23}{}}
+\newlabel{equation:rdh}{{25}{76}{Back Propagation II}{equation.Alph0.1.25}{}}
+\newlabel{equation:pass4_pe}{{26}{76}{Back Propagation II}{equation.Alph0.1.26}{}}
+\newlabel{equation:hv_w}{{27}{76}{Back Propagation II}{equation.Alph0.1.27}{}}
+\newlabel{equation:hv_b}{{28}{76}{Back Propagation II}{equation.Alph0.1.28}{}}
+\newlabel{equation:biasindex}{{29}{77}{Back Propagation II}{AMS.144}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {.2}Complexity Analysis}{77}{section.Alph0.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {.2.1}Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{77}{subsection.Alph0.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Forward Propagation I}{77}{section*.145}}
+\@writefile{toc}{\contentsline {subsubsection}{Back Propagation I}{78}{section*.148}}
+\@writefile{toc}{\contentsline {subsubsection}{Forward Propagation II}{78}{section*.151}}
+\@writefile{toc}{\contentsline {subsubsection}{Back Propagation II}{79}{section*.153}}
+\@writefile{toc}{\contentsline {subsubsection}{Softmax vs Sigmoid}{79}{section*.155}}
+\newlabel{equation:simplifieda}{{42}{81}{Softmax vs Sigmoid}{equation.Alph0.2.42}{}}
+\newlabel{equation:simplifiedb}{{43}{81}{Softmax vs Sigmoid}{equation.Alph0.2.43}{}}
 \citation{shewchuk1994introduction}
 \citation{golub1989matrix}
-\@writefile{toc}{\contentsline {section}{\numberline {.3}Computing TRS Solution: Complexity}{81}{section.Alph0.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {.3}Computing TRS Solution: Complexity}{82}{section.Alph0.3}}
 \citation{golub1989matrix}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Hyperparameters}{84}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Hyperparameters}{85}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {12}{\ignorespaces Hyperparameter Protocol\relax }}{85}{algorithm.12}}
-\newlabel{algorithm:hyperparameters}{{12}{85}{Hyperparameter Protocol\relax }{algorithm.12}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces  The \textbf  {Method} is the algorithm used to test the \textbf  {hyperparameter} in the same row. This mapping is used in Algorithm \ref  {algorithm:hyperparameters}, row 3.\relax }}{85}{table.caption.175}}
-\newlabel{table:hyperparameters}{{A.1}{85}{The \textbf {Method} is the algorithm used to test the \textbf {hyperparameter} in the same row. This mapping is used in Algorithm \ref {algorithm:hyperparameters}, row 3.\relax }{table.caption.175}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {12}{\ignorespaces Hyperparameter Protocol\relax }}{86}{algorithm.12}}
+\newlabel{algorithm:hyperparameters}{{12}{86}{Hyperparameter Protocol\relax }{algorithm.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {A.1}{\ignorespaces  The \textbf  {Method} is the algorithm used to test the \textbf  {hyperparameter} in the same row. This mapping is used in Algorithm \ref  {algorithm:hyperparameters}, row 3.\relax }}{86}{table.caption.176}}
+\newlabel{table:hyperparameters}{{A.1}{86}{The \textbf {Method} is the algorithm used to test the \textbf {hyperparameter} in the same row. This mapping is used in Algorithm \ref {algorithm:hyperparameters}, row 3.\relax }{table.caption.176}{}}
 \citation{ml_repo}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}}{86}{appendix.B}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}}{87}{appendix.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{appendix:dataset_descriptions}{{B}{86}{}{appendix.B}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.1}Habe}{86}{subsection.B.0.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.2}Nurs}{87}{subsection.B.0.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.3}IRIS}{88}{subsection.B.0.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.4}Derm}{89}{subsection.B.0.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.5}MNIST}{91}{subsection.B.0.5}}
+\newlabel{appendix:dataset_descriptions}{{B}{87}{}{appendix.B}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.1}Habe}{87}{subsection.B.0.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.2}Nurs}{88}{subsection.B.0.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.3}IRIS}{89}{subsection.B.0.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.4}Derm}{90}{subsection.B.0.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.5}MNIST}{92}{subsection.B.0.5}}
 \bibstyle{plain}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}PDF Plots From Matlab}{92}{appendix.C}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}PDF Plots From Matlab}{93}{appendix.C}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{AppendixA}{{C}{92}{PDF Plots From Matlab}{appendix.C}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {C.1}{\ignorespaces Final objective function achieved for training an ff-ANN on the set of datasets using SGD and using TRM.\relax }}{92}{table.caption.176}}
-\newlabel{table:hyperparam}{{C.1}{92}{Final objective function achieved for training an ff-ANN on the set of datasets using SGD and using TRM.\relax }{table.caption.176}{}}
+\newlabel{AppendixA}{{C}{93}{PDF Plots From Matlab}{appendix.C}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.1}{\ignorespaces Final objective function achieved for training an ff-ANN on the set of datasets using SGD and using TRM.\relax }}{93}{table.caption.177}}
+\newlabel{table:hyperparam}{{C.1}{93}{Final objective function achieved for training an ff-ANN on the set of datasets using SGD and using TRM.\relax }{table.caption.177}{}}
 \bibdata{uw-ethesis}
 \bibcite{tutorial}{1}
 \bibcite{TRM.book}{2}
@@ -377,7 +376,7 @@
 \bibcite{Fletcher.1987}{9}
 \bibcite{golub1989matrix}{10}
 \bibcite{Goodfellow-et-al-2016}{11}
-\@writefile{toc}{\contentsline {chapter}{\textbf  {References}}{93}{section*.177}}
+\@writefile{toc}{\contentsline {chapter}{\textbf  {References}}{94}{section*.178}}
 \bibcite{Derm}{12}
 \bibcite{Habe}{13}
 \bibcite{hastie2009overview}{14}

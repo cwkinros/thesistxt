@@ -207,7 +207,7 @@
 	
 	Machine learning has become an increasingly popular subject in industry and academia in recent years. Machine learning is an approach in which computers learn solutions from data directly. In this thesis we will be considering artificial neural networks, often referred to more simply as neural networks. Neural networks, particularly deep neural networks, are of great value for use across many industries, such as self-driving cars \cite{bojarski2016end}, computer vision \cite{krizhevsky2012imagenet}, natural language processing \cite{ma2002natural} and even for mastering the game of Go \cite{silver2016mastering}. The power of a multi-layer feed forward neural network lies in its ability to learn complex functions. In fact, 99any finite set of data can be fit exactly, to any chosen tolerance, with a two layer feed forward neural network given enough hidden nodes. For this reason, the multi-layer feed forward neural network is referred to as a universal approximator \cite{hornik1989multilayer}. 
 	
-	Neural networks must go through a training process in order to approximate a function. In this thesis, we are interested in supervised training methods for feed forward neural networks. Supervised training refers to training a model based on data that has an `answer key', meaning that there are dependent variables provided for their respective independent variables in the data \cite{hastie2009overview}. That is, the network is learning how to make predictions based on provided data, where the correct prediction is provided as well as the features used to make that prediction. The typical training approach used for feed forward neural networks is what is sometimes called the `Backpropagation Training Procedure' \cite{priddy2005artificial}. Training involves the formulation of an objective function based on the discrepancy between expected prediction from the `answer key', and the actual prediction made by the neural network based on its current parameters and then minimizing this objective function using a numerical optimization method. Backpropagation is a method used to compute derivatives of the objective function in terms of each parameter value, also known as a weight value, in order to construct the gradient which is the vector of partial derivatives of the weights of the network. Using the gradient or stochastic approximation to the gradient, gradient descent methods are used to minimize the objective function. Typically the objective function is the mean squared prediction error of all of the training samples. 
+	Like any machine learning model, a Neural Network is trained to approximate a function. In this thesis, we are interested in supervised training methods for feed forward neural networks. Supervised training refers to training a model based on data that has an `answer key', meaning that there are dependent variables provided for their respective independent variables in the data \cite{hastie2009overview}. That is, the network is learning how to make predictions based on provided data, where the correct prediction is provided as well as the features used to make that prediction. The typical training approach used for feed forward neural networks is what is sometimes called the `Backpropagation Training Procedure' \cite{priddy2005artificial}. Training involves the formulation of an objective function based on the discrepancy between expected prediction from the `answer key', and the actual prediction made by the neural network based on its current parameters and then minimizing this objective function using a numerical optimization method. Backpropagation is a method used to compute derivatives of the objective function in terms of each parameter value, also known as a weight value, in order to construct the gradient which is the vector of partial derivatives of the weights of the network. Using the gradient or stochastic approximation to the gradient, gradient descent methods are used to minimize the objective function. Typically the objective function is the mean squared prediction error of all of the training samples. 
 	
 	The most commonly known methods for minimizing the objective function of a neural network is stochastic gradient descent, or a mini-batch gradient descent method because for each step calculation it only requires computation of the first derivatives for a subset of the training set and is therefore typically fast which can be a benefit to some problems. However, the gradient direction is only the direction of fastest decrease up to the first order. These methods have difficulty in valley type structures where the direction of negative curvature is perpendicular to the gradient direction. In order to improve reduction in the objective value at each step, some methods use first derivatives to approximate second derivatives, these are known as quasi-Newton methods. Examples of successful methods that approximate second order information include the Broyden-Fletcher-Goldfarb-Shanno (BFGS) algorithm which solves the secant equation for the second derivative \cite{Shepherd.1997}. This increases the potential for reduction of the objective function at each step compared to a step of the same magnitude in the gradient direction. However, we can improve upon the accuracy of the step direction by computing second derivatives of the objective function.
 	
@@ -309,7 +309,7 @@
 	are the values at hidden nodes, used as intermediate variables in order to simplify calculations. 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=80mm]{../Desktop/figures/perceptron.PNG}
+		\includegraphics[width=80mm]{../../Desktop/figures/perceptron.PNG}
 		\caption{Graphical representation of an example perceptron to determine the expected output for the $k^{th}$ sample, $\mathbf{z}^{k}$ with $\mathbf{x}^{k} 
 			\in R^{3}$ and $\mathbf{y}^{k} \in R^{2}$. The ``1" is a constant multiplier which differentiates regular weights values from bias values, $\mathbf{b}_{i}$, $i=1,2$.}
 		\label{perceptron}
@@ -322,7 +322,7 @@
 	\begin{equation}
 	\mathbf{z}_{l}^{k} = \sigma_{l}(\mathbf{W}_{l}\mathbf{z}_{l-1}^{k} + \mathbf{b}_{l}), \quad \text{for} \ l = 1, ... , L,
 	\end{equation}
-	where $l$ represents the layer number, $L$ is the total number of layers and:
+	where $l$ represents the layer number, $sigma_{l}()$ is the non-linear funcction at layer $l$, $L$ is the total number of layers and:
 	\begin{equation}
 	\mathbf{z}_{0}^{k} = \mathbf{x}^{k}, \quad \text{for} \ k=1, 2, ... , m.
 	\end{equation}
@@ -330,15 +330,15 @@
 	\begin{figure}
 		\centering
 		\begin{subfigure}{.3\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/single_neuron.PNG}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/single_neuron.PNG}
 			\caption{}
 		\end{subfigure}
 		\begin{subfigure}{.3\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/first_layer_2neurons.PNG}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/first_layer_2neurons.PNG}
 			\caption{}
 		\end{subfigure}
 		\begin{subfigure}{.3\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/secon_layer_1neuron.PNG}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/secon_layer_1neuron.PNG}
 			\caption{}
 		\end{subfigure}
 		\caption{Visualization of the capacity increase from having multiple layers in a network. Subplot a) shows the classification potential for a single perceptron. Subplots b) and c) show the potential classification performed by 3 perceptrons, 2 in the first layer and 1 in the second.}
@@ -350,7 +350,7 @@
 	
 	The goal of training is to fit the network to the training data by solving an optimization problem. Typically the objective function, $f(\mathbf{W}_{1},...,\mathbf{W}_{L},\mathbf{b}_{1},...,\mathbf{b}_{L})$, used for this optimization problem is the mean squared error of the set of all $m$ training examples, which can be written as: 
 	\begin{equation}
-	f(\mathbf{W}_{1},...,\mathbf{W}_{L},\mathbf{b}_{1},...,\mathbf{b}_{L}) = \frac{1}{m}\sum_{k=1}^{m}{(\mathbf{y}^{k} - \mathbf{z}_{L}^{k})^{2}},
+	f(\mathbf{W}_{1},...,\mathbf{W}_{L},\mathbf{b}_{1},...,\mathbf{b}_{L}) = \frac{1}{m}\sum_{k=1}^{m}{(\mathbf{y}^{k} - \mathbf{z}_{L}^{k})^{T}(\mathbf{y}^{k} - \mathbf{z}_{L}^{k})},
 	\label{equation:objective_function}
 	\end{equation}
 	where $\mathbf{z}_{L}^{k}$ is the network's prediction for $\mathbf{y}^{k}$ which depends on weights $\mathbf{W}_{l}$ and biases $\mathbf{b}_{l}$ for all layers $l$, $l=1,...,L$. The optimization problem for training the network is therefore:
@@ -391,7 +391,7 @@
 		\item {Large number of training examples, $m$,}
 		\item {Large number of dimensions (weights, including biases), $n$. }
 	\end{enumerate}
-	For instance, a network with 7 layers and 100 hidden nodes per layer would have $n=70700$ ($100^{2}$ weights and $100$ biases for each layer) and the value of $m$ can be in the millions. The following characteristics of a ff-ANN objective function surface pose additional challenges to solving \ref{equation:optimization_simple} are \cite{Shepherd.1997}:
+	For instance, a network with 7 layers and 100 hidden nodes per layer would have $n=70700$ ($100^{2}$ weights and $100$ biases for each layer) and the value of $m$ can be in the millions. The following characteristics of a ff-ANN objective function surface pose additional challenges to solving (\ref{equation:optimization_simple}) are \cite{Shepherd.1997}:
 	\begin{enumerate}
 		\item {Smoothness,}
 		\item {Large plateaus (flat or nearly flat areas),}
@@ -418,13 +418,13 @@
 			\end{equation}
 			where $\eta$ is the learning rate chosen by the user which is decreased in magnitude throughout training using a predefined schedule, and $\widetilde{\nabla}{f(\mathbf{w}_{i-1})}$ refers to the approximation of the gradient of the objective function at point $\mathbf{w}_{i-1}$ based on a single, uniformly randomly selected, training example. 
 		}   
-		\item{\textbf{Mini-batch Gradient Descent} is a method that uses the same update function as shown in (\ref{equation:sgd_update}) but with $\widetilde{\nabla}{f(\mathbf{w}_{i})}$ computed as an approximation to the gradient of the objective function at point $\mathbf{w}_{i}$ based on a \textbf{subset} of the set of training examples $S$.}
+		\item{\textbf{Mini-batch Gradient Descent} is a method that uses the same update function as shown in (\ref{equation:sgd_update}) but with $\widetilde{\nabla}{f(\mathbf{w}_{i-1})}$ computed as an approximation to the gradient of the objective function at point $\mathbf{w}_{i-1}$ based on a \textbf{subset} of the set of training examples $S$.}
 	\end{enumerate}
 	First order methods compute steps very quickly. However, they can experience difficulties in some regions, such as in valleys. A valley is an example of a characteristic often seen in ff-ANN problems \cite{Shepherd.1997} that slows down first order methods. First order methods experience difficulties in this case because the gradient direction is almost perpendicular to the direction in which the local minimum is likely to be. Figure \ref{figure:valley}, which is from \cite{martens2010deep}, depicts this concept. These gradient methods also have difficulties in small gradient areas such as large pseudo-plateaus, since the length of the step taken at each iteration is proportionate to the size of the gradient for a constant learning rate.
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.5\linewidth]{../Desktop/figures/Deeplearning_HF_valley.PNG}
+		\includegraphics[width=0.5\linewidth]{../../Desktop/figures/Deeplearning_HF_valley.PNG}
 		\caption{This is Figure 1 from \cite{martens2010deep} which shows an example of a valley characteristic. On the left the arrows point towards the gradient direction and the red arrow points towards the shortest path to the smallest value visible. On the right are arrows pointing in the direction of a method considering curvature and therefore avoiding the gradient direction which is, in this case, in the direction of high curvature.}
 		\label{figure:valley}
 	\end{figure}
@@ -554,14 +554,14 @@
 	\begin{equation}
 	d(\lambda)= 
 	\begin{cases}
-	-\frac{1}{2}\lambda\gamma^{2} - \frac{1}{2}\mathbf{g}^{T}(\mathbf{H} + \lambda\mathbf{I})^{-1}\mathbf{g} ,& \text{if } (\mathbf{H} + \lambda\mathbf{I}) \succeq \mathbf{0},\\
+	-\frac{1}{2}\lambda\gamma^{2} - \frac{1}{2}\mathbf{g}^{T}(\mathbf{H} + \lambda\mathbf{I})^{-1}\mathbf{g} ,& \text{if } (\mathbf{H} + \lambda\mathbf{I}) \succ \mathbf{0},\\
 	-\infty,              & \text{otherwise}.
 	\end{cases}
 	\label{equation:g_fun}
 	\end{equation}
 	 From (\ref{equation:g_fun}) we see that optimality for the dual problem requries:
 	\begin{equation}
-	(\mathbf{H} + \lambda\mathbf{I}) \succeq \mathbf{0}.
+	(\mathbf{H} + \lambda\mathbf{I}) \succ \mathbf{0}.
 	\label{equation:possemdef}
 	\end{equation}
 	Writing this explicitly, the dual problem becomes:
@@ -579,13 +579,13 @@
 	\begin{aligned}
 	\nabla d(\lambda) & = -\gamma^{2} + \mathbf{g}^{T}(\mathbf{H} + \lambda\mathbf{I})^{-1}(\mathbf{H} + \lambda\mathbf{I})^{-1}\mathbf{g} = 0, \\
 	\end{aligned}
-	\label{equation:grad_lagrangian}
+	\label{equation:grad_d}
 	\end{equation}
 	when constraint (\ref{equation:inbounds}) is active. This can be seen by combining (\ref{equation:possemdef}) and $\mathbf{p}^{T}\mathbf{p} = \lambda^{2}$. Using the eigenvalue decomposition for $\mathbf{H}$,
 	\begin{equation}
 	\mathbf{H} = \mathbf{V}^{T}\mathbf{D}\mathbf{V},
 	\end{equation}
-	where $\mathbf{D}$ is the diagonal matrix such that $\mu_{i} = \mathbf{D}_{ii}$ is the $i^{th}$ eigenvalue of $\mathbf{H}$ by decreasing algebraic size (ie $\mu_{1}$ is the largest eigenvalue of $\mathbf{H}$), and $\mathbf{V}$ is the matrix of eigenvectors where $\mathbf{V}_{i}$, the $i^{th}$ column vector of \textbf{V}, is the eigenvector corresponding to $\mu_{i}$. We can now write (\ref{equation:grad_lagrangian}) as:
+	where $\mathbf{D}$ is the diagonal matrix such that $\mu_{i} = \mathbf{D}_{ii}$ is the $i^{th}$ eigenvalue of $\mathbf{H}$ by decreasing algebraic size (ie $\mu_{1}$ is the largest eigenvalue of $\mathbf{H}$), and $\mathbf{V}$ is the matrix of eigenvectors where $\mathbf{V}_{i}$, the $i^{th}$ column vector of \textbf{V}, is the eigenvector corresponding to $\mu_{i}$. We can now write (\ref{equation:grad_d}) as:
 	\begin{equation}
 	\begin{aligned}
 	\nabla d(\lambda) & = -\gamma^{2} + \mathbf{g}^{T}(\mathbf{V}^{T}(\mathbf{D} + \lambda\mathbf{I})\mathbf{V})^{-1}(\mathbf{D} + \lambda\mathbf{I})\mathbf{V})^{-1}\mathbf{g} \\
@@ -605,7 +605,7 @@
 	\end{equation}
 	Now, note that $(\mu_{i} + \lambda)$ is the $i^{th}$ eigenvalue of $(\mathbf{H} + \lambda\mathbf{I})$ so in order to satisfy the requirement in (\ref{equation:possemdef}), $\mu_{n} + \lambda \geq 0$ where $\mu_{n}$ is the smallest eigenvalue of the Hessian matrix, $\mathbf{H}$. The $\lambda$ which fulfills this constraint as well as (\ref{equation:grad_lagrangian2}), exists and is unique when $\mathbf{g}^{T}\mathbf{V}_{n}\neq0$ since the value of $\phi(\lambda)$ is $\infty$ when $-\lambda = \mu_{n}$ and then always decreasing for $\lambda > |\mu_{n}|$ and approaches zero. This implies that $\lambda$ is unique since there will only be one value of $\lambda$ which satisfies $\phi(\lambda) = \gamma^{2}$. A visualization of $\phi(\lambda)$ can be seen in \cite{TRM.book}, Figure 7.3.2. 
 
-	To summarize, in order for a solution $\mathbf{p}$ to be optimal it must satisfy primal feasibility, (\ref{equation:inbounds}), (\ref{equation:possemdef}), and complementary slackness, (\ref{equation:complementary_slackness}). Now that we have established optimality conditions for the TRS, we need to determine how to compute a solution that satifies these conditions. The dual problem (\ref{equation:dual2}) can be solved by an iterative method to determine a solution to $\phi(\lambda) = \gamma^{2}$ where $\mathbf{H} + \lambda \mathbf{I} \succeq 0$. For example, \cite{TRM.book}, finds a model minimizer using a numerical approach of adjusting $\lambda$ and solving for (\ref{equation:grad_lagrangian}) and re-adjusting $\lambda$ until a suitable $\mathbf{p}$ is achieved. As previously mentioned, in this thesis we follow a more recent approach by \cite{adachi.paper} which, for the boundary case, developed a generalized eigenvalue problem which has a solution from which a solution to the TRS can be directly computed. It also takes advantage of complementary slackness to devise a two step approach described in the following section.
+	To summarize, in order for a solution $\mathbf{p}$ to be optimal it must satisfy primal feasibility, (\ref{equation:inbounds}), (\ref{equation:possemdef}), and complementary slackness, (\ref{equation:complementary_slackness}). Now that we have established optimality conditions for the TRS, we need to determine how to compute a solution that satifies these conditions. The dual problem (\ref{equation:dual2}) can be solved by an iterative method to determine a solution to $\phi(\lambda) = \gamma^{2}$ where $\mathbf{H} + \lambda \mathbf{I} \succ 0$. For example, \cite{TRM.book}, finds a model minimizer using a numerical approach of adjusting $\lambda$ and solving for (\ref{equation:grad_lagrangian}) and re-adjusting $\lambda$ until a suitable $\mathbf{p}$ is achieved. As previously mentioned, in this thesis we follow a more recent approach by \cite{adachi.paper} which, for the boundary case, developed a generalized eigenvalue problem which has a solution from which a solution to the TRS can be directly computed. It also takes advantage of complementary slackness to devise a two step approach described in the following section. 
 	
 	\subsubsection{Solving TRS via a Generalized Eigenvalue Problem}
 	
@@ -705,7 +705,7 @@
 	= & \frac{\gamma^{4}}{(\mathbf{g}^{T}\mathbf{v}_{2})^{2}}\frac{(\mathbf{g}^{T}\mathbf{v}_{2})^{2}}{\gamma^{2}}, \\
 	= &\gamma^{2}.
 	\end{align*}
-	The condition (\ref{equation:possemdef}) is satisfied by taking the eigenvalue/eigenvector pair of (\ref{equation:M_def}) with the eigenvalue of the largest algebraic value which is explained in \cite{adachi.paper}. In the case that (\ref{equation:nothard}) is not satisfied, we have what is considered the ``hard case" which rarely occurs, see \cite{adachi.paper}. 
+	The condition (\ref{equation:possemdef}) is satisfied by taking the eigenvalue/eigenvector pair of (\ref{equation:M_def}) with the eigenvalue of the largest algebraic value which is explained in \cite{adachi.paper}. In the case where $(\mathbf{H} + I\lambda_{*})$ is singular, we have what is considered the ``hard case" which rarely occurs, see \cite{adachi.paper} for an approach to dealing with this case.  
 	
 	\subsubsection{Choosing the trial point}
 	
@@ -816,13 +816,13 @@
 	
 	\section{Computing the Solution to the TRS}
 	
-	The trust region subproblem, (\ref{equation:TRS}), is solved using the approach described in Chapter 2. The approach is left where two solutions need to be computed: one to solve the linear system of equations, (\ref{equation:p0}), and the other requires computing the smallest eigenvalue and it's associated eigenvector for the generalized eigenvalue problem (\ref{equation:M_def}). In this section we complete these gaps to show how our solution was implemented.
+	The trust region subproblem, (\ref{equation:TRS}), is solved using the approach described in Chapter 2. The approach is left where two solutions need to be computed: one to solve the linear system of equations, (\ref{equation:p0}), and the other requires computing the largest eigenvalue and it's associated eigenvector for the generalized eigenvalue problem (\ref{equation:M_def}). In this section we complete these gaps to show how our solution was implemented.
 	
 	\subsection{Conjugate Gradient}
 	
 	As mentioned, the solution to the system of linear equations (\ref{equation:p0}) must be computed in order to compute the solution to the TRS. The conjugate gradient method is used as a fast descent method for solving this system of linear equations. The particular implementation used is that in the MATLAB \textit{pcg} function. This method can be used either with a function call to an implementation of the Pearlmutter Trick in \S(3.1), or by being provided the computed Hessian. For most methods used in experimentation the latter approach requires fewer computations. This will be discussed in the following chapter.
 	
-	 Since ff-ANNs contain both negative and positive curvature, \textbf{H} is sometimes indefinite. In context of the TRS algorithm however, the $\mathbf{p}_{0}$ step is only considered when \textbf{H} happens to be positive definite. Therefore, we use the conjugate gradient with a max number of iterations. If it does not converge to a solution because $\mathbf{H}$ is indefinite, we know that $\mathbf{p}_{1}$, the boundary solution, is the solution to the TRS.  
+	 The Hessian of the objective function, \textbf{H}, is sometimes indefinite. In context of the TRS algorithm however, the $\mathbf{p}_{0}$ step is only considered when \textbf{H} happens to be positive definite. Therefore, we use the conjugate gradient with a max number of iterations. If it does not converge to a solution because $\mathbf{H}$ is indefinite, we know that $\mathbf{p}_{1}$, the boundary solution, is the solution to the TRS.  
 	 
 	 \begin{algorithm}
 	 	\caption{Conjugate Gradient, Algorithm 6.11 from \cite{demmel.book}}\label{algorithm:cg}
@@ -854,7 +854,7 @@
 	
 	\subsection{Computing $\mathbf{H}_{k}$}
 	
-	Using the ``Pearlmutter Trick'' proposed by \cite{Pearlmutter.1993} and it's specific application to ff-ANNs, we can now write a simple function to compute the hessian matrix of the ff-ANN at each iteration $k$, $\mathbf{H}_{k}$, as we show in Algorithm \ref{algorithm:hv}.
+	Using the ``Pearlmutter Trick'' proposed by \cite{Pearlmutter.1993} and it's specific application to ff-ANNs, we can now write a simple function to compute the Hessian matrix of the ff-ANN at each iteration $k$, $\mathbf{H}_{k}$, as we show in Algorithm \ref{algorithm:hv}.
 	
 	\makeatletter
 	\def\BState{\State\hskip-\ALG@thistlm}
@@ -876,8 +876,8 @@
 			\State [Four Pass Procedure in \S{3.1.1}]
 			\State \textbf{return} $\mathbf{Hv}$
 			\EndProcedure			
-			\label{algorithm:hv}
 		\end{algorithmic}
+		\label{algorithm:hv}
 	\end{algorithm}
 
 	\subsection{Computing The Boundary Solution, $\mathbf{p}_{1}$}
@@ -885,7 +885,7 @@
 	As described in Chapter 2, we can compute the boundary case solution, $\mathbf{p}_{1}$, from the solution to the generalized eigenvalue problem, (\ref{equation:M_def}), which is computed using the MATLAB $eigs$ function which is an implementation of the QZ method. In Algorithm \ref{algorithm:p1} we show our implementation of the $getp1()$ method which returns the boundary case solution. In this algorithm we call a method $Mv()$ defined below $getp1()$ which, given a vector $\mathbf{v} \in \mathbb{R}^{2n}$ , returns the product, $\mathbf{Mv}$, where $\mathbf{M}$ is defined in (\ref{equation:M}). 
 	
 	\begin{algorithm}
-		\caption{Compute $p_{1}$}
+		\caption{Compute $\mathbf{p}_{1}$}
 		\begin{algorithmic}[1]
 		\Procedure{$getp1()$}{}
 		\State given $\gamma$, $\mathbf{g} = $vectorized$(\nabla{f(\mathbf{w})})$
@@ -902,8 +902,8 @@
 		\State $Mv[n+1:2n] \gets Hv(\mathbf{v}_{2}) - \mathbf{g}\mathbf{g}^{T}\mathbf{v}_{2}/\gamma^{2}$
 		\State \textbf{return} $Mv$ 
 		\EndProcedure
-		\label{algorithm:p1}
 	\end{algorithmic}
+	\label{algorithm:p1}
 	\end{algorithm}  
 	
 	\subsection{Summary of TRS Solution Method}
@@ -977,7 +977,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.6\linewidth]{MNIST_SMBGDGD.png}
+		\includegraphics[width=0.6\linewidth]{../../Desktop/Figures/MNIST_SMBGDGD.png}
 		\caption{Training an ff-ANN to predict MNIST using \textbf{SGD}, \textbf{MBGD} and \textbf{GD} for comparison. }
 		\label{figure:SMBGDGD}
 	\end{figure}
@@ -1009,7 +1009,7 @@
 	\begin{equation}
 	c = \left \lfloor{r/a}\right \rfloor,
 	\end{equation}
-	and recall that $\gamma$ is the trust region size, or "step size" in the context of adjusted trust region methods.
+	and recall that $\gamma$ is the trust region size, or ``step size" in the context of adjusted trust region methods.
 	 We refer to this schedule we use as the adaptive trust region reduction schedule (ATRRS) and compute only the $\mathbf{p}_{1}$ step from (\ref{equation:p1}). This schedule takes into account the average approximated objective function over a set number of iterations, which we refer to as a \textbf{block}, that has number of iterations $a$. For our experiments we define $a$ to be:
 	\begin{equation}
 	a = \text{min}(\frac{m}{b_{m}^{small}}, b_{m}^{large}),
@@ -1157,7 +1157,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.5\linewidth]{../Desktop/figures/haberman_data.png}
+		\includegraphics[width=0.5\linewidth]{../../Desktop/figures/haberman_data.png}
 		\caption{Visualization of Habe dataset where classes are represented by shape and colour. This shows the difficulty in learning this dataset, there is no clear separation between classes.}
 		\label{figure:haberman}
 	\end{figure}
@@ -1177,7 +1177,7 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1.0\linewidth]{../Desktop/figures/structure.PNG}
+		\includegraphics[width=1.0\linewidth]{../../Desktop/figures/structure.PNG}
 		\caption{Structure of ff-ANN for learning the Derm dataset. Used as visual example to show resulting structure for a given $n_{0}$ and $n_{2}$ which are based on the dataset.}
 		\label{figure:structure}
 	\end{figure}
@@ -1199,21 +1199,30 @@
 	
 	The main comparison method we use in our numerical investigation is what we refer to as time required for a reasonable solution (TRRS). This follows the first metric concept where we compare the CPU time taken to reach a specific objective function value. The specific objective function value used is dependent on the methods being compared which means that the TRRS can only be used to compare two methods, otherwise this objective function may differ and change the result. 
 	
-	We define a reasonable solution, when comparing some method $a$ with some method $b$, to be a solution such that the objective function value $f(\mathbf{w}_{r}) \leq \psi$ where:
+	Before we define TRRS, we will first introduce a few notations. Suppose $R_{a}$ and $R_{b}$ are the final iteration numbers for method $a$ and $b$, respectively. Let $cpu(R_{a})$ ($cpu(R_{b})$) be the cpu times for performing the $R_{a}$ ($R_{b}$) iterations by method $a$ (method $b$). For the purpose of comparison, we will fix the time for both methods and the fixed time is chosen to be the minimum of the two:
 	\begin{equation}
-	\psi = \kappa +  \Delta|f(\mathbf{w}_{0}) - \kappa|.,
+	T = min(cpu(R_{a}), cpu(R_{b})).
 	\end{equation}
-	where $\mathbf{w}_{0}$ is the vector of initial parameters,  $\Delta$ is defined by the user and:
-	\begin{equation}
-	\kappa = min(f(\mathbf{w}^{a}_{r_{a}}),f(\mathbf{w}^{b}_{r_{b}})) \quad \text{for all } r_{a} \in [0,R^{a}_{T}] \text{ and } r_{b} \in [0,R^{b}_{T}],
-	\end{equation}
-	where $R^{a}_{T}$ is the smallest iteration number for method $a$ such that $cpu(R^{a}_{T}) \geq T$, where $cpu(r)$ is the cummulative cpu time required to compute all iterations up to and including iteration $r$, and
-	\begin{equation}
-	T = min(cpu(R_{a}),cpu(R_{b})),
-	\end{equation}
-	where $R_{a}$ and $R_{b}$ are the final iterations computed for method $a$ and $b$ respectively.
 	
-	The time required for a reasonable solution is therefore $cpu(R^{\psi}_{a})$ and $cpu(R^{\psi}_{b})$ for method $a$ and $b$ respectively where $R^{\psi}$ is the first iteration such that the objective function is considered a reasonable soluton. That is, $f(\mathbf{w}_{R^{\psi}}) \leq \psi$ and $f(\mathbf{w}_{r}) > \psi$ for all $r \in [0,R^{\psi} - 1]$.
+	Accordingly, let $R_{T}^{a}$ ($R_{T}^{b}$) be the smallest iteration number for method $a$ (method $b$) such that $cpu(R_{T}^{a}) >= T (cpu(R_{T}^{b}) >= T)$.
+	
+	We then consider the values of the objective function for all iterates generated by the two methods and find the minimum one. More precisely, we define
+	\begin{equation}
+	k = min(f(w_{ra}^a), f(w_{rb}^b))       \quad r_{a} = 0, 1, ..., R_{T}^{a}, \  r_{b} = 0, 1, ..., R_{T}^{b}
+	\end{equation}
+	where $w_{r_{a}}^{a}$ and $\mathbf{w}_{r_{b}}^{b}$ are the approximate solutions generated by method $a$ and method $b$, respectively.
+	
+	Now we call a solution, $\mathbf{w}_{r}$, a reasonable solution if $f(\mathbf{w}_{r})$ is close to k. Specifically,
+	\begin{equation}
+	f(\mathbf{w}_{r}) <= \psi,
+	\end{equation}
+	where
+	\begin{equation}
+	\psi = k + \Delta |f(\mathbf{w}_0) - k|.
+	\end{equation}	
+	Here $\mathbf{w}_{0}$ is the vector of initial parameters and Delta is given by the user.
+	
+	Finally, TRRS for method a is defined to be $cpu(R_{a}^{\psi})$ where $R_{a}^{\psi}$ is the first iteration such that $\mathbf{w}_{R_{a}^{\psi}}^a$ is considered a reasonable solution. TRRS for method b is defined similarly.
 		
 	\section{CPU time of TRM vs SGD}
 	
@@ -1253,19 +1262,19 @@
 	\begin{figure}
 		\centering
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Derm_TRMMBGD2.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Derm_TRMMBGD2.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{IRIS_TRMMBGD2.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/IRIS_TRMMBGD2.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Habe_TRMMBGD2.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Habe_TRMMBGD2.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Nurs_TRMMBGD2.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Nurs_TRMMBGD2.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{MNIST_TRMMBGD2.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/MNIST_TRMMBGD2.png}
 		\end{subfigure}
 		\caption{Running TRMMBGD vs MBGBD for training ff-ANNs on five datasets.}
 		\label{figure:TRMMBGD}
@@ -1341,19 +1350,19 @@
 	\begin{figure}
 		\centering
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Derm_SMBTRMTRM.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Derm_SMBTRMTRM.png}
 		\end{subfigure}%
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{IRIS_SMBTRMTRM.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/IRIS_SMBTRMTRM.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Habe_SMBTRMTRM.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Habe_SMBTRMTRM.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Nurs_SMBTRMTRM.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Nurs_SMBTRMTRM.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{MNIST_SMBTRMTRM.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/MNIST_SMBTRMTRM.png}
 		\end{subfigure}
 		\caption{Comparing \textbf{TRM} with stochastic training example subsampling \textbf{TRM} methods (\textbf{STRM} and \textbf{MBTRM}), based on objective function, $f(\mathbf{w})$, vs CPU time.}
 		\label{figure:SMBTRMTRM}
@@ -1370,37 +1379,7 @@
 	
 	Finally, we note that \textbf{MBTRM} has a lower TRRS when used to train using the MNIST dataset, even for the case when $\Delta = 1\%$. In conclusion, for some datasets we find that \textbf{MBTRM} can improve upon \textbf{TRM} however it is not a consistent trend across a diverse range of datasets.
 	
-	
-	\subsection{Traditional TRM $\gamma$ Update Scheme}
-	
-	We train the same networks using \textbf{BTRM} and \textbf{TRM} in order to test whether using stochastic sampling of training examples on the full \textbf{TRM} method, including the traditional \textbf{TRM} update scheme, is an effective method for improving $\mathbf{TRM}$ performance in terms of TRRS. The batch size is chosen using the hyperparameter value search scheme (see Appendix A). The hyperparameter which defined the batch size is $b_{m}^{large}$, which for all datasets is greater in size than $b_{m}^{small}$ that was used for the $\mathbf{MBTRM}$. We expect that a greater batch size will mean that the approximation of the trust region subproblem more closely resembles the actual subproblem. Therefore, we expect that the use of the traditional trust region size update in Algorithm \ref{trust region size} will be effective at predicting what size of region can be accurately modeled using the previous step accuracy.
-	
-	The optimization curves produced by running this experiment on each dataset, are presented in Figure \ref{figure:BTRMTRM}. Visually, we can see that the \textbf{BTRM} curves start out faster than \textbf{TRM} for training all datasets besides Habe, where \textbf{BTRM} is found to be essentially ineffective at minimizing the objective function. This result for Habe is expected for any stochastic method since subsets are not sufficiently representative of the full set as we discovered in Figure \ref{figure:haberman}. We can see the quantitative TRRS measurements in Tables \ref{SMBTRMTRM1}, \ref{SMBTRMTRM5} and \ref{SMBTRMTRM10} in columns 6 and 7. In the results for the MNIST dataset we see that for all values of $\Delta$, \textbf{BTRM} outperforms \textbf{TRM} in terms of TRRS. The results are more mixed for Derm, IRIS and Nurs. The positive result for Derm, IRIS and Nurs is that for all of these datasets we see that \textbf{BTRM} is faster at getting an approximate result, for $\Delta=10\%$ specifically, than \textbf{TRM}. On Habe there are no cases where \textbf{BTRM} outperforms \textbf{TRM} which makes sense recalling that Habe subsets are not very representative of the overall set.  
-	
-	We conclude that \textbf{BTRM} can decrease the TRRS compared to \textbf{TRM} for training ff-ANNs on datasets where we can be confident that most subsets of training samples have some relationship to the greater set of training samples. That is, if the prediction accuracy of dependent variables is significantly improved by the use of it's independent variables then \textbf{BTRM} is likely to outperform \textbf{TRM} based on our these results. In the case of the Habe dataset, the dependent variable does not seem to be strongly tied to the independent variables provided so the learning model, which has the potential to learn complex relationships, may tend to learn the noise of the training set, or subset, rather than it's weak or minimal underlying trend. This leads to poor generalization. We hypothesize that stochastic methods perform poorly since the poor signal to noise ratio means that the direction of each stochastic step may be more influenced by the noise of the small subset of samples rather than the underlying trend. To understand this more clearly, imagine performing a linear regression problem on a dataset with a very small signal to noise ratio. With 1000 samples, the signal may be picked up but with only 2 the predicted linear relationship will be heavily influenced by noise effecting the two points. 
-	
-	\begin{figure}
-		\centering
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/Derm_BTRMTRM.png}
-		\end{subfigure}%
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/IRIS_BTRMTRM.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/Habe_BTRMTRM.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/Nurs_BTRMTRM.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/MNIST_BTRMTRM.png}
-		\end{subfigure}
-		\caption{Comparing \textbf{TRM} with stochastic training example subsampling \textbf{TRM} method, \textbf{BTRM}, based on objective function over CPU time.}
-		\label{figure:BTRMTRM}
-	\end{figure}
-	
-	\begin{table}[h] 
+			\begin{table}[h] 
 		\centering 
 		\begin{tabular}{ |c||l|l||l|l||l|l| } 
 			\hline 
@@ -1460,55 +1439,42 @@
 		\end{tabular} 
 		\caption{TRRS results for $\Delta = 10\%$} \label{SMBTRMTRM10} \end{table}
 	
+	\subsection{Traditional TRM $\gamma$ Update Scheme}
+	
+	We train the same networks using \textbf{BTRM} and \textbf{TRM} in order to test whether using stochastic sampling of training examples on the full \textbf{TRM} method, including the traditional \textbf{TRM} update scheme, is an effective method for improving $\mathbf{TRM}$ performance in terms of TRRS. The batch size is chosen using the hyperparameter value search scheme (see Appendix A). The hyperparameter which defined the batch size is $b_{m}^{large}$. The value of $b_{m}^{large}$ is greater than that of $b_{m}^{small}$ for all datasets, which is why we use the label ``large". We expect that a greater batch size will mean that the approximation of the trust region subproblem more closely resembles the actual subproblem. Therefore, we expect that the use of the traditional trust region size update in Algorithm \ref{trust region size} will be effective at predicting what size of region can be accurately modeled using the previous step accuracy.
+	
+	The optimization curves produced by running this experiment on each dataset, are presented in Figure \ref{figure:BTRMTRM}. Visually, we can see that the \textbf{BTRM} curves start out faster than \textbf{TRM} for training all datasets besides Habe, where \textbf{BTRM} is found to be essentially ineffective at minimizing the objective function. This result for Habe is expected for any stochastic method since subsets are not sufficiently representative of the full set as we discovered in Figure \ref{figure:haberman}. We can see the quantitative TRRS measurements in Tables \ref{SMBTRMTRM1}, \ref{SMBTRMTRM5} and \ref{SMBTRMTRM10} in columns 6 and 7. In the results for the MNIST dataset we see that for all values of $\Delta$, \textbf{BTRM} outperforms \textbf{TRM} in terms of TRRS. The results are more mixed for Derm, IRIS and Nurs. The positive result for Derm, IRIS and Nurs is that for all of these datasets we see that \textbf{BTRM} is faster at getting an approximate result, for $\Delta=10\%$ specifically, than \textbf{TRM}. On Habe there are no cases where \textbf{BTRM} outperforms \textbf{TRM} which makes sense recalling that Habe subsets are not very representative of the overall set.  
+
+	
+	We conclude that \textbf{BTRM} can decrease the TRRS compared to \textbf{TRM} for training ff-ANNs on datasets where we can be confident that most subsets of training samples have some relationship to the greater set of training samples. That is, if the prediction accuracy of dependent variables is significantly improved by the use of it's independent variables then \textbf{BTRM} is likely to outperform \textbf{TRM} based on our these results. In the case of the Habe dataset, the dependent variable does not seem to be strongly tied to the independent variables provided so the learning model, which has the potential to learn complex relationships, may tend to learn the noise of the training set, or subset, rather than it's weak or minimal underlying trend. This leads to poor generalization. We hypothesize that stochastic methods perform poorly since the poor signal to noise ratio means that the direction of each stochastic step may be more influenced by the noise of the small subset of samples rather than the underlying trend. To understand this more clearly, imagine performing a linear regression problem on a dataset with a very small signal to noise ratio. With 1000 samples, the signal may be picked up but with only 2 the predicted linear relationship will be heavily influenced by noise effecting the two points. 
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/Derm_BTRMTRM.png}
+		\end{subfigure}%
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/IRIS_BTRMTRM.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/Habe_BTRMTRM.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/Nurs_BTRMTRM.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/MNIST_BTRMTRM.png}
+		\end{subfigure}
+		\caption{Comparing \textbf{TRM} with stochastic training example subsampling \textbf{TRM} method, \textbf{BTRM}, based on objective function over CPU time.}
+		\label{figure:BTRMTRM}
+	\end{figure}
+
+	
 	\section{Reducing the Dimentionality of TRS}
 	
 	We experiment with weight subsampling added to the \textbf{TRM} algorithm to train ff-ANNs using the five datasets with both \textbf{TRMWS} and \textbf{TRM} and comparing the results. The results of these experiments are shown in Figure \ref{figure:TRMWS}. Specifically, we plot the objective function vs the CPU time as we have done for stochastic methods in the previous section. In terms of the qualitative behaviour we can see that for certain types of datasets, this method is beneficial, such as for Derm and MNIST. For Habe, weight subsampling actually slows down the overall progress initially but it eventually surpases \textbf{TRM} in objective function over CPU time. Finally, we see little improvement for training on the IRIS dataset. 
 	
 	In order to compare these methods quantitatively, we display the TRRS in Tables \ref{table:TRMWS1}, \ref{table:TRMWS5} and \ref{table:TRMWS10} for the TRRS parameter $\Delta = 1\%$, $5\%$ and $10\%$ respectively. We observe improvement in terms of TRRS for training ff-ANNs on Derm, IRIS and MNIST for all values of $\Delta$ when adding weight subsampling to \textbf{TRM}. For Nurs we see that \textbf{TRM} has a shorter TRRS for all values of $\Delta$ displayed, however we note in Figure \ref{figure:TRMWS} that Nurs is faster at getting a very approximate solution and is passed before the $\Delta=10\%$ mark. Finally we see that \textbf{TRMWS} Habe outperforms \textbf{TRM} for only the lowest value of $\Delta$. These are mixed results, but we observe that \textbf{TRMWS} is faster at the beginning of training for 4/5 of our datasets, and has a better TRRS for $\Delta=1\%$ on 4/5 datasets as well. Therefore we can conclude that the variation, \textbf{TRMWS}, often improves \textbf{TRM} for the datasets considered.
-	
-	
-	\begin{figure}
-		\centering
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Derm_TRMWS.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{IRIS_TRMWS.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Habe_TRMWS.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Nurs_TRMWS.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{MNIST_TRMWS.png}
-		\end{subfigure}
-		\caption{Running TRM vs TRMWS for training ff-ANNs on five datasets.}
-		\label{figure:TRMWS}
-	\end{figure}
-	
-	\begin{figure}
-		\centering
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/Derm_BTRMWS.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/IRIS_BTRMWS.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/Habe_BTRMWS.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/Nurs_BTRMWS.png}
-		\end{subfigure}
-		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/MNIST_BTRMWS.png}
-		\end{subfigure}
-		\caption{Running BTRM vs BTRMWS for training ff-ANNs on five datasets.}
-		\label{figure:BTRMWS}
-	\end{figure}
-	
 	
 	\begin{table}[h] 
 		\centering 
@@ -1572,28 +1538,72 @@
 		\end{tabular} 
 		\caption{TRRS results for $\Delta = 10 \%$} \label{table:TRMWS10} \end{table}
 	
-	We have evaluated the effect of adding weight subsampling to the basic $\mathbf{TRM}$ method, now we wish to see if weight subsampling improves other methods such as methods that already include stochastic subsampling of data points which is SSTS. Firstly, we test the effect of weight subsampling on $\mathbf{BTRM}$ by comparing the behaviour and TRRS of the method with it's weight subset variation, $\mathbf{BTRMWS}$. The results of these experiments are shown in Figure \ref{figure:BTRMWS} and the TRRS values are shown in columns 4 and 5 of Tables \ref{table:TRMWS1}, \ref{table:TRMWS5} and \ref{table:TRMWS10}. Qualitatively and quantitatively we observe a much smaller effect of weight subsampling when it is applied to $\mathbf{BTRM}$ vs $\mathbf{TRM}$, though in all cases except for IRIS, the TRRS for $\Delta=10\%$ is lower for $\mathbf{BTRMWS}$ than for $\mathbf{BTRM}$. These findings suggest that weight subsampling has a smaller and more consistent effect, across different datasets, when applied to $\mathbf{BTRM}$ than when applied to $\mathbf{TRM}$. 
+		We have evaluated the effect of adding weight subsampling to the basic $\mathbf{TRM}$ method, now we wish to see if weight subsampling improves other methods such as methods that already include stochastic subsampling of data points which is SSTS. Firstly, we test the effect of weight subsampling on $\mathbf{BTRM}$ by comparing the behaviour and TRRS of the method with it's weight subset variation, $\mathbf{BTRMWS}$. The results of these experiments are shown in Figure \ref{figure:BTRMWS} and the TRRS values are shown in columns 4 and 5 of Tables \ref{table:TRMWS1}, \ref{table:TRMWS5} and \ref{table:TRMWS10}. Qualitatively and quantitatively we observe a much smaller effect of weight subsampling when it is applied to $\mathbf{BTRM}$ vs $\mathbf{TRM}$, though in all cases except for IRIS, the TRRS for $\Delta=10\%$ is lower for $\mathbf{BTRMWS}$ than for $\mathbf{BTRM}$. These findings suggest that weight subsampling has a smaller and more consistent effect, across different datasets, when applied to $\mathbf{BTRM}$ than when applied to $\mathbf{TRM}$. 
 	
 	Next, we test weight subsampling applied to stochastic trust region methods, \textbf{MBTRM} and \textbf{STRM}, to see if we get the same results as for $\mathbf{BTRM}$. These results can be seen in Figure \ref{figure:SMBTRMWS}. We find that applying weight subsampling to these methods does not follow the consistent and slight improvement seen when applying weight subsampling to $\mathbf{BTRM}$ to get $\mathbf{BTRMWS}$. Rather, we find that for $\Delta=1 \%$ and $5\%$, both \textbf{STRM} and \textbf{MBTRM} do better than their weight subset equivalents, \textbf{STRMWS} and \textbf{MBTRMWS}. For training on Derm, Habe and IRIS we do see an improvement in TRRS for $\Delta=10\%$ for $\mathbf{MBTRMWS}$ compared to \textbf{MBTRM}. 
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Derm_TRMWS.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/IRIS_TRMWS.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Habe_TRMWS.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Nurs_TRMWS.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/MNIST_TRMWS.png}
+		\end{subfigure}
+		\caption{Running TRM vs TRMWS for training ff-ANNs on five datasets.}
+		\label{figure:TRMWS}
+	\end{figure}
+	
+	\begin{figure}
+		\centering
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/Derm_BTRMWS.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/IRIS_BTRMWS.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/Habe_BTRMWS.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/Nurs_BTRMWS.png}
+		\end{subfigure}
+		\begin{subfigure}{.45\textwidth}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/MNIST_BTRMWS.png}
+		\end{subfigure}
+		\caption{Running BTRM vs BTRMWS for training ff-ANNs on five datasets.}
+		\label{figure:BTRMWS}
+	\end{figure}
+	
+
 	
 	By looking at all of our results from applying weight subsampling together, the trend appears to be that the smaller the stochastic subset of training samples chosen at each iteration, the less effective adding weight subsampling will be to reduce TRRS. This result, though not entirely expected, is not surprising as every time a variation is made using a stochastic approach, the steps become less likely to lead to the solution of the overall problem. Once the sum of all approximated steps is no longer leading towards a minima for the full objective function, $f(\mathbf{w})$, they are no longer of useful.
 	
 	\begin{figure}
 		\centering
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Derm_SMBTRMWS2.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Derm_SMBTRMWS2.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{IRIS_SMBTRMWS2.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/IRIS_SMBTRMWS2.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Habe_SMBTRMWS2.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Habe_SMBTRMWS2.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{Nurs_SMBTRMWS2.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/Nurs_SMBTRMWS2.png}
 		\end{subfigure}
 		\begin{subfigure}{.45\textwidth}
-			\includegraphics[width=\textwidth]{MNIST_SMBTRMWS2.png}
+			\includegraphics[width=\textwidth]{../../Desktop/Figures/MNIST_SMBTRMWS2.png}
 		\end{subfigure}
 		\caption{Test results for using stochastic TRM methods.}
 		\label{figure:SMBTRMWS}
@@ -1672,13 +1682,13 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=\textwidth]{images/CPU_time_H}
-		\caption{Percentage of time taken for computing the Hessian matrix at each change in weight values $\mathbf{w}$.}
+		\caption{Percentage of time taken for computing the Hessian matrix at each change in weight values $\mathbf{w}$. Recall that only 6 of 8 methods include the computation of the Hessian matrix. }
 		\label{figure:H_time}
 	\end{figure}
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{images/CPU_time_p0}
-	\caption{Percentage of time taken to solve for the $\mathbf{p}_{0}$, the bulk of which is solving the linear equation (\ref{equation:p0}).}
+	\caption{Percentage of time taken to solve for the $\mathbf{p}_{0}$, the bulk of which is solving the linear equation (\ref{equation:p0}). Recall that those methods which use the ATRRS do not compute $\mathbf{p}_{0}$ (see Algorithm \ref{algorithm:assrs-simple}).}
 	\label{figure:p0_time}
 \end{figure}
 	
@@ -1688,19 +1698,19 @@
 	\begin{figure}
 		\centering
 		\begin{subfigure}{.49\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/Submaxiter_noSGD.png}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/Submaxiter_noSGD.png}
 		\end{subfigure}
 		\begin{subfigure}{.49\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/Submaxiter_epoch.png}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/Submaxiter_epoch.png}
 		\end{subfigure}
 		\begin{subfigure}{.5\textwidth}
-			\includegraphics[width=\textwidth]{../Desktop/figures/Submaxiter.png}
+			\includegraphics[width=\textwidth]{../../Desktop/figures/Submaxiter.png}
 		\end{subfigure}
-		\caption{Convergence of \textbf{TRM} with $\mathbf{p}_{0}$ and $\mathbf{p}_{1}$ using stopping criterion of residual magnitude less than $10^{-3}$ (dashed line) and stopping criterion of reaching the max iteration (\textbf{submaxiter}=1,2,3,4,5). (Left) Convergence in terms of CPU time. (Right) Convergence in terms of Epoch. (Bottom) Convergence in terms of CPU time with \textbf{SGD} for reference.}
+		\caption{Convergence of \textbf{TRM} with $\mathbf{p}_{0}$ and $\mathbf{p}_{1}$ using stopping criterion of residual magnitude less than $10^{-3}$ (dashed line) and stopping criterion of reaching the max iteration (\textbf{submaxiter}=1,2,3,4,5). (Upper Left) Convergence in terms of CPU time. (Upper Right) Convergence in terms of Epoch. (Bottom) Convergence in terms of CPU time with \textbf{SGD} for reference.}
 		\label{figure:mnist_maxiter}
 	\end{figure}
 	
-	\section{Robustness Test}
+	\section{Robustness Test} 
 	
 	Most problems have unknown characteristics and therefore the behaviour of algorithms that can be attributed to the characteristics of the dataset compared to the performance of the method is fairly unknown. Therefore, we decided to run the methods on the XOR problem, which has some known characteristics which we describe in the section that follows. 
 	
@@ -1746,37 +1756,39 @@
 	
 	\subsection{XOR Training Results}
 	
-	In order to see quantitatively how well all of these methods perform, we train a two layer ff-ANN to learn the XOR solution, and run it 1000 times on 100 initial weight settings in order to test robustness. We analyze our results by categorizing the final value of the objective function for each trial for each of our methods. We say a method has \textbf{reached} a certain point if the final objective function value achieved by the method within $10^{-3}$ of the objective function value for a known point. The value of these known points are displayed in Table \ref{table:XOR_point_type}. The results of this experiment are displayed in Figure \ref{figure:XOR}. In order to consider time required to achieve these results, we also present the total CPU time for each of the methods that are tested, in Figure \ref{figure:XOR_time}.
+	In order to see quantitatively how well all of these methods perform, we train a two layer ff-ANN to learn the XOR solution, and run it 1000 times on 100 initial weight settings in order to test robustness. We analyze our results by categorizing the final value of the objective function for each trial for each of our methods. We say a method has reached one of the four known points, $\mathbf{x}$, if the final objective function value achieved by the method is within $10^{-3}$ of $f(\mathbf{x})$. The value of these known points are displayed in Table \ref{table:XOR_point_type}. The results of this experiment are displayed in Figure \ref{figure:XOR}. In order to consider time required to achieve these results, we also present the total CPU time for each of the methods that are tested, in Figure \ref{figure:XOR_time}.
 	
 	 The hyperparameter procedure resulted in values for training example sampling: $b_{m}^{small} = b_{m}^{large} = m$, therefore \textbf{TRM} is equivalent to \textbf{BTRM} for this experiment so we do not show \textbf{BTRM} results. The mini-batch trust region methods, \textbf{MBTRM} and \textbf{MBTRMWS}, are still distinct from \textbf{TRM} and \textbf{TRMWS} respectively because of difference in $\gamma$ update method.  
 	
 	The results of the experiment are shown in Figure \ref{figure:XOR}. The first, most striking result, is the stochastic gradient descent, \textbf{SGD}, converges to the saddle point 100\% of the time. Its important to point out that this result could be dependent on the initial learning rate and learning rate schedule. It is still an interesting result and shows that with certain parameter choices, \textbf{SGD} may have difficulty converging to a minimizer. The promising takeaway for our methods is that \textbf{TRM}, \textbf{MBTRM}, \textbf{MBTRMWS}, and \textbf{TRMWS} all converge to a local minima for all 1000 trials. This shows that in this context, weight subsampling does not seem to affect the global convergence property of \textbf{TRM}, that is the method still converges to minima in all cases. 
 	
-	Another interesting result from this experiment is the improvement in performance between \textbf{MBGD} and \textbf{TRMMBGD}. We see that \textbf{TRMMBGD} increases the chances of at least resulting in a saddle point solution, compared to reaching no critical point for \textbf{MBGD}, and in some cases reaching the global minimum, compared to \textbf{MBGD} which most of the time does not reach a saddle point and never reaches a local or global minimum. When we look at all the results together that the percentage of times that a local minimum is reached can be predicted by the number of steps calculated using all 4 training examples of the XOR problem. That is, all methods that used $b_{m} = m$ at each step reached a local minimum 100\% of the time, \textbf{TRMMBGD} which uses $b_{m} = 2$ most of the time and $b_{m} = m$ occasionally reaches a local minimum occasionally. Finally those methods that never consider all training samples at the same step, $b_{m} < m$, never reach a local minimum. This is to be expected that stochastic subsampling of training samples is ineffective for the XOR problem since the classes for set of 3 or fewer samples is linearly separable, therefore all 4 samples are required to represent the more complex XOR problem.
+	Another interesting result from this experiment is the improvement in performance between \textbf{MBGD} and \textbf{TRMMBGD}. We see that \textbf{TRMMBGD} increases the chances of at least resulting in a saddle point solution, compared to reaching no critical point for \textbf{MBGD}, and in some cases reaching the global minimum, compared to \textbf{MBGD} which most of the time does not reach a saddle point and never reaches a local or global minimum. When we look at all the results together that the percentage of times that a local minimum is reached can be predicted by the number of steps calculated using all 4 training examples of the XOR problem. That is, all methods that used $b_{m} = m$ at each step reached a local minimum 100\% of the time. \textbf{TRMMBGD}, which uses $b_{m} = 2$ most of the time and $b_{m} = m$ occasionally, reaches a local minimum occasionally. Finally those methods that never consider all training samples at the same step, $b_{m} < m$, never reach a local minimum. This is to be expected that stochastic subsampling of training samples is ineffective for the XOR problem since the classes for set of 3 or fewer samples is linearly separable, therefore all 4 samples are required to represent the more complex XOR problem.
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=\linewidth]{../Desktop/figures/XOR_robustness2.PNG}
+		\includegraphics[width=\linewidth]{../../Desktop/figures/XOR_robustness2.PNG}
 		\caption{Final points are recorded when the final objective function value is within a tolerance of $10^{-3}$ from one of the known points.}
 		\label{figure:XOR}
 	\end{figure}
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=\linewidth]{../Desktop/figures/XOR_robustness_time2.PNG}
+		\includegraphics[width=\linewidth]{../../Desktop/figures/XOR_robustness_time2.PNG}
 		\caption{Mean time taken to reach the process' final known point within a tolerance of $10^{-3}$.}
 		\label{figure:XOR_time}
 	\end{figure}
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=\linewidth]{../Desktop/figures/XOR_robustness_perceptron2.PNG}
+		\includegraphics[width=\linewidth]{../../Desktop/figures/XOR_robustness_perceptron2.PNG}
 		\caption{Comparison of methods implemented in this thesis with methods tested in \cite{Shepherd.1997}. The methods from our exploration are displayed as solid black and methods from \cite{Shepherd.1997} are coloured with a diagonal pattern.}
 		\label{figure:XOR_comparison}
 	\end{figure}
 	Finally, we compare these results with those from other methods used to train the same two layer ff-ANN from \cite{Shepherd.1997}. This comparison is shown in Figure \ref{figure:XOR_comparison}. Methods with the suffix $-tr$ are methods that use the trust region model approach, those with $-B$ uses line minimization and those ending in $-qn$ are quasi-Newton methods. The full list of methods and their definitions are available on p. 134 of \cite{Shepherd.1997}.
 	
-	In Figure \ref{figure:XOR_comparison} we see that \textbf{TRM} manages to outperform all methods studied in \cite{Shepherd.1997}, with the exception of \textbf{BD-tr} which is the trust region model method with the bold driver method for adjusting the step size. The bold driver method simply increases the trust region radius when the previous step reduces the objective function, and decreases it otherwise. This is different from \textbf{TRM} which updates the trust region size based on the reliability of the second order model used within the bounds. All of the methods from this thesis that use $b_{m} = m$ perform similarly to the trust region approaches tested in \cite{Shepherd.1997}, in terms of percentage of trials that reach the global minimum on the XOR problem. This simple problem does not show a very detailed comparison for training ff-ANNs in general but provides some context to show how these methods compare to a wide array of methods that have been studied in the context of training ff-ANNs. 
+	In Figure \ref{figure:XOR_comparison} we see that \textbf{TRM} manages to outperform all methods studied in \cite{Shepherd.1997}, with the exception of \textbf{BD-tr} which is the trust region model method with the bold driver method for adjusting the step size. The bold driver method simply increases the trust region radius when the previous step reduces the objective function, and decreases it otherwise. This is different from \textbf{TRM} which updates the trust region size based on the reliability of the second order model used within the bounds. This method therefore does not determine ``trust" of the second order model based on model accuracy but rather on reduction of the objective function, $f(\mathbf{w})$, a measure which does not take the model into consideration. In this thesis we decided to focus on methods derived from the more classical measure $\rho$ based on model accuracy. 
+	
+	All of the methods from this thesis that use $b_{m} = m$ perform similarly to the trust region approaches tested in \cite{Shepherd.1997}, in terms of percentage of trials that reach the global minimum on the XOR problem. This simple problem does not show a very detailed comparison for training ff-ANNs in general but provides some context to show how these methods compare to a wide array of methods that have been studied in the context of training ff-ANNs. 
 	
 	\chapter{Conclusion}
 	
@@ -1900,7 +1912,7 @@
 	where $\sigma_{l}(.)$ is the non-linear function at layer $l$, and $(\mathbf{W}_{l})_{i}$ is the $i^{th}$ row vector of the weight matrix at layer $l$. This allows us to compute the output of our final layer, $\mathbf{z}_{L}^{k}$, where $L$ is the number of layers. This forward propagation step is performed for each training example $k$ in our set of $m$ training examples. With this set of $m$ vectors $\mathbf{z}_{l}^{k}$, which depend on \textbf{w}, the objective function is now computed as:
 	
 	\begin{equation}
-	f(\mathbf{w}) = \frac{1}{2m}\sum_{k=1}^{m}{(\mathbf{z}_{L}^{k} - \mathbf{y}^{k})^{T}(\mathbf{z}_{L}^{k} - \mathbf{y}^{k})},
+	f(\mathbf{w}) = \frac{1}{2}\sum_{k=1}^{m}{(\mathbf{z}_{L}^{k} - \mathbf{y}^{k})^{T}(\mathbf{z}_{L}^{k} - \mathbf{y}^{k})},
 	\end{equation}
 	where $\mathbf{y}^k$ represents the vector of dependent variables of the $k^{th}$ training example, where training examples are presented as in (\ref{equation:training_example}), which is set at the time of training along with it's paired independent variable vector $\mathbf{x}^{k} = \mathbf{z}^{k}_{0}$.
 	
@@ -2197,7 +2209,7 @@
 	Now that we have determined that the runtime complexity of computing $\mathbf{H}_{k}\mathbf{v}$ for an arbitrary vector $\mathbf{v}$, is $O(mn)$, we can determine the runtime of Algorithm \ref{algorithm:trs}. Firstly, in order to compute the matrix $\mathbf{H}_{k}$, Algorithm \ref{algorithm:hv}, we must compute $n$ matrix vector products $\mathbf{H}_{k}\mathbf{v}$, which is bound by $O(mn^{2})$ computations. This computation does not have to be performed as only matrix vector products $\mathbf{H}_{k}\mathbf{v}$ must be computed necessarily. We discuss the two options, whether or not to compute $\mathbf{H}_{k}$, in the second half of this section. The remaining runtime complexities are dependent on the complexity required to compute the product $\mathbf{H}_{k}\mathbf{v}$, for any vector $\mathbf{v}$. We let $O(q)$ represent this complexity and discuss it's value based on $m$ and $n$ later on.
 	
 	The runtime complexity for computing $\mathbf{p}_{0}$ 
-	is the known complexity for the conjugate gradient method which is $O(nq)$ using exact arithmetic \cite{strakovs1991real} and in the computational setting is $O(q\sqrt{\kappa})$ where $\kappa$ is the condition number of $\mathbf{H}_{k}$ \cite{shewchuk1994introduction}. 
+	is the known complexity for the conjugate gradient method which, in the computational setting, is $O(q\sqrt{\kappa})$ where $\kappa$ is the condition number of $\mathbf{H}_{k}$ \cite{shewchuk1994introduction}. 
 	
 	The final major computation is solving the generalized eigenvalue problem at each iteration of the trust region method. This is solved using the ``eigs" MATLAB method which performs the QZ method in $O(n^{3})$ when a matrix-vector product takes $O(n^2)$ iterations \cite{golub1989matrix}. We can deduce that the complexity of the QZ method is more generally, $O(qn)$, where $n$ is typically the size of the matrix. In our case, we perform the QZ method on the matrix pencil $\mathbf{M}$ where $\mathbf{M} \in \mathbb{R}^{2n}$. The method will still take $O(qn)$ however the constant is twice as large.
 	
@@ -2205,7 +2217,7 @@
 	\begin{equation}
 	O(q) = O(n^{2}).
 	\end{equation}
-	The time complexity for a single iteration is therefore the summation of computing the Hessian matrix followed by $\mathbf{p}_{0}$ and $\mathbf{p}_{0}$ which takes 
+	The time complexity for a single iteration is therefore the summation of the time complexities for 3 computations, computing the $\mathbf{H}_{k}$, computing $\mathbf{p}_{0}$ and $\mathbf{p}_{0}$ which takes 
 	\begin{equation}
 	O(mn^{2}) + O(n^{2}\sqrt{\kappa}) + O(n^{3}) = O((m+n+\sqrt{\kappa})n^{2}).
 	\end{equation}

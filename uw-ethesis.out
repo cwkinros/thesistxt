@@ -49,12 +49,12 @@
 \BOOKMARK [2][-]{subsection.5.8.2}{XOR Training Results}{section.5.8}% 49
 \BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 50
 \BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 51
-\BOOKMARK [0][-]{appendix*.109}{APPENDICES}{}% 52
-\BOOKMARK [1][-]{section.Alph0.1}{Pearlmutter Trick for Computing Second Order Information}{appendix*.109}% 53
+\BOOKMARK [0][-]{appendix*.110}{APPENDICES}{}% 52
+\BOOKMARK [1][-]{section.Alph0.1}{Pearlmutter Trick for Computing Second Order Information}{appendix*.110}% 53
 \BOOKMARK [2][-]{subsection.Alph0.1.1}{Forward and Back Propagations}{section.Alph0.1}% 54
-\BOOKMARK [1][-]{section.Alph0.2}{Complexity Analysis}{appendix*.109}% 55
+\BOOKMARK [1][-]{section.Alph0.2}{Complexity Analysis}{appendix*.110}% 55
 \BOOKMARK [2][-]{subsection.Alph0.2.1}{Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{section.Alph0.2}% 56
-\BOOKMARK [1][-]{section.Alph0.3}{Computing TRS Solution: Complexity}{appendix*.109}% 57
+\BOOKMARK [1][-]{section.Alph0.3}{Computing TRS Solution: Complexity}{appendix*.110}% 57
 \BOOKMARK [0][-]{appendix.A}{Hyperparameters}{}% 58
 \BOOKMARK [0][-]{appendix.B}{}{}% 59
 \BOOKMARK [1][-]{subsection.B.0.1}{Habe}{appendix.B}% 60
@@ -63,4 +63,4 @@
 \BOOKMARK [2][-]{subsection.B.0.4}{Derm}{subsection.B.0.1}% 63
 \BOOKMARK [2][-]{subsection.B.0.5}{MNIST}{subsection.B.0.1}% 64
 \BOOKMARK [0][-]{appendix.C}{PDF Plots From Matlab}{}% 65
-\BOOKMARK [0][-]{section*.177}{References}{}% 66
+\BOOKMARK [0][-]{section*.178}{References}{}% 66
