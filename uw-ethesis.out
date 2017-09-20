@@ -20,47 +20,44 @@
 \BOOKMARK [2][-]{subsection.2.3.5}{Method Summary}{section.2.3}% 20
 \BOOKMARK [0][-]{chapter.3}{Solving the Trust Region Subproblem for Feedforward Neural Networks}{}% 21
 \BOOKMARK [1][-]{section.3.1}{Computing the Solution to the TRS}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.1.1}{Conjugate Gradient}{section.3.1}% 23
-\BOOKMARK [2][-]{subsection.3.1.2}{QZ Method}{section.3.1}% 24
-\BOOKMARK [2][-]{subsection.3.1.3}{Computing Hk}{section.3.1}% 25
-\BOOKMARK [2][-]{subsection.3.1.4}{Computing The Boundary Solution, p1}{section.3.1}% 26
-\BOOKMARK [2][-]{subsection.3.1.5}{Summary of TRS Solution Method}{section.3.1}% 27
-\BOOKMARK [0][-]{chapter.4}{Modified Trust Region Methods}{}% 28
-\BOOKMARK [1][-]{subsection.4.0.1}{Challenge: Stochastic Variations on the TRM}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.1}{Stochastic Subsampling of Training Samples}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.2}{Weight Subsampling}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.3}{Hybrid Approach}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.4}{Summary}{chapter.4}% 33
-\BOOKMARK [0][-]{chapter.5}{Numerical Results}{}% 34
-\BOOKMARK [1][-]{section.5.1}{Experimental Set-up}{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.1.1}{Datasets}{section.5.1}% 36
-\BOOKMARK [2][-]{subsection.5.1.2}{Network Structure}{section.5.1}% 37
-\BOOKMARK [1][-]{section.5.2}{Methods for Comparison}{chapter.5}% 38
-\BOOKMARK [2][-]{subsection.5.2.1}{Time Required for a Reasonable Solution}{section.5.2}% 39
-\BOOKMARK [1][-]{section.5.3}{CPU time of TRM vs SGD}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.4}{Using TRM and MBGD in Hybrid: TRMMBGD}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.5}{Stochastic TRMs}{chapter.5}% 42
-\BOOKMARK [2][-]{subsection.5.5.1}{Adaptive Trust Region Reduction Scheme}{section.5.5}% 43
-\BOOKMARK [2][-]{subsection.5.5.2}{Traditional TRM \040Update Scheme}{section.5.5}% 44
-\BOOKMARK [1][-]{section.5.6}{Reducing the Dimentionality of TRS}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.7}{CPU Time Analysis}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.8}{Robustness Test}{chapter.5}% 47
-\BOOKMARK [2][-]{subsection.5.8.1}{The XOR Problem}{section.5.8}% 48
-\BOOKMARK [2][-]{subsection.5.8.2}{XOR Training Results}{section.5.8}% 49
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 50
-\BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 51
-\BOOKMARK [0][-]{appendix*.110}{APPENDICES}{}% 52
-\BOOKMARK [1][-]{section.Alph0.1}{Pearlmutter Trick for Computing Second Order Information}{appendix*.110}% 53
-\BOOKMARK [2][-]{subsection.Alph0.1.1}{Forward and Back Propagations}{section.Alph0.1}% 54
-\BOOKMARK [1][-]{section.Alph0.2}{Complexity Analysis}{appendix*.110}% 55
-\BOOKMARK [2][-]{subsection.Alph0.2.1}{Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{section.Alph0.2}% 56
-\BOOKMARK [1][-]{section.Alph0.3}{Computing TRS Solution: Complexity}{appendix*.110}% 57
-\BOOKMARK [0][-]{appendix.A}{Hyperparameters}{}% 58
-\BOOKMARK [0][-]{appendix.B}{}{}% 59
-\BOOKMARK [1][-]{subsection.B.0.1}{Habe}{appendix.B}% 60
-\BOOKMARK [2][-]{subsection.B.0.2}{Nurs}{subsection.B.0.1}% 61
-\BOOKMARK [2][-]{subsection.B.0.3}{IRIS}{subsection.B.0.1}% 62
-\BOOKMARK [2][-]{subsection.B.0.4}{Derm}{subsection.B.0.1}% 63
-\BOOKMARK [2][-]{subsection.B.0.5}{MNIST}{subsection.B.0.1}% 64
-\BOOKMARK [0][-]{appendix.C}{PDF Plots From Matlab}{}% 65
-\BOOKMARK [0][-]{section*.178}{References}{}% 66
+\BOOKMARK [2][-]{subsection.3.1.1}{Computing Second Order Derivatives}{section.3.1}% 23
+\BOOKMARK [2][-]{subsection.3.1.2}{Conjugate Gradient}{section.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.1.3}{Implicitly Restarted Arnoldi Method}{section.3.1}% 25
+\BOOKMARK [2][-]{subsection.3.1.4}{Computing Hk}{section.3.1}% 26
+\BOOKMARK [2][-]{subsection.3.1.5}{Computing The Boundary Solution, p1}{section.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.1.6}{Summary of TRS Solution Method}{section.3.1}% 28
+\BOOKMARK [0][-]{chapter.4}{Modified Trust Region Methods}{}% 29
+\BOOKMARK [1][-]{subsection.4.0.1}{Challenge: Stochastic Variations on the TRM}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.1}{Stochastic Subsampling of Training Samples}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.2}{Weight Subsampling}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.3}{Hybrid Approach}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.4}{Full Hessian vs Hessian Free}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.5}{Summary}{chapter.4}% 35
+\BOOKMARK [0][-]{chapter.5}{Numerical Results}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Experimental Set-up}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.1.1}{Datasets}{section.5.1}% 38
+\BOOKMARK [2][-]{subsection.5.1.2}{Network Structure}{section.5.1}% 39
+\BOOKMARK [1][-]{section.5.2}{Methods for Comparison}{chapter.5}% 40
+\BOOKMARK [2][-]{subsection.5.2.1}{Time Required for a Reasonable Solution}{section.5.2}% 41
+\BOOKMARK [1][-]{section.5.3}{CPU time of TRM vs SGD}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.4}{Using TRM and MBGD in Hybrid: TRMMBGD}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.5}{Stochastic TRMs}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.5.1}{Adaptive Trust Region Reduction Scheme}{section.5.5}% 45
+\BOOKMARK [2][-]{subsection.5.5.2}{Traditional TRM \040Update Scheme}{section.5.5}% 46
+\BOOKMARK [1][-]{section.5.6}{Reducing the Dimentionality of TRS}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.7}{CPU Time Analysis}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.8}{Robustness Test}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.8.1}{The XOR Problem}{section.5.8}% 50
+\BOOKMARK [2][-]{subsection.5.8.2}{XOR Training Results}{section.5.8}% 51
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 52
+\BOOKMARK [1][-]{section.6.1}{Future Work}{chapter.6}% 53
+\BOOKMARK [0][-]{appendix*.108}{APPENDICES}{}% 54
+\BOOKMARK [0][-]{appendix.A}{Pearlmutter Trick for Computing Second Order Information}{}% 55
+\BOOKMARK [1][-]{subsection.A.0.1}{Forward and Back Propagations}{appendix.A}% 56
+\BOOKMARK [1][-]{section.A.1}{Complexity Analysis}{appendix.A}% 57
+\BOOKMARK [2][-]{subsection.A.1.1}{Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{section.A.1}% 58
+\BOOKMARK [1][-]{section.A.2}{Computing TRS Solution: Complexity}{appendix.A}% 59
+\BOOKMARK [0][-]{appendix.B}{Hyperparameters}{}% 60
+\BOOKMARK [0][-]{appendix.C}{Full Hessian vs Hessian Free}{}% 61
+\BOOKMARK [0][-]{appendix.D}{Hyperparameter Test Results}{}% 62
+\BOOKMARK [0][-]{section*.178}{References}{}% 63

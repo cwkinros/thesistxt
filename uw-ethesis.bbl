@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{neural1}
+Herve Abdi, Dominique Valentin, and Betty Edelman.
+\newblock Neural networks (quantitative applications in the social sciences).
+\newblock {\em Sage University paper, Series}, (5):10, 1999.
+
 \bibitem{tutorial}
 Chuan Yu Foo Yifan Mai Caroline Suen Adam Coates Andrew Maas Awni Hannun Brody
   Huval Tao Wang Sameep~Tandon Andrew~Ng, Jiquan~Ngiam.
@@ -48,7 +53,7 @@ R.A. Fisher.
 \bibitem{Fletcher.1987}
 R.~Fletcher.
 \newblock {\em Practical Methods of Optimization}.
-\newblock John Wiley and Sons, New York, 2nd edition, 1987.
+\newblock John Wiley \& Sons, New York, 2nd edition, 1987.
 
 \bibitem{golub1989matrix}
 Gene~H Golub and Charles~F Van~Loan.
@@ -60,6 +65,16 @@ Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
 \newblock {\em Deep Learning}.
 \newblock MIT Press, 2016.
 \newblock \url{http://www.deeplearningbook.org}.
+
+\bibitem{neural2}
+Daniel Graupe.
+\newblock {\em Principles of artificial neural networks}, volume~7.
+\newblock World Scientific, 2013.
+
+\bibitem{gulcehre2017robust}
+Caglar Gulcehre, Jose Sotelo, Marcin Moczulski, and Yoshua Bengio.
+\newblock A robust adaptive stochastic gradient method for deep learning.
+\newblock {\em arXiv preprint arXiv:1703.00788}, 2017.
 
 \bibitem{Derm}
 Nilsel~Ilter H.~Altay~Gubenir, Gulsen~Demiroz.
@@ -163,6 +178,12 @@ David Silver, Aja Huang, Chris~J Maddison, Arthur Guez, Laurent Sifre, George
 \newblock Mastering the game of go with deep neural networks and tree search.
 \newblock {\em Nature}, 529(7587):484--489, 2016.
 
+\bibitem{simpson2015oddball}
+Andrew~JR Simpson.
+\newblock " oddball sgd": Novelty driven stochastic gradient descent for
+  training deep neural networks.
+\newblock {\em arXiv preprint arXiv:1509.05765}, 2015.
+
 \bibitem{dropout}
 Nitish Srivastava, Geoffrey~E Hinton, Alex Krizhevsky, Ilya Sutskever, and
   Ruslan Salakhutdinov.
@@ -191,5 +212,15 @@ Vladimir~N Vapnik and A~Ya Chervonenkis.
 \newblock On the uniform convergence of relative frequencies of events to their
   probabilities.
 \newblock In {\em Measures of Complexity}, pages 11--30. Springer, 2015.
+
+\bibitem{wright1999numerical}
+Stephen~J Wright and Jorge Nocedal.
+\newblock Numerical optimization.
+\newblock {\em Springer Science}, 35(67-68):7, 1999.
+
+\bibitem{IRAM}
+Chao Yang.
+\newblock The implicitly restarted arnoldi method.
+\newblock http://www.caam.rice.edu/software/ARPACK/UG/node45.html, 1997.
 
 \end{thebibliography}

@@ -1,7 +1,7 @@
 \contentsline {chapter}{List of Tables}{ix}{section*.2}
 \contentsline {chapter}{List of Figures}{xi}{section*.4}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Summary of Contributions}{3}{section.1.1}
+\contentsline {section}{\numberline {1.1}Summary of Contributions}{4}{section.1.1}
 \contentsline {section}{\numberline {1.2}Outline}{4}{section.1.2}
 \contentsline {chapter}{\numberline {2}Training Feed Forward Artificial Neural Networks}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}Feed Forward Artificial Neural Networks}{6}{section.2.1}
@@ -9,33 +9,35 @@
 \contentsline {subsection}{\numberline {2.1.2}Multiple Layers for Complex Models}{7}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Training}{9}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Overfitting}{10}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Optimization Methods for Training ff-ANNs}{10}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}First Order Methods}{11}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Second Order Methods}{12}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.2}Optimization Methods for Training ff-ANNs}{11}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}First Order Methods}{12}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Second Order Methods}{13}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Trust Region Methods}{14}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Subproblem Definition}{15}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Step Calculation: Solving the Trust Region Subproblem}{15}{subsection.2.3.2}
 \contentsline {subsubsection}{Optimality Conditions}{16}{section*.29}
-\contentsline {subsubsection}{Solving TRS via a Generalized Eigenvalue Problem}{19}{section*.43}
-\contentsline {subsubsection}{Interior Case}{19}{section*.44}
-\contentsline {subsubsection}{Boundary Case via a Generalized Eigenvalue Problem}{20}{section*.46}
-\contentsline {subsubsection}{Choosing the trial point}{21}{section*.56}
+\contentsline {subsubsection}{Solving TRS via a Generalized Eigenvalue Problem}{19}{section*.42}
+\contentsline {subsubsection}{Interior Case}{19}{section*.43}
+\contentsline {subsubsection}{Boundary Case via a Generalized Eigenvalue Problem}{20}{section*.45}
+\contentsline {subsubsection}{Choosing the trial point}{21}{section*.55}
 \contentsline {subsection}{\numberline {2.3.3}Acceptance of the trial point}{22}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Trust region radius update}{22}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}Method Summary}{23}{subsection.2.3.5}
 \contentsline {chapter}{\numberline {3}Solving the Trust Region Subproblem for Feedforward Neural Networks}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Computing the Solution to the TRS}{26}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Conjugate Gradient}{26}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}QZ Method}{26}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Computing $\mathbf {H}_{k}$}{26}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Computing The Boundary Solution, $\mathbf {p}_{1}$}{28}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Summary of TRS Solution Method}{28}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.1}Computing the Solution to the TRS}{25}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Computing Second Order Derivatives}{26}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Conjugate Gradient}{26}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Implicitly Restarted Arnoldi Method}{26}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Computing $\mathbf {H}_{k}$}{27}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Computing The Boundary Solution, $\mathbf {p}_{1}$}{27}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Summary of TRS Solution Method}{29}{subsection.3.1.6}
 \contentsline {chapter}{\numberline {4}Modified Trust Region Methods}{30}{chapter.4}
 \contentsline {subsection}{\numberline {4.0.1}Challenge: Stochastic Variations on the \textbf {TRM}}{30}{subsection.4.0.1}
 \contentsline {section}{\numberline {4.1}Stochastic Subsampling of Training Samples}{31}{section.4.1}
 \contentsline {section}{\numberline {4.2}Weight Subsampling}{34}{section.4.2}
 \contentsline {section}{\numberline {4.3}Hybrid Approach}{35}{section.4.3}
-\contentsline {section}{\numberline {4.4}Summary}{36}{section.4.4}
+\contentsline {section}{\numberline {4.4}Full Hessian vs Hessian Free}{35}{section.4.4}
+\contentsline {section}{\numberline {4.5}Summary}{36}{section.4.5}
 \contentsline {chapter}{\numberline {5}Numerical Results}{38}{chapter.5}
 \contentsline {section}{\numberline {5.1}Experimental Set-up}{38}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Datasets}{38}{subsection.5.1.1}
@@ -52,29 +54,24 @@
 \contentsline {section}{\numberline {5.8}Robustness Test}{63}{section.5.8}
 \contentsline {subsection}{\numberline {5.8.1}The XOR Problem}{63}{subsection.5.8.1}
 \contentsline {subsection}{\numberline {5.8.2}XOR Training Results}{64}{subsection.5.8.2}
-\contentsline {chapter}{\numberline {6}Conclusion}{68}{chapter.6}
-\contentsline {section}{\numberline {6.1}Future Work}{69}{section.6.1}
-\contentsline {chapter}{APPENDICES}{70}{appendix*.110}
-\contentsline {section}{\numberline {.1}Pearlmutter Trick for Computing Second Order Information}{70}{section.Alph0.1}
-\contentsline {subsection}{\numberline {.1.1}Forward and Back Propagations}{71}{subsection.Alph0.1.1}
-\contentsline {subsubsection}{Forward Propagation I}{73}{section*.118}
-\contentsline {subsubsection}{Back Propagation I}{73}{section*.121}
-\contentsline {subsubsection}{Forward Propagation II}{74}{section*.127}
-\contentsline {subsubsection}{Back Propagation II}{75}{section*.134}
-\contentsline {section}{\numberline {.2}Complexity Analysis}{77}{section.Alph0.2}
-\contentsline {subsection}{\numberline {.2.1}Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{77}{subsection.Alph0.2.1}
-\contentsline {subsubsection}{Forward Propagation I}{77}{section*.145}
-\contentsline {subsubsection}{Back Propagation I}{78}{section*.148}
-\contentsline {subsubsection}{Forward Propagation II}{78}{section*.151}
-\contentsline {subsubsection}{Back Propagation II}{79}{section*.153}
-\contentsline {subsubsection}{Softmax vs Sigmoid}{79}{section*.155}
-\contentsline {section}{\numberline {.3}Computing TRS Solution: Complexity}{82}{section.Alph0.3}
-\contentsline {chapter}{\numberline {A}Hyperparameters}{85}{appendix.A}
-\contentsline {chapter}{\numberline {B}}{87}{appendix.B}
-\contentsline {subsection}{\numberline {B.0.1}Habe}{87}{subsection.B.0.1}
-\contentsline {subsection}{\numberline {B.0.2}Nurs}{88}{subsection.B.0.2}
-\contentsline {subsection}{\numberline {B.0.3}IRIS}{89}{subsection.B.0.3}
-\contentsline {subsection}{\numberline {B.0.4}Derm}{90}{subsection.B.0.4}
-\contentsline {subsection}{\numberline {B.0.5}MNIST}{92}{subsection.B.0.5}
-\contentsline {chapter}{\numberline {C}PDF Plots From Matlab}{93}{appendix.C}
-\contentsline {chapter}{\textbf {References}}{94}{section*.178}
+\contentsline {chapter}{\numberline {6}Conclusion}{67}{chapter.6}
+\contentsline {section}{\numberline {6.1}Future Work}{68}{section.6.1}
+\contentsline {chapter}{APPENDICES}{69}{appendix*.108}
+\contentsline {chapter}{\numberline {A}Pearlmutter Trick for Computing Second Order Information}{70}{appendix.A}
+\contentsline {subsection}{\numberline {A.0.1}Forward and Back Propagations}{71}{subsection.A.0.1}
+\contentsline {subsubsection}{Forward Propagation I}{73}{section*.116}
+\contentsline {subsubsection}{Back Propagation I}{73}{section*.119}
+\contentsline {subsubsection}{Forward Propagation II}{74}{section*.125}
+\contentsline {subsubsection}{Back Propagation II}{75}{section*.132}
+\contentsline {section}{\numberline {A.1}Complexity Analysis}{77}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{77}{subsection.A.1.1}
+\contentsline {subsubsection}{Forward Propagation I}{77}{section*.143}
+\contentsline {subsubsection}{Back Propagation I}{78}{section*.146}
+\contentsline {subsubsection}{Forward Propagation II}{78}{section*.149}
+\contentsline {subsubsection}{Back Propagation II}{79}{section*.151}
+\contentsline {subsubsection}{Softmax vs Sigmoid}{79}{section*.153}
+\contentsline {section}{\numberline {A.2}Computing TRS Solution: Complexity}{82}{section.A.2}
+\contentsline {chapter}{\numberline {B}Hyperparameters}{85}{appendix.B}
+\contentsline {chapter}{\numberline {C}Full Hessian vs Hessian Free}{87}{appendix.C}
+\contentsline {chapter}{\numberline {D}Hyperparameter Test Results}{89}{appendix.D}
+\contentsline {chapter}{\textbf {References}}{90}{section*.178}

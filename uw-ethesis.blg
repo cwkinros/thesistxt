@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: uw-ethesis.aux
 The style file: plain.bst
 Database file #1: uw-ethesis.bib
-I was expecting a `,' or a `}'---line 208 of file uw-ethesis.bib
+I was expecting a `,' or a `}'---line 256 of file uw-ethesis.bib
  :  
  :  note = {Accessed: 2017-06-25}
 (Error may have been on previous line)
@@ -26,6 +26,7 @@ Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, 
 while executing---line 1049 of file plain.bst
 Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
 while executing---line 1049 of file plain.bst
+Warning--there's a number but no volume in neural1
 Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
 while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "Andrew Ng, Jiquan Ngiam, Chuan Yu Foo, Yifan Mai, Caroline Suen, Adam Coates, Andrew Maas, Awni Hannun, Brody Huval, Tao Wang, Sameep Tandon" for entry tutorial
