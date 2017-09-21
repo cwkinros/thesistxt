@@ -48,7 +48,7 @@
 \contentsline {section}{\numberline {5.4}Using TRM and MBGD in Hybrid: TRMMBGD}{44}{section.5.4}
 \contentsline {section}{\numberline {5.5}Stochastic TRMs}{47}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Adaptive Trust Region Reduction Scheme}{47}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Traditional TRM $\gamma $ Update Scheme}{50}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.2}Traditional TRM $\gamma $ Update Scheme}{49}{subsection.5.5.2}
 \contentsline {section}{\numberline {5.6}Reducing the Dimentionality of TRS}{53}{section.5.6}
 \contentsline {section}{\numberline {5.7}CPU Time Analysis}{59}{section.5.7}
 \contentsline {section}{\numberline {5.8}Robustness Test}{63}{section.5.8}
@@ -56,22 +56,21 @@
 \contentsline {subsection}{\numberline {5.8.2}XOR Training Results}{64}{subsection.5.8.2}
 \contentsline {chapter}{\numberline {6}Conclusion}{67}{chapter.6}
 \contentsline {section}{\numberline {6.1}Future Work}{68}{section.6.1}
-\contentsline {chapter}{APPENDICES}{69}{appendix*.108}
-\contentsline {chapter}{\numberline {A}Pearlmutter Trick for Computing Second Order Information}{70}{appendix.A}
-\contentsline {subsection}{\numberline {A.0.1}Forward and Back Propagations}{71}{subsection.A.0.1}
-\contentsline {subsubsection}{Forward Propagation I}{73}{section*.116}
-\contentsline {subsubsection}{Back Propagation I}{73}{section*.119}
-\contentsline {subsubsection}{Forward Propagation II}{74}{section*.125}
-\contentsline {subsubsection}{Back Propagation II}{75}{section*.132}
-\contentsline {section}{\numberline {A.1}Complexity Analysis}{77}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{77}{subsection.A.1.1}
-\contentsline {subsubsection}{Forward Propagation I}{77}{section*.143}
-\contentsline {subsubsection}{Back Propagation I}{78}{section*.146}
-\contentsline {subsubsection}{Forward Propagation II}{78}{section*.149}
-\contentsline {subsubsection}{Back Propagation II}{79}{section*.151}
-\contentsline {subsubsection}{Softmax vs Sigmoid}{79}{section*.153}
-\contentsline {section}{\numberline {A.2}Computing TRS Solution: Complexity}{82}{section.A.2}
-\contentsline {chapter}{\numberline {B}Hyperparameters}{85}{appendix.B}
-\contentsline {chapter}{\numberline {C}Full Hessian vs Hessian Free}{87}{appendix.C}
-\contentsline {chapter}{\numberline {D}Hyperparameter Test Results}{89}{appendix.D}
-\contentsline {chapter}{\textbf {References}}{90}{section*.178}
+\contentsline {chapter}{APPENDICES}{70}{appendix*.108}
+\contentsline {chapter}{\numberline {A}Pearlmutter Trick for Computing Second Order Information}{71}{appendix.A}
+\contentsline {subsection}{\numberline {A.0.1}Forward and Back Propagations}{72}{subsection.A.0.1}
+\contentsline {subsubsection}{Forward Propagation I}{74}{section*.116}
+\contentsline {subsubsection}{Back Propagation I}{74}{section*.119}
+\contentsline {subsubsection}{Forward Propagation II}{75}{section*.125}
+\contentsline {subsubsection}{Back Propagation II}{76}{section*.132}
+\contentsline {section}{\numberline {A.1}Complexity Analysis}{78}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{78}{subsection.A.1.1}
+\contentsline {subsubsection}{Forward Propagation I}{78}{section*.143}
+\contentsline {subsubsection}{Back Propagation I}{79}{section*.146}
+\contentsline {subsubsection}{Forward Propagation II}{79}{section*.149}
+\contentsline {subsubsection}{Back Propagation II}{80}{section*.151}
+\contentsline {subsubsection}{Softmax vs Sigmoid}{80}{section*.153}
+\contentsline {chapter}{\numberline {B}Hyperparameters}{84}{appendix.B}
+\contentsline {chapter}{\numberline {C}Full Hessian vs Hessian Free}{86}{appendix.C}
+\contentsline {chapter}{\numberline {D}Hyperparameter Test Results}{88}{appendix.D}
+\contentsline {chapter}{\textbf {References}}{89}{section*.171}

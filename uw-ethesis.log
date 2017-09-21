@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.5.21)  19 SEP 2017 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.5.21)  20 SEP 2017 23:22
 entering extended mode
 **uw-ethesis.tex
 (uw-ethesis.tex
@@ -543,7 +543,7 @@ Chapter 2.
 
 
 ]
-<../../Desktop/figures/single_perceptron.PNG, id=587, 703.12688pt x 392.21532pt
+<../../Desktop/figures/single_perceptron.PNG, id=581, 703.12688pt x 392.21532pt
 >
 File: ../../Desktop/figures/single_perceptron.PNG Graphic file (type png)
  <use ../../Desktop/figures/single_perceptron.PNG>
@@ -555,7 +555,7 @@ put line 290.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7]
-<../../Desktop/figures/single_neuron.PNG, id=610, 411.78844pt x 405.76593pt>
+<../../Desktop/figures/single_neuron.PNG, id=604, 411.78844pt x 405.76593pt>
 File: ../../Desktop/figures/single_neuron.PNG Graphic file (type png)
 
 <use ../../Desktop/figures/single_neuron.PNG>
@@ -563,7 +563,7 @@ Package pdftex.def Info: ../../Desktop/figures/single_neuron.PNG used on input
 line 324.
 (pdftex.def)             Requested size: 138.21777pt x 136.19402pt.
 
-<../../Desktop/figures/first_layer_2neurons.PNG, id=611, 409.53pt x 406.51875pt
+<../../Desktop/figures/first_layer_2neurons.PNG, id=605, 409.53pt x 406.51875pt
 >
 File: ../../Desktop/figures/first_layer_2neurons.PNG Graphic file (type png)
  <use ../../Desktop/figures/first_layer_2neurons.PNG>
@@ -571,7 +571,7 @@ Package pdftex.def Info: ../../Desktop/figures/first_layer_2neurons.PNG used on
  input line 328.
 (pdftex.def)             Requested size: 138.21777pt x 137.20346pt.
 
-<../../Desktop/figures/secon_layer_1neuron.PNG, id=612, 411.03563pt x 407.27156
+<../../Desktop/figures/secon_layer_1neuron.PNG, id=606, 411.03563pt x 407.27156
 pt>
 File: ../../Desktop/figures/secon_layer_1neuron.PNG Graphic file (type png)
  <use ../../Desktop/figures/secon_layer_1neuron.PNG>
@@ -581,7 +581,7 @@ input line 332.
  [8 <../../Desktop/figures/single_perceptron.PNG>] [9 <../../Desktop/figures/si
 ngle_neuron.PNG> <../../Desktop/figures/first_layer_2neurons.PNG> <../../Deskto
 p/figures/secon_layer_1neuron.PNG>] [10] [11]
-<../../Desktop/figures/Deeplearning_HF_valley.PNG, id=671, 1009.52156pt x 567.6
+<../../Desktop/figures/Deeplearning_HF_valley.PNG, id=666, 1009.52156pt x 567.6
 2062pt>
 File: ../../Desktop/figures/Deeplearning_HF_valley.PNG Graphic file (type png)
  <use ../../Desktop/figures/Deeplearning_HF_valley.PNG>
@@ -637,7 +637,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 
 ] [31]
-<../../Desktop/Figures/MNIST_SMBGDGD.png, id=1045, 289.08pt x 216.81pt>
+<../../Desktop/Figures/MNIST_SMBGDGD.png, id=1041, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/MNIST_SMBGDGD.png Graphic file (type png)
 
 <use ../../Desktop/Figures/MNIST_SMBGDGD.png>
@@ -653,7 +653,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../../Desktop/figures/haberman_data.png, id=1111, 421.575pt x 316.18124pt>
+<../../Desktop/figures/haberman_data.png, id=1107, 421.575pt x 316.18124pt>
 File: ../../Desktop/figures/haberman_data.png Graphic file (type png)
 
 <use ../../Desktop/figures/haberman_data.png>
@@ -667,7 +667,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [38
 
 
-] <../../Desktop/figures/structure.PNG, id=1120, 615.0478pt x 603.0028pt>
+] <../../Desktop/figures/structure.PNG, id=1116, 615.0478pt x 603.0028pt>
 File: ../../Desktop/figures/structure.PNG Graphic file (type png)
 
 <use ../../Desktop/figures/structure.PNG>
@@ -685,44 +685,44 @@ op/figures/structure.PNG>] [42
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[43] <../../Desktop/Figures/Derm_TRMMBGD23.png, id=1165, 289.08pt x 216.81pt>
+[43] <../../Desktop/Figures/Derm_TRMMBGD23.png, id=1162, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Derm_TRMMBGD23.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Derm_TRMMBGD23.png>
 Package pdftex.def Info: ../../Desktop/Figures/Derm_TRMMBGD23.png used on input
- line 1270.
+ line 1268.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/IRIS_TRMMBGD23.png, id=1166, 289.08pt x 216.81pt>
+<../../Desktop/Figures/IRIS_TRMMBGD23.png, id=1163, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/IRIS_TRMMBGD23.png Graphic file (type png)
 
 <use ../../Desktop/Figures/IRIS_TRMMBGD23.png>
 Package pdftex.def Info: ../../Desktop/Figures/IRIS_TRMMBGD23.png used on input
- line 1273.
+ line 1271.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/Habe_TRMMBGD23.png, id=1167, 289.08pt x 216.81pt>
+<../../Desktop/Figures/Habe_TRMMBGD23.png, id=1164, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Habe_TRMMBGD23.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Habe_TRMMBGD23.png>
 Package pdftex.def Info: ../../Desktop/Figures/Habe_TRMMBGD23.png used on input
- line 1276.
+ line 1274.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/Nurs_TRMMBGD23.png, id=1168, 289.08pt x 216.81pt>
+<../../Desktop/Figures/Nurs_TRMMBGD23.png, id=1165, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Nurs_TRMMBGD23.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Nurs_TRMMBGD23.png>
 Package pdftex.def Info: ../../Desktop/Figures/Nurs_TRMMBGD23.png used on input
- line 1279.
+ line 1277.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/MNIST_TRMMBGD23.png, id=1169, 289.08pt x 216.81pt>
+<../../Desktop/Figures/MNIST_TRMMBGD23.png, id=1166, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/MNIST_TRMMBGD23.png Graphic file (type png)
 
 <use ../../Desktop/Figures/MNIST_TRMMBGD23.png>
 Package pdftex.def Info: ../../Desktop/Figures/MNIST_TRMMBGD23.png used on inpu
-t line 1282.
+t line 1280.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
 
@@ -738,44 +738,44 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 igures/IRIS_TRMMBGD23.png (PNG copy)> <../../Desktop/Figures/Habe_TRMMBGD23.png
  (PNG copy)> <../../Desktop/Figures/Nurs_TRMMBGD23.png (PNG copy)> <../../Deskt
 op/Figures/MNIST_TRMMBGD23.png (PNG copy)>] [46]
-<../../Desktop/Figures/Derm_SMBTRMTRM.png, id=1186, 289.08pt x 216.81pt>
+<../../Desktop/Figures/Derm_SMBTRMTRM.png, id=1183, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Derm_SMBTRMTRM.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Derm_SMBTRMTRM.png>
 Package pdftex.def Info: ../../Desktop/Figures/Derm_SMBTRMTRM.png used on input
- line 1358.
+ line 1356.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/IRIS_SMBTRMTRM.png, id=1187, 289.08pt x 216.81pt>
+<../../Desktop/Figures/IRIS_SMBTRMTRM.png, id=1184, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/IRIS_SMBTRMTRM.png Graphic file (type png)
 
 <use ../../Desktop/Figures/IRIS_SMBTRMTRM.png>
 Package pdftex.def Info: ../../Desktop/Figures/IRIS_SMBTRMTRM.png used on input
- line 1361.
+ line 1359.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/Habe_SMBTRMTRM.png, id=1188, 289.08pt x 216.81pt>
+<../../Desktop/Figures/Habe_SMBTRMTRM.png, id=1185, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Habe_SMBTRMTRM.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Habe_SMBTRMTRM.png>
 Package pdftex.def Info: ../../Desktop/Figures/Habe_SMBTRMTRM.png used on input
- line 1364.
+ line 1362.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/Nurs_SMBTRMTRM.png, id=1189, 289.08pt x 216.81pt>
+<../../Desktop/Figures/Nurs_SMBTRMTRM.png, id=1186, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Nurs_SMBTRMTRM.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Nurs_SMBTRMTRM.png>
 Package pdftex.def Info: ../../Desktop/Figures/Nurs_SMBTRMTRM.png used on input
- line 1367.
+ line 1365.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/MNIST_SMBTRMTRM.png, id=1190, 289.08pt x 216.81pt>
+<../../Desktop/Figures/MNIST_SMBTRMTRM.png, id=1187, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/MNIST_SMBTRMTRM.png Graphic file (type png)
 
 <use ../../Desktop/Figures/MNIST_SMBTRMTRM.png>
 Package pdftex.def Info: ../../Desktop/Figures/MNIST_SMBTRMTRM.png used on inpu
-t line 1370.
+t line 1368.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
  [47
 
@@ -787,56 +787,59 @@ Figures/MNIST_SMBTRMTRM.png (PNG copy)>]
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1447.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 1447.
+(hyperref)                removing `math shift' on input line 1445.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1447.
+(hyperref)                removing `\gamma' on input line 1445.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1445.
 
 [49] [50]
-<../../Desktop/figures/Derm_BTRMTRM3.png, id=1222, 289.08pt x 216.81pt>
+<../../Desktop/figures/Derm_BTRMTRM3.png, id=1220, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/Derm_BTRMTRM3.png Graphic file (type png)
 
 <use ../../Desktop/figures/Derm_BTRMTRM3.png>
 Package pdftex.def Info: ../../Desktop/figures/Derm_BTRMTRM3.png used on input 
-line 1459.
+line 1458.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/figures/IRIS_BTRMTRM3.png, id=1223, 289.08pt x 216.81pt>
+<../../Desktop/figures/IRIS_BTRMTRM3.png, id=1221, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/IRIS_BTRMTRM3.png Graphic file (type png)
 
 <use ../../Desktop/figures/IRIS_BTRMTRM3.png>
 Package pdftex.def Info: ../../Desktop/figures/IRIS_BTRMTRM3.png used on input 
-line 1462.
+line 1461.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/figures/Habe_BTRMTRM3.png, id=1224, 289.08pt x 216.81pt>
+<../../Desktop/figures/Habe_BTRMTRM3.png, id=1222, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/Habe_BTRMTRM3.png Graphic file (type png)
 
 <use ../../Desktop/figures/Habe_BTRMTRM3.png>
 Package pdftex.def Info: ../../Desktop/figures/Habe_BTRMTRM3.png used on input 
-line 1465.
+line 1464.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/figures/Nurs_BTRMTRM3.png, id=1225, 289.08pt x 216.81pt>
+<../../Desktop/figures/Nurs_BTRMTRM3.png, id=1223, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/Nurs_BTRMTRM3.png Graphic file (type png)
 
 <use ../../Desktop/figures/Nurs_BTRMTRM3.png>
 Package pdftex.def Info: ../../Desktop/figures/Nurs_BTRMTRM3.png used on input 
-line 1468.
+line 1467.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/figures/MNIST_BTRMTRM3.png, id=1226, 289.08pt x 216.81pt>
+<../../Desktop/figures/MNIST_BTRMTRM3.png, id=1224, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/MNIST_BTRMTRM3.png Graphic file (type png)
 
 <use ../../Desktop/figures/MNIST_BTRMTRM3.png>
 Package pdftex.def Info: ../../Desktop/figures/MNIST_BTRMTRM3.png used on input
- line 1471.
+ line 1470.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
  [51] [52 <../../Desktop/figures/Derm_BTRMTRM3.png (PNG copy)> <../../Desktop/f
 igures/IRIS_BTRMTRM3.png (PNG copy)> <../../Desktop/figures/Habe_BTRMTRM3.png (
@@ -848,207 +851,225 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[53] <../../Desktop/Figures/Derm_TRMWS.png, id=1249, 289.08pt x 216.81pt>
+[53] <../../Desktop/Figures/Derm_TRMWS.png, id=1247, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Derm_TRMWS.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Derm_TRMWS.png>
 Package pdftex.def Info: ../../Desktop/Figures/Derm_TRMWS.png used on input lin
-e 1549.
+e 1548.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/IRIS_TRMWS.png, id=1250, 289.08pt x 216.81pt>
+<../../Desktop/Figures/IRIS_TRMWS.png, id=1248, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/IRIS_TRMWS.png Graphic file (type png)
 
 <use ../../Desktop/Figures/IRIS_TRMWS.png>
 Package pdftex.def Info: ../../Desktop/Figures/IRIS_TRMWS.png used on input lin
-e 1552.
+e 1551.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/Habe_TRMWS.png, id=1251, 289.08pt x 216.81pt>
+<../../Desktop/Figures/Habe_TRMWS.png, id=1249, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Habe_TRMWS.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Habe_TRMWS.png>
 Package pdftex.def Info: ../../Desktop/Figures/Habe_TRMWS.png used on input lin
-e 1555.
+e 1554.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/Nurs_TRMWS.png, id=1252, 289.08pt x 216.81pt>
+<../../Desktop/Figures/Nurs_TRMWS.png, id=1250, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Nurs_TRMWS.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Nurs_TRMWS.png>
 Package pdftex.def Info: ../../Desktop/Figures/Nurs_TRMWS.png used on input lin
-e 1558.
+e 1557.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/MNIST_TRMWS.png, id=1253, 289.08pt x 216.81pt>
+<../../Desktop/Figures/MNIST_TRMWS.png, id=1251, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/MNIST_TRMWS.png Graphic file (type png)
 
 <use ../../Desktop/Figures/MNIST_TRMWS.png>
 Package pdftex.def Info: ../../Desktop/Figures/MNIST_TRMWS.png used on input li
-ne 1561.
+ne 1560.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/figures/Derm_BTRMWS3.png, id=1254, 289.08pt x 216.81pt>
+<../../Desktop/figures/Derm_BTRMWS3.png, id=1252, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/Derm_BTRMWS3.png Graphic file (type png)
 
 <use ../../Desktop/figures/Derm_BTRMWS3.png>
 Package pdftex.def Info: ../../Desktop/figures/Derm_BTRMWS3.png used on input l
-ine 1570.
+ine 1569.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/figures/IRIS_BTRMWS3.png, id=1255, 289.08pt x 216.81pt>
+<../../Desktop/figures/IRIS_BTRMWS3.png, id=1253, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/IRIS_BTRMWS3.png Graphic file (type png)
 
 <use ../../Desktop/figures/IRIS_BTRMWS3.png>
 Package pdftex.def Info: ../../Desktop/figures/IRIS_BTRMWS3.png used on input l
-ine 1573.
+ine 1572.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/figures/Habe_BTRMWS3.png, id=1256, 289.08pt x 216.81pt>
+<../../Desktop/figures/Habe_BTRMWS3.png, id=1254, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/Habe_BTRMWS3.png Graphic file (type png)
 
 <use ../../Desktop/figures/Habe_BTRMWS3.png>
 Package pdftex.def Info: ../../Desktop/figures/Habe_BTRMWS3.png used on input l
-ine 1576.
+ine 1575.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/figures/Nurs_BTRMWS3.png, id=1257, 289.08pt x 216.81pt>
+<../../Desktop/figures/Nurs_BTRMWS3.png, id=1255, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/Nurs_BTRMWS3.png Graphic file (type png)
 
 <use ../../Desktop/figures/Nurs_BTRMWS3.png>
 Package pdftex.def Info: ../../Desktop/figures/Nurs_BTRMWS3.png used on input l
-ine 1579.
+ine 1578.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/figures/MNIST_BTRMWS3.png, id=1258, 289.08pt x 216.81pt>
+<../../Desktop/figures/MNIST_BTRMWS3.png, id=1256, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/MNIST_BTRMWS3.png Graphic file (type png)
 
 <use ../../Desktop/figures/MNIST_BTRMWS3.png>
 Package pdftex.def Info: ../../Desktop/figures/MNIST_BTRMWS3.png used on input 
-line 1582.
+line 1581.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/Derm_SMBTRMWS2.png, id=1259, 289.08pt x 216.81pt>
+<../../Desktop/Figures/Derm_SMBTRMWS2.png, id=1257, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Derm_SMBTRMWS2.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Derm_SMBTRMWS2.png>
 Package pdftex.def Info: ../../Desktop/Figures/Derm_SMBTRMWS2.png used on input
- line 1595.
+ line 1594.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/IRIS_SMBTRMWS2.png, id=1260, 289.08pt x 216.81pt>
+<../../Desktop/Figures/IRIS_SMBTRMWS2.png, id=1258, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/IRIS_SMBTRMWS2.png Graphic file (type png)
 
 <use ../../Desktop/Figures/IRIS_SMBTRMWS2.png>
 Package pdftex.def Info: ../../Desktop/Figures/IRIS_SMBTRMWS2.png used on input
- line 1598.
+ line 1597.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/Habe_SMBTRMWS2.png, id=1261, 289.08pt x 216.81pt>
+<../../Desktop/Figures/Habe_SMBTRMWS2.png, id=1259, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Habe_SMBTRMWS2.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Habe_SMBTRMWS2.png>
 Package pdftex.def Info: ../../Desktop/Figures/Habe_SMBTRMWS2.png used on input
- line 1601.
+ line 1600.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/Nurs_SMBTRMWS2.png, id=1262, 289.08pt x 216.81pt>
+<../../Desktop/Figures/Nurs_SMBTRMWS2.png, id=1260, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/Nurs_SMBTRMWS2.png Graphic file (type png)
 
 <use ../../Desktop/Figures/Nurs_SMBTRMWS2.png>
 Package pdftex.def Info: ../../Desktop/Figures/Nurs_SMBTRMWS2.png used on input
- line 1604.
+ line 1603.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
 
-<../../Desktop/Figures/MNIST_SMBTRMWS2.png, id=1263, 289.08pt x 216.81pt>
+<../../Desktop/Figures/MNIST_SMBTRMWS2.png, id=1261, 289.08pt x 216.81pt>
 File: ../../Desktop/Figures/MNIST_SMBTRMWS2.png Graphic file (type png)
 
 <use ../../Desktop/Figures/MNIST_SMBTRMWS2.png>
 Package pdftex.def Info: ../../Desktop/Figures/MNIST_SMBTRMWS2.png used on inpu
-t line 1607.
+t line 1606.
 (pdftex.def)             Requested size: 207.32315pt x 155.49104pt.
- [54] [55 <../../Desktop/Figures/Derm_TRMWS.png (PNG copy)> <../../Desktop/Figu
-res/IRIS_TRMWS.png (PNG copy)> <../../Desktop/Figures/Habe_TRMWS.png (PNG copy)
-> <../../Desktop/Figures/Nurs_TRMWS.png (PNG copy)> <../../Desktop/Figures/MNIS
-T_TRMWS.png (PNG copy)>]
-[56 <../../Desktop/figures/Derm_BTRMWS3.png (PNG copy)> <../../Desktop/figures/
-IRIS_BTRMWS3.png (PNG copy)> <../../Desktop/figures/Habe_BTRMWS3.png (PNG copy)
-> <../../Desktop/figures/Nurs_BTRMWS3.png (PNG copy)> <../../Desktop/figures/MN
-IST_BTRMWS3.png (PNG copy)>] [57] [58 <../../Desktop/Figures/Derm_SMBTRMWS2.png
- (PNG copy)> <../../Desktop/Figures/IRIS_SMBTRMWS2.png (PNG copy)> <../../Deskt
-op/Figures/Habe_SMBTRMWS2.png (PNG copy)> <../../Desktop/Figures/Nurs_SMBTRMWS2
-.png (PNG copy)> <../../Desktop/Figures/MNIST_SMBTRMWS2.png (PNG copy)>]
-<../../Desktop/Figures/CPU_time_p1_notitle.png, id=1289, 1040.38687pt x 425.339
-07pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[54] [55 <../../Desktop/Figures/Derm_TRMWS.png (PNG copy)> <../../Desktop/Figur
+es/IRIS_TRMWS.png (PNG copy)> <../../Desktop/Figures/Habe_TRMWS.png (PNG copy)>
+ <../../Desktop/Figures/Nurs_TRMWS.png (PNG copy)> <../../Desktop/Figures/MNIST
+_TRMWS.png (PNG copy)>] [56 <../../Desktop/figures/Derm_BTRMWS3.png (PNG copy)>
+ <../../Desktop/figures/IRIS_BTRMWS3.png (PNG copy)> <../../Desktop/figures/Hab
+e_BTRMWS3.png (PNG copy)> <../../Desktop/figures/Nurs_BTRMWS3.png (PNG copy)> <
+../../Desktop/figures/MNIST_BTRMWS3.png (PNG copy)>] [57 <../../Desktop/Figures
+/Derm_SMBTRMWS2.png (PNG copy)> <../../Desktop/Figures/IRIS_SMBTRMWS2.png (PNG 
+copy)> <../../Desktop/Figures/Habe_SMBTRMWS2.png (PNG copy)> <../../Desktop/Fig
+ures/Nurs_SMBTRMWS2.png (PNG copy)> <../../Desktop/Figures/MNIST_SMBTRMWS2.png 
+(PNG copy)>] [58]
+<../../Desktop/Figures/CPU_time_p1_notitle.png, id=1287, 1063.72406pt x 421.575
+pt>
 File: ../../Desktop/Figures/CPU_time_p1_notitle.png Graphic file (type png)
  <use ../../Desktop/Figures/CPU_time_p1_notitle.png>
 Package pdftex.def Info: ../../Desktop/Figures/CPU_time_p1_notitle.png used on 
-input line 1679.
-(pdftex.def)             Requested size: 460.72124pt x 188.35692pt.
+input line 1678.
+(pdftex.def)             Requested size: 460.72124pt x 182.5924pt.
 
-<../../Desktop/Figures/CPU_time_H_notitle.png, id=1292, 902.6222pt x 423.83344p
+<../../Desktop/Figures/CPU_time_H_notitle.png, id=1290, 902.6222pt x 423.83344p
 t>
 File: ../../Desktop/Figures/CPU_time_H_notitle.png Graphic file (type png)
  <use ../../Desktop/Figures/CPU_time_H_notitle.png>
 Package pdftex.def Info: ../../Desktop/Figures/CPU_time_H_notitle.png used on i
-nput line 1685.
+nput line 1684.
 (pdftex.def)             Requested size: 460.72124pt x 216.33972pt.
 
-<../../Desktop/Figures/CPU_time_p0_notitle.png, id=1293, 983.17313pt x 424.5862
+<../../Desktop/Figures/CPU_time_p0_notitle.png, id=1291, 992.20688pt x 429.8559
 4pt>
 File: ../../Desktop/Figures/CPU_time_p0_notitle.png Graphic file (type png)
  <use ../../Desktop/Figures/CPU_time_p0_notitle.png>
 Package pdftex.def Info: ../../Desktop/Figures/CPU_time_p0_notitle.png used on 
-input line 1691.
-(pdftex.def)             Requested size: 460.72124pt x 198.966pt.
- [59] [60 <../../Desktop/Figures/CPU_time_p1_notitle.png> <../../Desktop/Figure
-s/CPU_time_H_notitle.png>] <../../Desktop/figures/Submaxiter_noSGD.png, id=1311
-, 289.08pt x 216.81pt>
+input line 1690.
+(pdftex.def)             Requested size: 460.72124pt x 199.5989pt.
+ [59
+
+] [60 <../../Desktop/Figures/CPU_time_p1_notitle.png> <../../Desktop/Figures/CP
+U_time_H_notitle.png>] <../../Desktop/figures/Submaxiter_noSGD.png, id=1308, 28
+9.08pt x 216.81pt>
 File: ../../Desktop/figures/Submaxiter_noSGD.png Graphic file (type png)
 
 <use ../../Desktop/figures/Submaxiter_noSGD.png>
 Package pdftex.def Info: ../../Desktop/figures/Submaxiter_noSGD.png used on inp
-ut line 1702.
+ut line 1701.
 (pdftex.def)             Requested size: 225.75594pt x 169.31622pt.
 
-<../../Desktop/figures/Submaxiter_epoch.png, id=1312, 289.08pt x 216.81pt>
+<../../Desktop/figures/Submaxiter_epoch.png, id=1309, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/Submaxiter_epoch.png Graphic file (type png)
 
 <use ../../Desktop/figures/Submaxiter_epoch.png>
 Package pdftex.def Info: ../../Desktop/figures/Submaxiter_epoch.png used on inp
-ut line 1705.
+ut line 1704.
 (pdftex.def)             Requested size: 225.75594pt x 169.31622pt.
 
-<../../Desktop/figures/Submaxiter.png, id=1313, 289.08pt x 216.81pt>
+<../../Desktop/figures/Submaxiter.png, id=1310, 289.08pt x 216.81pt>
 File: ../../Desktop/figures/Submaxiter.png Graphic file (type png)
 
 <use ../../Desktop/figures/Submaxiter.png>
 Package pdftex.def Info: ../../Desktop/figures/Submaxiter.png used on input lin
-e 1708.
+e 1707.
 (pdftex.def)             Requested size: 230.36061pt x 172.77003pt.
  [61 <../../Desktop/Figures/CPU_time_p0_notitle.png>] [62 <../../Desktop/figure
 s/Submaxiter_noSGD.png (PNG copy)> <../../Desktop/figures/Submaxiter_epoch.png 
-(PNG copy)> <../../Desktop/figures/Submaxiter.png (PNG copy)>] [63]
-Overfull \hbox (3.29797pt too wide) in paragraph at lines 1762--1763
+(PNG copy)> <../../Desktop/figures/Submaxiter.png (PNG copy)>]
+Overfull \hbox (11.42386pt too wide) in paragraph at lines 1715--1716
+\OT1/cmr/m/n/12 It is im-por-tant to have some mea-sure of ro-bust-ness for an 
+al-go-rithm which is non-deterministic
+ []
+
+[63]
+Overfull \hbox (3.29797pt too wide) in paragraph at lines 1761--1762
 []\OT1/cmr/m/n/12 The hy-per-pa-ram-e-ter pro-ce-dure re-sulted in val-ues for 
 train-ing ex-am-ple sam-pling: $\OML/cmm/m/it/12 b[] \OT1/cmr/m/n/12 =$
  []
 
 [64]
-<../../Desktop/figures/XOR_robustness2.PNG, id=1337, 965.85844pt x 371.13657pt>
+<../../Desktop/figures/XOR_robustness2.PNG, id=1334, 965.85844pt x 371.13657pt>
 File: ../../Desktop/figures/XOR_robustness2.PNG Graphic file (type png)
 <use ../../Desktop/figures/XOR_robustness2.PNG>
 Package pdftex.def Info: ../../Desktop/figures/XOR_robustness2.PNG used on inpu
-t line 1770.
+t line 1769.
 (pdftex.def)             Requested size: 460.72124pt x 177.03355pt.
 
-<../../Desktop/figures/XOR_robustness_perceptron2.PNG, id=1338, 1007.26312pt x 
+<../../Desktop/figures/XOR_robustness_perceptron2.PNG, id=1335, 1007.26312pt x 
 462.97969pt>
 File: ../../Desktop/figures/XOR_robustness_perceptron2.PNG Graphic file (type p
 ng)
  <use ../../Desktop/figures/XOR_robustness_perceptron2.PNG>
 Package pdftex.def Info: ../../Desktop/figures/XOR_robustness_perceptron2.PNG u
-sed on input line 1778.
+sed on input line 1777.
 (pdftex.def)             Requested size: 460.72124pt x 211.7652pt.
 
 
@@ -1060,77 +1081,77 @@ Chapter 6.
 [67
 
 
-] [68] [69
+] [68] [69] [70
 
 
 ]
 Appendix A.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1833.
+(hyperref)                than one, level fixed on input line 1834.
 
-[70
+[71
 
 
-] [71] [72] [73] [74]
+] [72] [73] [74] [75]
 
-LaTeX Warning: Reference `equation:df_dzL' on page 75 undefined on input line 1
-985.
+LaTeX Warning: Reference `equation:df_dzL' on page 76 undefined on input line 1
+986.
 
-[75] [76]
-Overfull \hbox (0.36499pt too wide) in paragraph at lines 2057--2057
+[76] [77]
+Overfull \hbox (0.36499pt too wide) in paragraph at lines 2058--2058
 []\OT1/cmr/bx/n/14.4 Complexity Anal-y-sis of The Pearl-mut-ter Trick for ff-AN
 Ns 
  []
 
 
-Overfull \hbox (13.72998pt too wide) in paragraph at lines 2084--2092
+Overfull \hbox (13.72998pt too wide) in paragraph at lines 2085--2093
 \OT1/cmr/m/n/12 which takes con-stant time de-ter-mined by the non-linear func-
 tion since the prod-uct $(\OT1/cmr/bx/n/12 W[]\OT1/cmr/m/n/12 )[]\OT1/cmr/bx/n/
 12 z[] \OT1/cmr/m/n/12 +$
  []
 
-[77] [78] [79] [80] [81] [82] [83] [84]
+[78] [79] [80] [81] [82] [83]
 Appendix B.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[85
+[84
 
 
-] [86]
+] [85]
 Appendix C.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[87
+[86
 
 
-] [88]
+] [87]
 Appendix D.
-[89
+[88
 
 
-] (uw-ethesis.bbl [90
+] (uw-ethesis.bbl [89
 
 
 
 
-] [91] [92]
+] [90] [91]
 Underfull \hbox (badness 10000) in paragraph at lines 222--225
 []\OT1/cmr/m/n/12 Chao Yang.  The im-plic-itly restarted arnoldi method.
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2417.
- [93]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2417.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2376.
+ [92]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2376.
  (uw-ethesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2417.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2417.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2376.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2376.
 
 Package rerunfilecheck Info: File `uw-ethesis.out' has not changed.
-(rerunfilecheck)             Checksum: B8DEB3B9582259445BBED4B68E632320;4646.
+(rerunfilecheck)             Checksum: A39535E94A199C29DBC574C8D1D105E3;4563.
 
 
 LaTeX Warning: There were undefined references.
@@ -1138,16 +1159,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2417.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2376.
  ) 
 Here is how much of TeX's memory you used:
- 9696 strings out of 493673
- 150478 string characters out of 3141524
- 254266 words of memory out of 3000000
- 12330 multiletter control sequences out of 15000+200000
+ 9677 strings out of 493673
+ 150263 string characters out of 3141524
+ 255252 words of memory out of 3000000
+ 12329 multiletter control sequences out of 15000+200000
  16080 words of font info for 60 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 36i,22n,41p,2640b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,22n,41p,2530b,521s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Colleen\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\dpi600\
 cmtt12.pk> <C:\Users\Colleen\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm
 \dpi600\cmbx6.pk> <C:\Users\Colleen\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pu
@@ -1177,9 +1198,9 @@ r\public\cm\dpi720\cmsy10.pk> <C:\Users\Colleen\AppData\Local\MiKTeX\2.9\fonts\
 pk\ljfour\public\cm\dpi600\cmr17.pk> <C:\Users\Colleen\AppData\Local\MiKTeX\2.9
 \fonts\pk\ljfour\public\cm\dpi600\cmr12.pk> <C:\Users\Colleen\AppData\Local\MiK
 TeX\2.9\fonts\pk\ljfour\public\cm\dpi1244\cmbx12.pk>
-Output written on uw-ethesis.pdf (105 pages, 1579363 bytes).
+Output written on uw-ethesis.pdf (104 pages, 1569410 bytes).
 PDF statistics:
- 2484 PDF objects out of 2487 (max. 8388607)
- 545 named destinations out of 1000 (max. 500000)
- 735 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2450 PDF objects out of 2487 (max. 8388607)
+ 527 named destinations out of 1000 (max. 500000)
+ 727 words of extra memory for PDF output out of 10000 (max. 10000000)
 

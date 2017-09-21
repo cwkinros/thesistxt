@@ -56,8 +56,7 @@
 \BOOKMARK [1][-]{subsection.A.0.1}{Forward and Back Propagations}{appendix.A}% 56
 \BOOKMARK [1][-]{section.A.1}{Complexity Analysis}{appendix.A}% 57
 \BOOKMARK [2][-]{subsection.A.1.1}{Complexity Analysis of The Pearlmutter Trick for ff-ANNs}{section.A.1}% 58
-\BOOKMARK [1][-]{section.A.2}{Computing TRS Solution: Complexity}{appendix.A}% 59
-\BOOKMARK [0][-]{appendix.B}{Hyperparameters}{}% 60
-\BOOKMARK [0][-]{appendix.C}{Full Hessian vs Hessian Free}{}% 61
-\BOOKMARK [0][-]{appendix.D}{Hyperparameter Test Results}{}% 62
-\BOOKMARK [0][-]{section*.178}{References}{}% 63
+\BOOKMARK [0][-]{appendix.B}{Hyperparameters}{}% 59
+\BOOKMARK [0][-]{appendix.C}{Full Hessian vs Hessian Free}{}% 60
+\BOOKMARK [0][-]{appendix.D}{Hyperparameter Test Results}{}% 61
+\BOOKMARK [0][-]{section*.171}{References}{}% 62

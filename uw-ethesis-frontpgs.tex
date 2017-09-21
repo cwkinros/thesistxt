@@ -75,7 +75,8 @@ I understand that my thesis may be made electronically available to the public.
 
 \begin{center}\textbf{Abstract}\end{center}
 
-A numerical investigation was performed into the efficacy and behaviour of trust region, and trust region based methods, for training feedforward neural networks. Methods used were based on a recent approach to solving the trust region subproblem. Variations to this method were designed to incorporate stochastic methods as well as parameter subsampling methods. The numerical investigation revealed ....
+Artificial feed-forward neural networks (ff-ANNs) serve as powerful machine learning models for supervised classification problems. They have been used to solve problems stretching from natural language processing to computer vision. ff-ANNs are typically trained using gradient based approaches, which only require the computation of first order derivatives. In this thesis we explore the benefits and drawbacks of training an ff-ANN with a method which requires the computation of second order derivatives of the objective function. We also explore whether stochastic approximations can be used to decrease the computation time of such a method. A numerical investigation was performed into the behaviour of trust region methods, a type of second order numerical optimization method, when used to train ff-ANNs on several datasets. Our study compares a classical trust region approach and evaluates the effect of adapting this method using stochastic variations. The exploration includes three approaches to reducing the computations required to perform the classical method: stochastic subsampling of training examples, stochastic subsampling of parameters and using a gradient based approach in combination with the classical trust region method. We found that stochastic subsampling methods can, in some cases, reduce the CPU time required to reach a reasonable solution when compared to the classical trust region method but this was not consistent across all datasets. We also found that using the classical trust region method in combination with mini-batch gradient descent either successfully matched (within 0.1s) or decreased the CPU time required to reach a reasonable solution for all datasets. This was achieved by only computing the trust region step when training progress using the gradient approach had stalled. 
+
 
 \cleardoublepage
 %\newpage
@@ -85,7 +86,7 @@ A numerical investigation was performed into the efficacy and behaviour of trust
 
 \begin{center}\textbf{Acknowledgements}\end{center}
 
-I would like to thank all the little people who made this possible.
+I would like to thank my supervisors, Professor Yuying Li and Professor Justin Wan, for all of their help and guidance through this process. I learned a lot from both of you and really appreciate all of the hard work you each put into helping me succeed. I would also like to thank all of my labmates for their encouragement and support.
 \cleardoublepage
 %\newpage
 
@@ -94,7 +95,7 @@ I would like to thank all the little people who made this possible.
 
 \begin{center}\textbf{Dedication}\end{center}
 
-This is dedicated to the one I love.
+This is dedicated to my family.
 \cleardoublepage
 %\newpage
 
