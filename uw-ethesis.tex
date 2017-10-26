@@ -205,23 +205,23 @@
 	\chapter{Introduction}
 	%======================================================================
 	
-	Machine learning has become an increasingly popular subject in industry and academia in recent years. Machine learning is an approach in which computers learn solutions from data directly. In this thesis we will be considering artificial neural networks, often referred to more simply as neural networks. Neural networks, particularly deep neural networks, are of great value for use across many industries, such as self-driving cars \cite{bojarski2016end}, computer vision \cite{krizhevsky2012imagenet}, natural language processing \cite{ma2002natural} and even for mastering the game of Go \cite{silver2016mastering}. The power of a multi-layer feed forward neural network lies in its ability to learn complex functions. In fact, any finite set of data can be fit to any chosen tolerance, by a two layer feed forward neural network given it has enough hidden nodes. For this reason, the multi-layer feed forward neural network is referred to as a universal approximator \cite{hornik1989multilayer}. 
+	Machine learning has become an increasingly popular subject in industry and academia in recent years. Machine learning is an approach in which computers learn solutions from data directly. In this thesis we will be considering artificial neural networks, often referred to more simply as neural networks. Neural networks, particularly deep neural networks, are of great value for use across many industries, such as self-driving cars \cite{bojarski2016end}, computer vision \cite{krizhevsky2012imagenet}, natural language processing \cite{ma2002natural} and even for mastering the game of Go \cite{silver2016mastering}. In this thesis we study multi-layer feedforward neural networks which are neural networks of more than one layer which only contain connections that are in the direction from input to output. The power of a multi-layer feedforward neural network lies in its ability to learn complex functions. In fact, the multi-layer feedforward neural network is referred to as a universal approximator \cite{hornik1989multilayer}. 
 	
-	In this thesis, we are interested in supervised training methods for feed forward neural networks. Supervised training refers to training a model based on data that has an `answer key', meaning that there are dependent variables provided for their respective independent variables in the data \cite{hastie2009overview}. In other words, the network is learning how to make predictions based on provided data, where the correct prediction is provided as well as the features used to make that prediction. The typical training approach used for feed forward neural networks is what is sometimes called the `Backpropagation Training Procedure' \cite{priddy2005artificial}. Training involves the formulation of an objective function based on the discrepancy between expected prediction from the `answer key', and the actual prediction made by the neural network based on its current parameters. Once the objective function has been formulated it is minimized using a numerical optimization method. Backpropagation is a method used to compute partial derivatives of the objective function in terms of each parameter value, also known as a weight value. These partial derivatives are then used to construct the gradient, the vector of partial derivatives of the objective function in terms of weights of the network. Using the gradient or stochastic approximation to the gradient, a numerical method can now be applied to reduce the value of the objective function. Typically the objective function is the mean squared prediction error of all of the training samples. 
+	In this thesis, we are interested in supervised training methods for feedforward neural networks. Supervised training refers to training a model based on data that has an `answer key', meaning that there are dependent variables provided for their respective independent variables in the data \cite{hastie2009overview}. In other words, the network is learning how to make predictions based on provided data, where the correct prediction is provided as well as the features used to make that prediction. The typical training approach used for feedforward neural networks is what is sometimes called the `Backpropagation Training Procedure' \cite{priddy2005artificial}. Training involves the formulation of an objective function based on the discrepancy between expected prediction from the `answer key', and the actual prediction made by the neural network based on its current parameters. Once the objective function has been formulated it is minimized using a numerical optimization method. Backpropagation is a method used to compute partial derivatives of the objective function in terms of each parameter value, also known as a weight value. These partial derivatives are then used to construct the gradient, the vector of partial derivatives of the objective function in terms of weights of the network. Using the gradient or stochastic approximation to the gradient, a numerical method can now be applied to reduce the value of the objective function. Typically the objective function is the mean squared prediction error of all of the training samples. 
 	
-	The standard method for minimizing the objective function of a neural network is gradient descent  \cite{neural1}\cite{neural2}. More recently, there has been interest in deeper networks which require solving very large optimization problems for which online learning methods such as stochastic gradient descent or mini-batch gradient descent are typically used \cite{gulcehre2017robust}\cite{simpson2015oddball}. These methods are useful because each step calculation only requires computation of the first derivatives for a subset of the training set and is therefore typically fast, which can be a benefit to some problems. However, the gradient direction is only the direction of fastest decrease up to the first order. These methods have difficulty in valley type structures where the direction of negative curvature is perpendicular to the gradient direction. In order to improve reduction in the objective value at each step, some methods use first derivatives to approximate second derivatives, these are known as quasi-Newton methods. Examples of successful methods that approximate second order information include the Broyden-Fletcher-Goldfarb-Shanno (BFGS) algorithm which solves the secant equation for the second derivative \cite{Shepherd.1997}. This increases the potential for reduction of the objective function at each step compared to a step of the same magnitude in the gradient direction. However, we can improve upon the accuracy of the step direction by computing second derivatives of the objective function.
+	The standard method for minimizing the objective function of a neural network is gradient descent  \cite{neural1}\cite{neural2}. More recently, there has been interest in deeper networks which require solving very large optimization problems for which online learning methods such as stochastic gradient descent or mini-batch gradient descent are typically used \cite{gulcehre2017robust}\cite{simpson2015oddball}. These methods are useful because each step calculation only requires computation of the first derivatives for a subset of the training set and is therefore typically fast, which can be a benefit to some problems. However, the gradient direction is only the direction of fastest decrease up to the first order. These methods have difficulty in valley type structures where the direction of negative curvature is perpendicular to the gradient direction. In order to improve reduction in the objective value at each step, some methods use first derivatives to approximate second derivatives. These are known as quasi-Newton methods. Examples of successful methods that approximate second order information include the Broyden-Fletcher-Goldfarb-Shanno (BFGS) algorithm which solves the secant equation for the second derivative \cite{Shepherd.1997}. This increases the potential for reduction of the objective function at each step compared to a step of the same magnitude in the gradient direction. However, we can improve upon the accuracy of the step direction by computing second derivatives of the objective function.
 	
-	Second order numerical optimization methods, methods which use second derivatives of the objective function in terms of its parameters, take more time to compute but provide more information and therefore can compute step directions that are closer to the optimal reduction in objective function value over a step. The curvature information, given by second derivatives, is helpful for descending valley type structures effectively and can be more effective at passing through nearly flat areas in the objective function surface \cite{Shepherd.1997}. This information can be significantly slower to compute at each iteration, therefore the benefit of the method must be very large for the speed to be comparable to a first order method. Their relative behaviours depend on the characteristics of the optimization problem being considered. 
+	Second order numerical optimization methods, those which use second derivatives of the objective function in terms of its parameters, take more time to compute but provide more information and therefore can compute step directions that are closer to the optimal reduction in objective function value over a step. The curvature information, given by second derivatives, is helpful for descending valley type structures effectively and can be more effective at passing through nearly flat areas in the objective function surface \cite{Shepherd.1997}. This information can be significantly slower to compute at each iteration, therefore the benefit of the method must be very large for the speed to be comparable to a first order method. Their relative behaviours depend on the characteristics of the optimization problem being considered. 
 	
 	Newton's method is a common second order method which solves for the first order critical point of the second order approximation to the objective function at each iteration. One issue with this algorithm is that the Hessian, the matrix containing the second order derivatives of the objective function, can be indefinite if it is not close to a minimum. When the Hessian is not positive semi-definite, Newton's method would point towards a critical point which is not a local minimizer. Because of this, Newton's method is only locally convergent. There are many methods, such as BFGS mentioned earlier, that approximate the second order information while keeping the approximate Hessian positive definite. Other approaches include the Hessian free method which approximates the Hessian by adding an extra value to each eigenvalue of the finite difference approximation of the Hessian matrix \cite{martens2010deep}. There are also trust region type methods during which the minimizer of a bounded second order trust region subproblem is solved at each step where the bound is adjusted based on the model's accuracy \cite{wright1999numerical}. 
 	
-	In this thesis we study the performance, in terms of CPU time and training error, of the trust region method and variations of the method to train neural networks on several datasets. Trust region method is chosen as the topic of study because it is globally convergent under mild assumptions \cite{shultz1985family}, compared to Newton's method which is only locally convergent. The basic idea of the algorithm is that at each step we consider a region around the current point where the model, constructed based on the first and second order information, is trusted. At this point we solve a constrained minimization problem for this model within the trusted bounds called the trust region subproblem. In order to study whether the basic second order trust region method can be sped up in terms of CPU time required for a reasonable solution, we study stochastic subsampling effects on the method. This is a different approach to second order approximation than that taken by quasi-Newton methods. Rather than approximating second derivatives from first derivatives we are approximating second derivatives of the objective function from the true second order derivatives of randomly subsampled training examples. This is the method used in stochastic gradient descent in order to speed up gradient descent. We wish to determine whether the same approach benefits trust region methods. We also study the effect of subsampling parameters or `weights', which is a method inspired by co-ordinate descent type approaches, where we only consider a subset of the parameters at each step. This reduces the dimensionality of the trust region subproblem.
+	In this thesis we study the performance, in terms of CPU time and training error, of the trust region method and variations of the method to train neural networks on several datasets. The trust region method is chosen as the topic of study because it is globally convergent under mild assumptions \cite{shultz1985family}, compared to Newton's method which is only locally convergent. The basic idea of the algorithm is that at each step we consider a region around the current point where the model, constructed based on the first and second order information, is trusted. At this point we solve a constrained minimization problem for this model within the trusted bounds called the trust region subproblem. In order to study whether the basic second order trust region method can be sped up in terms of CPU time required for a reasonable solution, we study stochastic subsampling effects on the method. This is a different approach to second order approximation than that taken by quasi-Newton methods. Rather than approximating second derivatives from first derivatives we are approximating second derivatives of the objective function from the true second order derivatives of randomly subsampled training examples. This is the method used in stochastic gradient descent in order to speed up gradient descent. We wish to determine whether the same approach benefits trust region methods. We also study the effect of subsampling parameters or `weights', which is a method inspired by co-ordinate descent type approaches, where we only consider a subset of the parameters at each step. This reduces the dimensionality of the trust region subproblem.
 	
-	Through this study we aim to shed light on the behaviour of trust region methods and stochastic variants of trust region methods when used to train feed forward neural networks. We are looking for promising directions of speed up to the trust region method while maintaining the benefit of using second order information, which is improved step direction at each iteration. As feed forward neural networks are used to solve more diverse problems we expect that a greater understanding of the behaviour of a wider range of numerical optimization methods in the specific context of training neural networks will become increasingly valuable.
+	Through this study we aim to shed light on the behaviour of trust region methods and stochastic variants of trust region methods when used to train feedforward neural networks. We are looking for promising directions of speed up to the trust region method while maintaining the benefit of using second order information, which is improved step direction at each iteration. As feedforward neural networks are used to solve more diverse problems we expect that a greater understanding of the behaviour of a wider range of numerical optimization methods in the specific context of training neural networks will become increasingly valuable.
 	
 	\section{Summary of Contributions}
 	
-	We compute second order information from feed forward neural networks using a backpropagation technique proposed by Pearlmutter in 1993 \cite{Pearlmutter.1993} and implement the trust region method using a recent approach that involves solving a single generalized eigenvalue problem to determine the trust region subproblem solution at each iteration, rather than an iterative procedure \cite{adachi.paper}. With a complete trust region algorithm we then perform experiments that compare the trust region algorithm to algorithms based on variations of the complete trust region algorithm to collect empirical information of their behaviour as well as seeking quantitative information to indicate which variations, if any, decrease the computational time of the trust region method. More specifically, our contributions are as follows:
+	We compute second order information from feedforward neural networks using a backpropagation technique proposed by Pearlmutter in 1993 \cite{Pearlmutter.1993}. We also implement the trust region method using a recent approach that involves solving a single generalized eigenvalue problem to determine the trust region subproblem solution at each iteration, rather than an iterative procedure \cite{adachi.paper}. With a complete trust region algorithm we then perform experiments that compare the trust region algorithm to those based on variations of the complete trust region algorithm to collect empirical information of their behaviour as well as seeking quantitative information to indicate which variations, if any, decrease the computational time of the trust region method. More specifically, our contributions are as follows:
 	
 	\begin{enumerate}
 		\item{A study of the benefits and drawbacks of using stochastic subsampling of training examples upon which to solve the trust region subproblem at each iteration compared to using the full training set which is the case for the full trust region algorithm. For gradient methods, subsampling is a very effective speed up approach. This motivated us to study this appraoch in the context of a second order method.}
@@ -232,12 +232,12 @@
 	
 	\section{Outline}
 	
-	We begin by providing background in Chapter 2 where we define the feed forward artificial neural network (ff-ANN) as well as the trust region method and the specific approach we will be taking to compute the solution to the trust region subproblem from \cite{adachi.paper}. In Chapter 3 we cover the full details of the trust region approach and implementation used in our study. In Chapter 4 we define the various algorithms that will be studied and which variations are used to develop them based on the trust region method from Chapter 3. Chapter 5 contains the main contributions of this thesis. Here we present the results and analysis of the numerical exploration into trust region methods and its variations when used to train neural networks on data from five different datasets. Finally, in Chapter 6 we outline the conclusions from the thesis and highlight directions for future work. 
+	We begin by providing background in Chapter 2 where we define the feedforward artificial neural network (ff-ANN) as well as the trust region method and the specific approach we will be taking to compute the solution to the trust region subproblem from \cite{adachi.paper}. In Chapter 3 we cover the full details of the trust region approach and implementation used in our study. In Chapter 4 we define the various algorithms that will be studied and which variations are used to develop them based on the trust region method from Chapter 3. Chapter 5 contains the main contributions of this thesis. Here we present the results and analysis of the numerical exploration into trust region methods and its variations when used to train neural networks on data from five different datasets. Finally, in Chapter 6 we outline the conclusions from the thesis and highlight directions for future work. 
 	
 	
 	\chapter{Training Feed Forward Artificial Neural Networks}
 	
-	In this chapter we provide the necessary background information for our investigation. This includes a definition and description of feed forward artificial neural networks (ff-ANNs), some numerical optimization methods used for training ff-ANNs, as well as trust region methods. In addition, we provide the details of the specific trust region method we will be using in this thesis to train our networks.
+	In this chapter we provide the necessary background information for our investigation. This includes a definition and description of feedforward artificial neural networks (ff-ANNs), some numerical optimization methods used for training ff-ANNs, as well as trust region methods. In addition, we provide the details of the specific trust region method we will be using in this thesis to train our networks.
 	
 	%----------------------------------------------------------------------
 	\section{Feed Forward Artificial Neural Networks}
@@ -309,7 +309,7 @@
 	
 	 Meeting this criteria for all activation functions, we can still use the concept of neurons as hyperplanes as described in the previous section for perceptrons. The hyperplane defined by a neuron with an activation function satisfying (\ref{equation:classification_function}) separates the two value ranges in (\ref{equation:classification_function}) rather than determining a simple binary output.
 	 
-	 An ff-ANN can contain several layers of neurons stacked on top of eachother as well as several neurons per layer. By adding multiple layers, the network can learn more complex functions. The output of the neurons at each layer, which is the more general version of (\ref{equation:perceptron_output}), becomes:
+	 An ff-ANN can contain several layers of neurons stacked on top of each other as well as several neurons per layer. By adding multiple layers, the network can learn more complex functions. The output of the neurons at each layer, which is the more general version of (\ref{equation:perceptron_output}), becomes:
 	\begin{equation}
 	\mathbf{z}_{l}^{k} = \sigma_{l}(\mathbf{W}_{l}\mathbf{z}_{l-1}^{k} + \mathbf{b}_{l}), \quad \text{for} \ l = 1, ... , L,
 	\end{equation}
@@ -396,21 +396,21 @@
 	\begin{enumerate}
 		\item {\textbf{Gradient Descent} is typically only used for small datasets which has the update defined by 
 			\begin{equation}
-			\mathbf{w}_{i} = \mathbf{w}_{i-1} - \eta{\nabla}{f(\mathbf{w}_{i-1})},
+			\mathbf{w}_{k} = \mathbf{w}_{k-1} - \eta{\nabla}{f(\mathbf{w}_{k-1})},
 			\label{equation:gd_update}
 			\end{equation}
-			where $\eta$ is the learning rate. When $\eta$ is small enough and kept constant, gradient descent does not converge to a saddle point \cite{gd_converges.paper}.
+			where $\eta$ is the learning rate. When $\eta$ is small enough and kept constant, with random initialization, gradient descent does not converge to a saddle point almost surely \cite{gd_converges.paper}.
 		}
 		\item{\textbf{Stochastic Gradient Descent} is a commonly known and used method which approximates gradient descent using only a single example at each step. Each iteration $i$ has the update:
 			\begin{equation}
-			\mathbf{w}_{i} = \mathbf{w}_{i-1} - \eta\widetilde{\nabla}{f(\mathbf{w}_{i-1})},
+			\mathbf{w}_{k} = \mathbf{w}_{k-1} - \eta\widetilde{\nabla}{f(\mathbf{w}_{k-1})},
 			\label{equation:sgd_update}
 			\end{equation}
-			where $\eta$ is the learning rate chosen by the user which is decreased in magnitude throughout training using a predefined schedule, and $\widetilde{\nabla}{f(\mathbf{w}_{i-1})}$ refers to the approximation of the gradient of the objective function at point $\mathbf{w}_{i-1}$ based on a single, uniformly randomly selected, training example. 
+			where $\eta$ is the learning rate chosen by the user which is decreased in magnitude throughout training using a predefined schedule, and $\widetilde{\nabla}{f(\mathbf{w}_{k-1})}$ refers to the approximation of the gradient of the objective function at point $\mathbf{w}_{k-1}$ based on a single, uniformly randomly selected, training example. 
 		}   
-		\item{\textbf{Mini-batch Gradient Descent} is a method that uses the same update function as shown in (\ref{equation:sgd_update}) but with $\widetilde{\nabla}{f(\mathbf{w}_{i-1})}$ computed as an approximation to the gradient of the objective function at point $\mathbf{w}_{i-1}$ based on a \textbf{subset} of the set of training examples $S$.}
+		\item{\textbf{Mini-batch Gradient Descent} is a method that uses the same update function as shown in (\ref{equation:sgd_update}) but with $\widetilde{\nabla}{f(\mathbf{w}_{k-1})}$ computed as an approximation to the gradient of the objective function at point $\mathbf{w}_{k-1}$ based on a \textbf{subset} of the set of training examples $S$.}
 	\end{enumerate}
-	First order methods compute steps very quickly. However, they can experience difficulties in some regions, such as in valleys. A valley is an example of a characteristic often seen in ff-ANN problems \cite{Shepherd.1997} that slows down first order methods. First order methods experience difficulties in this case because the gradient direction is almost perpendicular to the direction in which the local minimum is likely to be. Figure \ref{figure:valley}, which is from \cite{martens2010deep}, depicts this concept. These gradient methods also have difficulties in small gradient areas such as large pseudo-plateaus, since the length of the step taken at each iteration is proportionate to the size of the gradient for a constant learning rate.
+	First order methods compute steps very quickly. However, they can experience difficulties in some regions, such as in valleys. A valley is an example of a characteristic often seen in ff-ANN problems \cite{Shepherd.1997} that slows down first order methods. First order methods experience difficulties in this case because the gradient direction is almost perpendicular to the direction of the local minimum. Figure \ref{figure:valley}, which is from \cite{martens2010deep}, depicts this concept. These gradient methods also have difficulties in small gradient areas such as large pseudo-plateaus, since the length of the step taken at each iteration is proportionate to the size of the gradient for a constant learning rate.
 	
 	\begin{figure}[h]
 		\centering
@@ -426,25 +426,25 @@
 	\begin{enumerate}
 		\item{\textbf{Quasi-Newton methods} estimate the Hessian matrix (second order information) using only first order derivatives. The full Newton's method updates the iterate as follows:
 			\begin{equation}
-			\mathbf{w}_{i} = \mathbf{w}_{i-1} - (\nabla^{2}{f(\mathbf{w}_{i-1})})^{-1}\nabla{f(\mathbf{w}_{i-1})},
+			\mathbf{w}_{k} = \mathbf{w}_{k-1} - (\nabla^{2}{f(\mathbf{w}_{k-1})})^{-1}\nabla{f(\mathbf{w}_{k-1})},
 			\label{equation:newtons}
 			\end{equation}
-			where $\nabla^{2}{f(\mathbf{w}_{i-1})}$ is the Hessian matrix of $f(
-			\mathbf{w}_{i-1})$. This step is the solution to the first order critical point of the second order approximation of $f(\mathbf{w}_{i-1})$ using the Taylor series expansion, (\ref{equation:taylor_series}). Quasi-Newton methods replace $(\nabla^{2}{f(\mathbf{w}_{i-1})})$ with an approximation to the Hessian. A common quasi-Newton method is \textbf{BFGS (Broyden-Fletcher-Goldfarb-Shanno) algorithm} which approximates the Hessian using the secant equation \cite{Shepherd.1997}.  
+			where $\nabla^{2}{f(\mathbf{w}_{k-1})}$ is the Hessian matrix of $f(
+			\mathbf{w}_{k-1})$. This step is the solution to the first order critical point of the second order approximation of $f(\mathbf{w}_{k-1})$ using the Taylor series expansion, (\ref{equation:taylor_series}). Quasi-Newton methods replace $(\nabla^{2}{f(\mathbf{w}_{k-1})})$ with an approximation to the Hessian. A common quasi-Newton method is the \textbf{BFGS (Broyden-Fletcher-Goldfarb-Shanno) algorithm} which approximates the Hessian using the secant equation \cite{Shepherd.1997}.  
 		}
-		\item{\textbf{Finite Difference Newton Methods} are methods where $(\nabla^{2}{f(\mathbf{w}_{i-1})})$ in (\ref{equation:newtons}) is replaced by a finite difference approximation to the Hessian which uses only first order information \cite{Shepherd.1997}.}
-		\item{\textbf{Levenberg-Marquardt} is an algorithm for non-linear least squares problems, has an update of the following form \cite{Shepherd.1997}:
+		\item{\textbf{Finite Difference Newton Methods} are methods where $(\nabla^{2}{f(\mathbf{w}_{k-1})})$ in (\ref{equation:newtons}) is replaced by a finite difference approximation to the Hessian which uses only first order information \cite{Shepherd.1997}.}
+		\item{\textbf{Levenberg-Marquardt} is an algorithm for non-linear least squares problems, which has an update of the following form \cite{Shepherd.1997}:
 			\begin{equation}
-			\mathbf{w}_{i} = \mathbf{w}_{i-1} + [\mathbf{J}^{T}_{i-1}\mathbf{J}^{}_{i-1} + \lambda\mathbf{I}]^{-1}\mathbf{J}^{T}_{i-1}\mathbf{r}_{i-1},
+			\mathbf{w}_{k} = \mathbf{w}_{k-1} + [\mathbf{J}^{T}_{k-1}\mathbf{J}^{}_{k-1} + \lambda\mathbf{I}]^{-1}\mathbf{J}^{T}_{k-1}\mathbf{r}_{k-1}.
 			\end{equation}    
-			where $\mathbf{r}$ is the residual vector, $\mathbf{J}$ is the Jacobian of $\mathbf{r}$, and $\lambda$ is a damping factor which is adapted based on descent speed \cite{Shepherd.1997}. }    
+			Here $\mathbf{r}_{k-1}$ is the residual vector which contains values $(\mathbf{y}^{k} - \mathbf{z}_{L}^{k})_{i}$ for all indices $i=1,...,n_{L}$ where $\mathbf{y}^{k} \in \mathbb{R}^{n_{L}}$, and all training examples $k = 1,...,m$, identified by the superscript. The iteration index is $k-1$, identified by the subscript. The matrix $\mathbf{J}_{k-1}$ is the Jacobian of $\mathbf{r}_{k-1}$ in terms of each weight, and $\lambda$ is a damping factor which is adapted based on descent speed \cite{Shepherd.1997}. }    
 	\end{enumerate}
-	These methods are quite effective at approximating curvature in many instances without the computational time cost of actually computing it directly. BFGS in particular is a very well known approach for incorporating second order information based on recent updates. These, however, do not have the full second order information, e.g., the negative curvature information may be abscent in the Hessian update. There are also methods that use exact second order information which we are interested in for this thesis. 
+	These methods are quite effective at approximating curvature in many instances without the computational time cost of actually computing it directly. BFGS in particular is a very well known approach for incorporating second order information based on recent updates. These, however, do not have the full second order information, e.g., the negative curvature information may be absent in the Hessian update. There are also methods that use exact second order information which we are interested in for this thesis. 
 	\begin{enumerate}
 		\item{\textbf{Newton's Method} is a classical second order optimization method which is only locally convergent. The Newton's method update is defined by (\ref{equation:newtons}). This method is the inspiration for some  second order methods for neural network learning such as the ``Approximate saddle-free Newton" method proposed by \cite{saddle_free}.}
 		\item{\textbf{Trust Region Methods} are globally convergent methods. At each iteration a solution to a subproblem which approximates the original problem, in a trusted region, based on the first and second order information of the objective function, is used to determine a step towards the solution for the original problem. This is the approach we focus on for this thesis. }
 	\end{enumerate}
-	We specifically investigate a trust region method with exact Hessian information in this thesis as well as modified versions based on subsampling of parameters and training examples. Our main motivation in looking at trust region methods is that they are well suited to non-convex problems since a global minimizer to the subproblem is computed at each iteration.
+	We specifically investigate a trust region method with exact Hessian information in this thesis as well as modified versions based on subsampling of parameters and training examples. Part of our motivation in looking at trust region methods is that they are well suited to non-convex problems since a global minimizer to the subproblem is computed at each iteration. This does not mean a global minimizer will be computed for the problem but does lead to convergence to a local minimizer. 
 	
 	\section{Trust Region Methods}
 	The idea of a trust region method is to solve a subproblem at each iteration based on a model that is trusted within a certain radius around the current point. Trust region methods consist of the following steps \cite{TRM.book}:
@@ -491,7 +491,7 @@
 	\label{equation:delta}
 	\end{equation}
 	
-	Traditionally, the trust region subproblem is solved using an iterative method involving repetitively computing solutions to linear equations or eigenvalue problems. It is demonstrated in a recent paper, \cite{adachi.paper}, that the trust region subproblem can be solved by a single generalized eignevalue problem and linear equation. This makes the trust region method more appealing since it is simple to implement with the possibility of improved computational efficiency. We provide the details of this computation.  
+	Traditionally, the trust region subproblem is solved using an iterative method involving repeatedly computing solutions to linear equations or eigenvalue problems. It is demonstrated in a recent paper, \cite{adachi.paper}, that the trust region subproblem can be solved by a single generalized eigenvalue problem and linear equation. This makes the trust region method more appealing since it is simple to implement with the possibility of improved computational efficiency. We provide the details of this computation.  
 	
 	\subsubsection{Optimality Conditions}
 	
@@ -540,7 +540,7 @@
 	\end{aligned}
 	\label{equation:infimum}
 	\end{equation}
-	 Using (\ref{equation:infimum}) to simplify (\ref{equation:dual}) the dual function we get:
+	 Using (\ref{equation:infimum}) to simplify (\ref{equation:dual}), the dual function, we get:
 	\begin{equation}
 	d(\lambda)= 
 	-\frac{1}{2}\lambda\gamma^{2} - \frac{1}{2}\mathbf{g}^{T}(\mathbf{H} + \lambda\mathbf{I})^{-1}\mathbf{g},
@@ -554,18 +554,18 @@
 	 The remaining discussion is on a technique by Adachi et al \cite{adachi.paper} to determine the value of $\lambda$ which maximizes (\ref{equation:dual2}). A stationary point must satisfy:
 	\begin{equation}
 	\begin{aligned}
-	\nabla d(\lambda) & = -\gamma^{2} + \mathbf{g}^{T}(\mathbf{H} + \lambda\mathbf{I})^{-1}(\mathbf{H} + \lambda\mathbf{I})^{-1}\mathbf{g} = 0, \\
+	d^{\prime}(\lambda)) & = \frac{1}{2} ( -\gamma^{2} + \mathbf{g}^{T}(\mathbf{H} + \lambda\mathbf{I})^{-2}\mathbf{g}) \\ & = 0. \\
 	\end{aligned}
 	\label{equation:grad_d}
 	\end{equation}
-	when constraint (\ref{equation:inbounds}) is active. This can be seen by combining (\ref{equation:possemdef}) and $\mathbf{p}^{T}\mathbf{p} = \lambda^{2}$. Using the eigenvalue decomposition for $\mathbf{H}$,
+	Using the eigenvalue decomposition for $\mathbf{H}$,
 	\begin{equation}
 	\mathbf{H} = \mathbf{V}^{T}\mathbf{D}\mathbf{V},
 	\end{equation}
 	where $\mathbf{D}$ is the diagonal matrix such that $\mu_{i} = \mathbf{D}_{ii}$ is the $i^{th}$ eigenvalue of $\mathbf{H}$ by decreasing algebraic size (ie $\mu_{1}$ is the largest eigenvalue of $\mathbf{H}$), and $\mathbf{V}$ is the matrix of eigenvectors where $\mathbf{V}_{i}$, the $i^{th}$ column vector of \textbf{V}, is the eigenvector corresponding to $\mu_{i}$. We can now write (\ref{equation:grad_d}) as:
 	\begin{equation}
 	\begin{aligned}
-	\nabla d(\lambda) & = -\gamma^{2} + \mathbf{g}^{T}(\mathbf{V}^{T}(\mathbf{D} + \lambda\mathbf{I})\mathbf{V})^{-1}(\mathbf{D} + \lambda\mathbf{I})\mathbf{V})^{-1}\mathbf{g} \\
+	2d^\prime(\lambda) & = -\gamma^{2} + \mathbf{g}^{T}(\mathbf{V}^{T}(\mathbf{D} + \lambda\mathbf{I})\mathbf{V})^{-2}\mathbf{g} \\
 	& = -\gamma^{2} + \mathbf{g}^{T}(\mathbf{V}^{T}(\mathbf{D} + \lambda\mathbf{I})\mathbf{V}\mathbf{V}^{T}(\mathbf{D} + \lambda\mathbf{I})\mathbf{V})^{-1}\mathbf{g}  \\
 	& = -\gamma^{2} + \mathbf{g}^{T}(\mathbf{V}^{T}(\mathbf{D} + \lambda\mathbf{I})(\mathbf{D} + \lambda\mathbf{I})\mathbf{V})^{-1}\mathbf{g}  \\ 
 	& = -\gamma^{2} + \mathbf{g}^{T}(\mathbf{V}^{T}(\mathbf{D} + \lambda\mathbf{I})^{2}\mathbf{V})^{-1}\mathbf{g}  \\ 
@@ -582,7 +582,7 @@
 	\end{equation}
 	Now, note that $(\mu_{i} + \lambda)$ is the $i^{th}$ eigenvalue of $(\mathbf{H} + \lambda\mathbf{I})$ so in order to satisfy the requirement in (\ref{equation:possemdef}), $\mu_{n} + \lambda > 0$ where $\mu_{n}$ is the smallest eigenvalue of the Hessian matrix, $\mathbf{H}$. The $\lambda$ which fulfills this constraint as well as (\ref{equation:grad_lagrangian2}), exists and is unique when $\mathbf{g}^{T}\mathbf{V}_{n}\neq0$ since the value of $\phi(\lambda)$ is $\infty$ when $-\lambda = \mu_{n}$ and then always decreasing for $\lambda > |\mu_{n}|$ and approaches zero. A visualization of $\phi(\lambda)$ can be seen in \cite{TRM.book}, Figure 7.3.2. There is a case where the value of $\lambda$ which maximizes (\ref{equation:dual2}) makes ($\mathbf{H}+\lambda\mathbf{I}$) semi-positive definite and singular which is discussed in \cite{adachi.paper}. 
 
-	To summarize, in order for a solution $\mathbf{p}$ to be optimal in the case that ($\mathbf{H} + \lambda\mathbf{I}) \succ \mathbf{0}$, it must satisfy primal feasibility, (\ref{equation:inbounds}), (\ref{equation:possemdef}), and complementary slackness, (\ref{equation:complementary_slackness}). Now that we have established optimality conditions for the TRS, we need to determine how to compute a solution that satifies these conditions. The dual problem (\ref{equation:dual2}) can be solved by an iterative method to determine a solution to $\phi(\lambda) = \gamma^{2}$ where $\mathbf{H} + \lambda \mathbf{I} \succ 0$. For example, \cite{TRM.book}, finds a model minimizer using a numerical approach of adjusting $\lambda$ and solving for (\ref{equation:grad_lagrangian}) and re-adjusting $\lambda$ until a suitable $\mathbf{p}$ is achieved. As previously mentioned, in this thesis we follow a more recent approach by \cite{adachi.paper} which, for the boundary case, developed a generalized eigenvalue problem with a solution from which a solution to the TRS can be directly computed. It also takes advantage of complementary slackness to devise a two step approach described in the following section. 
+	To summarize, in order for a solution $\mathbf{p}$ to be optimal in the case that ($\mathbf{H} + \lambda\mathbf{I}) \succ \mathbf{0}$, it must satisfy primal feasibility, (\ref{equation:inbounds}), (\ref{equation:possemdef}), and complementary slackness, (\ref{equation:complementary_slackness}). Now that we have established optimality conditions for the TRS, we need to determine how to compute a solution that satisfies these conditions. The dual problem (\ref{equation:dual2}) can be solved by an iterative method to determine a solution to $\phi(\lambda) = \gamma^{2}$ where $\mathbf{H} + \lambda \mathbf{I} \succ 0$. For example, \cite{TRM.book}, finds a model minimizer using a numerical approach of adjusting $\lambda$ and solving for (\ref{equation:grad_lagrangian}) and re-adjusting $\lambda$ until a suitable $\mathbf{p}$ is achieved. As previously mentioned, in this thesis we follow a more recent approach by \cite{adachi.paper} which, for the boundary case, developed a generalized eigenvalue problem with a solution from which a solution to the TRS can be directly computed. It also takes advantage of complementary slackness to devise a two step approach described in the following section. 
 	
 	\subsubsection{Solving TRS via a Generalized Eigenvalue Problem}
 	
@@ -603,7 +603,7 @@
 	\end{subequations}
 	adapted from (\ref{equation:grad_lagrangian}), (\ref{equation:possemdef}) and (\ref{equation:inbounds}) respectively for this case, since $\lambda = 0$ in order to satisfy complementary slackness, (\ref{equation:complementary_slackness}).
 	
-	Define $\mathbf{p}_{0}$ to be a solution to (\ref{equation:p0}), which is unique when $\mathbf{H}$ is non-singular. If $\mathbf{H}$ is singular any of the feasible solutions can be submitted as the $\mathbf{p}_{0}$ solution. In the case where the hyperplane of optimal solutions intersects the trust region sphere, there will be at least one boundary case solution, otherwise none of the possible solutions to $\mathbf{p}_{0}$ would satisfy (\ref{equation:p0_bounds}) and would therefore not be valid steps. Because of this, we can ensure that there is always a boundary solution which is a global minimizer in the case that $\mathbf{H}$ is singular. In our approach we do not check for singularity, rather we set a maximum number of iterations on our linear equation solver, which is the conjugate gradient method as will be discussed in the following chapter, and only consider solutions that satisfy the all of the above equations. 
+	Define $\mathbf{p}_{0}$ to be a solution to (\ref{equation:p0}), which is unique when $\mathbf{H}$ is non-singular. If $\mathbf{H}$ is singular any of the feasible solutions can be submitted as the $\mathbf{p}_{0}$ solution. In the case where the hyperplane of optimal solutions intersects the trust region sphere, there will be at least one boundary case solution. Otherwise none of the possible solutions to $\mathbf{p}_{0}$ would satisfy (\ref{equation:p0_bounds}) and would therefore not be valid steps. Because of this, we can ensure that there is always a boundary solution which is a global minimizer in the case that $\mathbf{H}$ is singular. In our approach we do not check for singularity. Rather, we set a maximum number of iterations on our linear equation solver, which is the conjugate gradient method as will be discussed in the following chapter, and only consider solutions that satisfy the all of the above equations. 
 	
 	\subsubsection{Boundary Case via a Generalized Eigenvalue Problem}
 	
@@ -667,7 +667,7 @@
 	(\mathbf{H} + \lambda_{*}\mathbf{I})(- \frac{\gamma^{2}}{\mathbf{g}^{T}\mathbf{v}_{2}}\mathbf{v}_{1}) = -\mathbf{g},
 	\label{equation:M_def2_rearranged}
 	\end{equation}
-	which is equivalent to (\ref{equation:grad_lagrangian}) with the RHS of (\ref{equation:p1}) replaced by $\mathbf{p}_{1}$, therefore the dual feasibility, (\ref{equation:grad_lagrangian}), is satisfied. Rearranging (\ref{equation:M_def1}) we get:
+	which is equivalent to (\ref{equation:grad_lagrangian}) with the RHS of (\ref{equation:p1}) replaced by $\mathbf{p}_{1}$. Therefore the dual feasibility, (\ref{equation:grad_lagrangian}), is satisfied. Rearranging (\ref{equation:M_def1}) we get:
 	
 	\begin{equation}
 	\mathbf{v}_{1} = (\mathbf{H} + \lambda_{*}\mathbf{I})\mathbf{v}_{2}.
@@ -682,7 +682,7 @@
 	= & \frac{\gamma^{4}}{(\mathbf{g}^{T}\mathbf{v}_{2})^{2}}\frac{(\mathbf{g}^{T}\mathbf{v}_{2})^{2}}{\gamma^{2}}, \\
 	= &\gamma^{2}.
 	\end{align*}
-	The condition (\ref{equation:possemdef}) is satisfied by taking the eigenvalue/eigenvector pair of (\ref{equation:M_def}) with the eigenvalue of the largest algebraic value which is explained in \cite{adachi.paper}. In the case where $(\mathbf{H} + I\lambda_{*})$ is singular, we have what is considered the ``hard case" which rarely occurs, see \cite{adachi.paper} for an approach to dealing with this case.  
+	The condition (\ref{equation:possemdef}) is satisfied by taking the eigenvalue/eigenvector pair of (\ref{equation:M_def}) with the eigenvalue of the largest algebraic value which is explained in \cite{adachi.paper}. In the case where $(\mathbf{H} + I\lambda_{*})$ is singular, we have what is considered the ``hard case" which rarely occurs. See \cite{adachi.paper} for an approach to dealing with this case.  
 	
 	\subsubsection{Choosing the trial point}
 	
@@ -813,17 +813,16 @@
 	 		\State $\mathbf{x}_{0} \gets \mathbf{0}$
 	 		\State $\mathbf{r}_{0} \gets \mathbf{b}$
 	 		\State $\mathbf{p}_{0} \gets \mathbf{b}$ 
-	 		\State $i \gets 0$
-	 		\While{$ \|{\mathbf{r}_{i}}\| > \delta$} 
-	 		\State $i = i + 1$
-	 		\State $(\mathbf{A}\mathbf{p}_{i-1}) = \mathbf{Av}(\mathbf{p}_{i-1})$
-	 		\State $\alpha_{i} = \mathbf{r}^{T}_{i-1}\mathbf{r}_{i-1}/(\mathbf{p}^{T}_{i-1}(\mathbf{A}\mathbf{p}_{i-1}))$
-	 		\State $\mathbf{x}_{i} = \mathbf{x}_{i} + \alpha_{i}\mathbf{p}_{i-1}$
-	 		\State $\mathbf{r}_{i} = \mathbf{r}_{i} + \alpha_{i}(\mathbf{A}\mathbf{p}_{i-1})$ 
-	 		\State $\mu_{i} = (\mathbf{r}^{T}_{k}\mathbf{r}_{k})/(\mathbf{r}_{k-1}^{T}\mathbf{r}_{k-1})$ 
-	 		\State $\mathbf{p}_{i} = \mathbf{r}_{i} + \mu_{i}\mathbf{p}_{i-1}$
+	 		\State $k \gets 0$
+	 		\While{$ \|{\mathbf{r}_{k}}\| > \delta$} 
+	 		\State $k = k + 1$
+	 		\State $\alpha_{k} = \mathbf{r}^{T}_{k-1}\mathbf{r}_{k-1}/(\mathbf{p}^{T}_{k-1}\mathbf{A}\mathbf{p}_{k-1})$
+	 		\State $\mathbf{x}_{k} = \mathbf{x}_{k} + \alpha_{k}\mathbf{p}_{k-1}$
+	 		\State $\mathbf{r}_{k} = \mathbf{r}_{k} + \alpha_{k}\mathbf{A}\mathbf{p}_{k-1}$ 
+	 		\State $\mu_{k} = (\mathbf{r}^{T}_{k}\mathbf{r}_{k})/(\mathbf{r}_{k-1}^{T}\mathbf{r}_{k-1})$ 
+	 		\State $\mathbf{p}_{k} = \mathbf{r}_{k} + \mu_{k}\mathbf{p}_{k-1}$
 	 		\EndWhile 
-	 		\Return{$\mathbf{x}_{i}$} 
+	 		\Return{$\mathbf{x}_{k}$} 
 	 		\EndProcedure
 	 		\label{algorithm:cg}
 	 	\end{algorithmic}
@@ -1008,7 +1007,7 @@
 	\end{equation}
 	where $\mathbf{p}^{w} \in \mathbb{R}^{b_{w}}$, 
 	\begin{equation}
-	(\mathbf{g}^{w}_{k})_{i} = (\mathbf{g}_{r})_{(\mathbf{a}_{r})_{i}},
+	(\mathbf{g}^{w}_{k})_{i} = (\mathbf{g}_{k})_{(\mathbf{a}_{k})_{i}},
 	\end{equation}
 	and
 	\begin{equation}
@@ -1047,9 +1046,9 @@
 	
 	\section{Full Hessian vs Hessian Free}
 	
-	Our methods can all be performed using either a function which computes the product $\mathbf{H}_{k}\mathbf{v}$ for any given vector $\mathbf{v}$, or by using the full Hessian $\mathbf{H}_{k}$ which must be computed first. When using a Hessian free approach, the ``Pearlmutter Trick" (see Appendix \ref{appendix:pearlmutter}) must be performed each time $\mathbf{H}_{k}\mathbf{v}$ is computed for some vector $\mathbf{v}$. This takes $O(mn)$ computations where $m$ is the number of training samples and $n$ is the number of parameters. Computing $\mathbf{H}_{k}\mathbf{v}$ when we have computed $\mathbf{H}_{k}$ only takes $O(n^{2})$ and often $n < m$. This, however, requires the added cost of computing $\mathbf{H}_{k}$. We simplified this discussion by using symbols $n$, $m$, and $\mathbf{H}_{k}$ which are the symbols relevant to the $\mathbf{TRM}$. This discussion is also true for $b_{w}$, any value of $b_{m}$ and the approximate or lower dimension Hessian matrix being used. It is therefore relevant to all method variations presented in this chapter.
+	Our methods can all be performed using either a function which computes the product $\mathbf{H}_{k}\mathbf{v}$ for any given vector $\mathbf{v}$, or by using the full Hessian $\mathbf{H}_{k}$ which must be computed first. When using a Hessian free approach, the ``Pearlmutter Trick" (see Appendix \ref{appendix:pearlmutter}) must be performed each time $\mathbf{H}_{k}\mathbf{v}$ is computed for some vector $\mathbf{v}$. This takes $O(mn)$ computations where $m$ is the number of training samples and $n$ is the number of parameters. Computing $\mathbf{H}_{k}\mathbf{v}$ when we compute $\mathbf{H}_{k}$ only takes $O(n^{2})$ and often $n < m$. This, however, requires the added cost of computing $\mathbf{H}_{k}$. We simplified this discussion by using symbols $n$, $m$, and $\mathbf{H}_{k}$ which are the symbols relevant to the $\mathbf{TRM}$. This discussion is also true for $b_{w}$, any value of $b_{m}$ and the approximate or lower dimension Hessian matrix being used. It is therefore relevant to all method variations presented in this chapter.
 	
-	In order to decide for which methods we computed the full Hessian matrix and for which we did not, we timed the first 1000 iterations (or fewer for those that converged prior to 1000 iterations) of all methods on all datasets using both approaches. These results are presented in Appendix \ref{appendix:fhhf}.  We chose to keep the Hessian computation approach for each method consistent across datasets for our experimental results. If a method computed each step taking on average less CPU time using the Hessian free approach for the majority of datasets, the Hessian free approach was used for all datasets in experimentation and otherwise the full Hessian approach was used. We show the resulting choice of Hessian computation in Table \ref{table:FHHF}. 
+	In order to decide for which methods we compute the full Hessian matrix and for which we did not, we timed the first 1000 iterations (or fewer for those that converged prior to 1000 iterations) of all methods on all datasets using both approaches. These results are presented in Appendix \ref{appendix:fhhf}.  We chose to keep the Hessian computation approach for each method consistent across datasets for our experimental results. If a method computed each step taking on average less CPU time using the Hessian free approach for the majority of datasets, the Hessian free approach was used for all datasets in experimentation and otherwise the full Hessian approach was used. We show the resulting choice of Hessian computation in Table \ref{table:FHHF}. 
 	
 	
 	\begin{table}[h]
@@ -1117,7 +1116,7 @@
 	
 	\subsection{Datasets}
 	
-	Sizes of datasets are displayed in Table \ref{table:datasets}. The datasets were chosen to have a variety of sizes in terms of the number of independent variables, $n_{0}$, and the number of classes, both which affect the number of paramters, $n$, in the resulting ff-ANN. They also have differing numbers of training examples, $m$. They cover a few application domains as shown in Table \ref{table:datasettopics}, and are expected to have different properties. For instance, most datasets have separable classes, except Habe where the class label appears virtually unrelated to the independent variables as can be seen in Figure \ref{figure:haberman}.
+	Sizes of datasets are displayed in Table \ref{table:datasets}. The datasets were chosen to have a variety of sizes in terms of the number of independent variables, $n_{0}$, and the number of classes, both which affect the number of parameters, $n$, in the resulting ff-ANN. They also have differing numbers of training examples, $m$. They cover a few application domains as shown in Table \ref{table:datasettopics}, and are expected to have different properties. For instance, most datasets have separable classes, except Habe where the class label appears virtually unrelated to the independent variables as can be seen in Figure \ref{figure:haberman}.
 	
 	\begin{table}[h]
 		\begin{center}
@@ -1149,7 +1148,7 @@
 				\hline
 				IRIS & predict class of iris plant & \cite{IRIS}\\
 				\hline
-				Nurs & rank applicatios to nursery schools & \cite{Nurs}\\
+				Nurs & rank applications to nursery schools & \cite{Nurs}\\
 				\hline
 				Habe & predict survival status for patients with breast cancer  & \cite{Habe}\\ 
 				\hline
@@ -1223,7 +1222,7 @@
 	\begin{equation}
 	\psi = k + \Delta |f(\mathbf{w}_0) - k|.
 	\end{equation}	
-	Here $\mathbf{w}_{0}$ is the vector of initial parameters and Delta is given by the user.
+	Here $\mathbf{w}_{0}$ is the vector of initial parameters and $\Delta$ is given by the user.
 	
 	Finally, TRRS for method $a$ is defined to be $cpu(K_{a}^{\psi})$ where $K_{a}^{\psi}$ is the first iteration such that $\mathbf{w}_{K_{a}^{\psi}}^a$ is considered a reasonable solution. TRRS for method $b$ is defined similarly.
 		
@@ -1786,7 +1785,7 @@
 	
 	\chapter{Conclusion}
 	
-	In this thesis, we studied a trust region approach, that uses the recent generalized eigenvalue method to solve the trust region subproblem (TRS), on training feed forward neural networks (ff-ANNs) by using the `Pearlmutter Trick' to compute the second order information. From this full method, we developed several variations of this learning algorithm that either estimate the TRS at an iteration, reduce the dimension of the TRS, or combine the trust region method with a stochastic gradient method. We used each of these methods to train networks on five datasets of different sizes and application domains. We analyzed these results to provide some insight as to the behaviour of these methods as well as a measure of CPU time taken to reach a reasonable solution, which provides an indicator of speed.
+	In this thesis, we studied a trust region approach, that uses the recent generalized eigenvalue method to solve the trust region subproblem (TRS), on training feedforward neural networks (ff-ANNs) by using the `Pearlmutter Trick' to compute the second order information. From this full method, we developed several variations of this learning algorithm that either estimate the TRS at an iteration, reduce the dimension of the TRS, or combine the trust region method with a stochastic gradient method. We used each of these methods to train networks on five datasets of different sizes and application domains. We analyzed these results to provide some insight as to the behaviour of these methods as well as a measure of CPU time taken to reach a reasonable solution, which provides an indicator of speed.
 	
 	Our results suggest that combining the trust region method presented in this thesis, along with mini-batch gradient descent, we can match or improve upon the speed of mini-batch gradient descent for all datasets tested. In terms of stochastic approximation approaches, we find that second order approximations using stochastic sampling were not beneficial for all datasets. However, results for using a large batch trust region method with the trust region size update showed that for most datasets a speed up in training results from large batch size sampling. We also find that with the largest dataset, MNIST, which requires the most parameters in a two-layer network, smaller batch stochastic sampling can be effective at speeding up the method. These results show promise for use on larger datasets.
 	
@@ -1796,7 +1795,7 @@
 	
 	 Despite some reduction of time required for a reasonable solution using stochastic subsampling and weight subsampling, these time reductions are still not large enough to improve upon the TRRS of a stochastic gradient descent method. Therefore, the benefit of a trust region method, without used in combination with a first order method, still lies purely in its ability to produce precise results and not in its speed.
 	
-	Overall, we have shed some light into the behaviour and performance changes of a specific approach to approximation of the trust region method used to train feed forward neural networks. We have also identified one method, the hybrid of the trust region method with mini-batch gradient descent, which does provide some improvements in speed and precision to mini-batch gradient descent.
+	Overall, we have shed some light into the behaviour and performance changes of a specific approach to approximation of the trust region method used to train feedforward neural networks. We have also identified one method, the hybrid of the trust region method with mini-batch gradient descent, which does provide some improvements in speed and precision to mini-batch gradient descent.
 	
 
 	\section{Future Work}
@@ -1910,7 +1909,7 @@
 	where $\sigma_{l}(.)$ is the non-linear function at layer $l$, and $(\mathbf{W}_{l})_{i}$ is the $i^{th}$ row vector of the weight matrix at layer $l$. This allows us to compute the output of our final layer, $\mathbf{z}_{L}^{k}$, where $L$ is the number of layers. This forward propagation step is performed for each training example $k$ in our set of $m$ training examples. With this set of $m$ vectors $\mathbf{z}_{l}^{k}$, which depend on \textbf{w}, the objective function is now computed as:
 	
 	\begin{equation}
-	f(\mathbf{w}) = \frac{1}{2}\sum_{k=1}^{m}{(\mathbf{z}_{L}^{k} - \mathbf{y}^{k})^{T}(\mathbf{z}_{L}^{k} - \mathbf{y}^{k})},
+	f(\mathbf{w}) = \frac{1}{2m}\sum_{k=1}^{m}{(\mathbf{z}_{L}^{k} - \mathbf{y}^{k})^{T}(\mathbf{z}_{L}^{k} - \mathbf{y}^{k})},
 	\end{equation}
 	where $\mathbf{y}^k$ represents the vector of dependent variables of the $k^{th}$ training example, where training examples are presented as in (\ref{equation:training_example}), which is set at the time of training along with it's paired independent variable vector $\mathbf{x}^{k} = \mathbf{z}^{k}_{0}$.
 	
@@ -1919,7 +1918,7 @@
 	In this pass the propagation vector, $\mathbf{a}^{k}_{l}$ from Algorithm \ref{algorithm:passes}, for each training example is the vector where the element at index $i$ is defined as  $\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}^{k}_{l})_{i}}}$ and the vector is of length $n_{l}$. Initializing in this case involves defining this propagation vector at layer $L$ following our propagation procedure. Based on the objective function, the elements of this initial vector are:
 	
 	\begin{equation}
-	\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}^{k}_{L})_{i}}} = ((\mathbf{z}_{L}^{k})_{i} - \mathbf{y}^{k}_{i}).
+	\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}^{k}_{L})_{i}}} = \frac{1}{m}((\mathbf{z}_{L}^{k})_{i} - \mathbf{y}^{k}_{i}).
 	\label{equation:df_dzL0}
 	\end{equation}
 	This pass begins at the final layer, therefore $l = L$ for which $\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}^{k}_{L})_{i}}}$ has already been computed using equation (\ref{equation:df_dzL0}) for $i=1,...,n_{L}$. The value of $\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}^{k}_{L})_{i}}}$ are then each computed based on the previous layer. The propagation begins with the propagation equation used in Algorithm \ref{algorithm:passes} defined as:
@@ -1931,12 +1930,12 @@
 	From this propagation procedure there is now sufficient information to compute the gradient defined as $\nabla{f(\mathbf{w})}$ where each element indexed by $q$ is defined as $\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{W}_{l})_{ij}}}$ using the index mapping from (\ref{equation:index}). Each of these components is computed using:
 	
 	\begin{equation}
-	\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{W}_{l})_{ij}}} = \sum_{k=0}^{m-1}{\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}_{l}^{k})_{i}}}\sigma_{l}^{\prime}((\mathbf{W}_{l})_{i}\mathbf{z}_{l-1}^{k}+ (\mathbf{b}_{l})_{i})(\mathbf{z}^{k}_{l-1})_{j}},
+	\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{W}_{l})_{ij}}} = \sum_{k=1}^{m}{\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}_{l}^{k})_{i}}}\sigma_{l}^{\prime}((\mathbf{W}_{l})_{i}\mathbf{z}_{l-1}^{k}+ (\mathbf{b}_{l})_{i})(\mathbf{z}^{k}_{l-1})_{j}},
 	\label{equation:grad_w}
 	\end{equation}
 	and
 	\begin{equation}
-	\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{b}_{l})_{i}}} = \sum_{k=0}^{m-1}{\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}_{l}^{k})_{i}}}\sigma_{l}^{\prime}((\mathbf{W}_{l})_{i}\mathbf{z}_{l-1}^{k}+ (\mathbf{b}_{l})_{i})},
+	\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{b}_{l})_{i}}} = \sum_{k=1}^{m}{\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}_{l}^{k})_{i}}}\sigma_{l}^{\prime}((\mathbf{W}_{l})_{i}\mathbf{z}_{l-1}^{k}+ (\mathbf{b}_{l})_{i})},
 	\label{equation:grad_b}
 	\end{equation}
 	where 
@@ -1983,9 +1982,9 @@
 	
 	\subsubsection{Back Propagation II}
 	
-	In this final pass the propagation vector, $\mathbf{a}_{l}^{k}$, is set as the vector of size $n_{l}$ such that each element $i$ is defined by $R\{\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}_{l}^{k})_{i}}}\}$. The ``R" operator is applied to (\ref{equation:df_dzL}) for computing initial values $R\{\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}_{L}^{k})_{i}}}\}$ which results in:
+	In this final pass the propagation vector, $\mathbf{a}_{l}^{k}$, is set as the vector of size $n_{l}$ such that each element $i$ is defined by $R\{\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}_{l}^{k})_{i}}}\}$. The ``R" operator is applied to (\ref{equation:df_dzL0}) for computing initial values $R\{\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}_{L}^{k})_{i}}}\}$ which results in:
 	\begin{equation}
-	R\{\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}_{L}^{k})_{i}}}\} = R\{(\mathbf{z}_{L}^{k})_{i} - \mathbf{y}_{i}^{k}\} = R\{(\mathbf{z}_{L}^{k})_{i}\},
+	R\{\frac{\partial{f(\mathbf{w})}}{\partial{(\mathbf{z}_{L}^{k})_{i}}}\} = \frac{1}{m}R\{(\mathbf{z}_{L}^{k})_{i} - \mathbf{y}_{i}^{k}\} = \frac{1}{m}R\{(\mathbf{z}_{L}^{k})_{i}\},
 	\end{equation}
 	where $\mathbf{y}^{k}$ is the dependent variable vector for the $k^{th}$ training example which is set before optimization begins and therefore $R\{\mathbf{y}^{k}\} = \mathbf{0}$.
 	
